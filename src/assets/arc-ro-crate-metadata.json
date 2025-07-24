@@ -1,0 +1,5323 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "Sample": "https://bioschemas.org/Sample",
+      "additionalProperty": "http://schema.org/additionalProperty",
+      "intendedUse": "https://bioschemas.org/intendedUse",
+      "computationalTool": "https://bioschemas.org/computationalTool",
+      "labEquipment": "https://bioschemas.org/labEquipment",
+      "reagent": "https://bioschemas.org/reagent",
+      "LabProtocol": "https://bioschemas.org/LabProtocol",
+      "executesLabProtocol": "https://bioschemas.org/executesLabProtocol",
+      "parameterValue": "https://bioschemas.org/parameterValue",
+      "LabProcess": "https://bioschemas.org/LabProcess",
+      "measurementMethod": "http://schema.org/measurementMethod",
+      "sha256": "https://schema.org/sha256"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "#Organization_Institute_of_Plant_Biochemistry,_HHU_Düsseldorf",
+      "@type": "Organization",
+      "name": "Institute of Plant Biochemistry, HHU Düsseldorf"
+    },
+    {
+      "@id": "http://purl.org/spar/scoro/research-assistant",
+      "@type": "DefinedTerm",
+      "name": "research assistant",
+      "termCode": "http://purl.org/spar/scoro/research-assistant"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-9021-3197",
+      "@type": "Person",
+      "givenName": "Dominik",
+      "affiliation": {
+        "@id": "#Organization_Institute_of_Plant_Biochemistry,_HHU_Düsseldorf"
+      },
+      "email": [
+        "dominik.brilhaus@hhu.de",
+        "brilhaus@hhu.de"
+      ],
+      "familyName": "Brilhaus",
+      "jobTitle": {
+        "@id": "http://purl.org/spar/scoro/research-assistant"
+      },
+      "address": "HHU Düsseldorf, 22.07.U1.43, Universitätsstr. 1, 40225 Düsseldorf",
+      "telephone": "0211-8115523"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-5309-0527",
+      "@type": "Person",
+      "givenName": "Andrea",
+      "affiliation": {
+        "@id": "#Organization_Institute_of_Plant_Biochemistry,_HHU_Düsseldorf"
+      },
+      "email": "andrea.brauetigam@hhu.de",
+      "familyName": "Bräutigam",
+      "jobTitle": {
+        "@id": "http://purl.org/spar/scoro/research-assistant"
+      },
+      "address": "Universitätsstr. 1, 40225 Düsseldorf"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-9161-4889",
+      "@type": "Person",
+      "givenName": "Tabea",
+      "affiliation": {
+        "@id": "#Organization_Institute_of_Plant_Biochemistry,_HHU_Düsseldorf"
+      },
+      "email": "tabea.mettler@hhu.de",
+      "familyName": "Mettler-Altmann",
+      "jobTitle": {
+        "@id": "http://purl.org/spar/scoro/research-assistant"
+      },
+      "address": "Universitätsstr. 1, 40225 Düsseldorf"
+    },
+    {
+      "@id": "#Organization_Smithsonian_Tropical_Research_Institute,_Panama",
+      "@type": "Organization",
+      "name": "Smithsonian Tropical Research Institute, Panama"
+    },
+    {
+      "@id": "http://purl.org/spar/scoro/co-investigator",
+      "@type": "DefinedTerm",
+      "name": "co-investigator",
+      "termCode": "http://purl.org/spar/scoro/co-investigator"
+    },
+    {
+      "@id": "#Person_Klaus_Winter",
+      "@type": "Person",
+      "givenName": "Klaus",
+      "affiliation": {
+        "@id": "#Organization_Smithsonian_Tropical_Research_Institute,_Panama"
+      },
+      "email": "winterk@si.edu",
+      "familyName": "Winter",
+      "jobTitle": {
+        "@id": "http://purl.org/spar/scoro/co-investigator"
+      },
+      "address": "Balboa, Ancón, Republic of Panama",
+      "disambiguatingDescription": "Comment {Name = \"Worksheet\"}"
+    },
+    {
+      "@id": "http://purl.org/spar/scoro/principal-investigator",
+      "@type": "DefinedTerm",
+      "name": "principal investigator",
+      "termCode": "http://purl.org/spar/scoro/principal-investigator"
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-0970-4672",
+      "@type": "Person",
+      "givenName": "Andreas",
+      "affiliation": {
+        "@id": "#Organization_Institute_of_Plant_Biochemistry,_HHU_Düsseldorf"
+      },
+      "email": "aweber@hhu.de",
+      "familyName": "Weber",
+      "jobTitle": {
+        "@id": "http://purl.org/spar/scoro/principal-investigator"
+      },
+      "additionalName": "P M",
+      "address": "Universitätsstr. 1, 40225 Düsseldorf"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-9062-3516",
+      "@type": "Person",
+      "givenName": "Eva",
+      "affiliation": {
+        "@id": "#Organization_Institute_of_Plant_Biochemistry,_HHU_Düsseldorf"
+      },
+      "familyName": "Maleckova",
+      "jobTitle": {
+        "@id": "http://purl.org/spar/scoro/research-assistant"
+      },
+      "address": "Universitätsstr. 1, 40225 Düsseldorf"
+    },
+    {
+      "@id": "#Person_Alisandra_Denton",
+      "@type": "Person",
+      "givenName": "Alisandra",
+      "affiliation": {
+        "@id": "#Organization_Institute_of_Plant_Biochemistry,_HHU_Düsseldorf"
+      },
+      "familyName": "Denton",
+      "jobTitle": {
+        "@id": "http://purl.org/spar/scoro/research-assistant"
+      },
+      "additionalName": "K",
+      "address": "Universitätsstr. 1, 40225 Düsseldorf"
+    },
+    {
+      "@id": "studies/TalinumGenomeDraft/resources/Talinum.gm.CDS.nt.fa",
+      "@type": "File",
+      "name": "studies/TalinumGenomeDraft/resources/Talinum.gm.CDS.nt.fa",
+      "sha256": "29dca7b3f0807548db82f227157cdea39427e700b348e9fb2266ee985a71e609"
+    },
+    {
+      "@id": "#Source_VariousTalinumData[WIP]",
+      "@type": "Sample",
+      "additionalType": "Source",
+      "name": "VariousTalinumData[WIP]"
+    },
+    {
+      "@id": "#Protocol_TalinumGenomeDraft_TalinumGenomeDraft",
+      "@type": "LabProtocol",
+      "name": "TalinumGenomeDraft"
+    },
+    {
+      "@id": "#Process_TalinumGenomeDraft",
+      "@type": "LabProcess",
+      "name": "TalinumGenomeDraft",
+      "object": {
+        "@id": "#Source_VariousTalinumData[WIP]"
+      },
+      "result": {
+        "@id": "studies/TalinumGenomeDraft/resources/Talinum.gm.CDS.nt.fa"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_TalinumGenomeDraft_TalinumGenomeDraft"
+      }
+    },
+    {
+      "@id": "studies/TalinumGenomeDraft/",
+      "@type": "Dataset",
+      "additionalType": "Study",
+      "identifier": "TalinumGenomeDraft",
+      "creator": [
+        {
+          "@id": "http://orcid.org/0000-0001-9062-3516"
+        },
+        {
+          "@id": "http://orcid.org/0000-0001-9021-3197"
+        },
+        {
+          "@id": "#Person_Alisandra_Denton"
+        },
+        {
+          "@id": "http://orcid.org/0000-0003-0970-4672"
+        }
+      ],
+      "dateModified": "2025-07-21T15:52:54.0657155",
+      "hasPart": {
+        "@id": "studies/TalinumGenomeDraft/resources/Talinum.gm.CDS.nt.fa"
+      },
+      "about": {
+        "@id": "#Process_TalinumGenomeDraft"
+      }
+    },
+    {
+      "@id": "#CharacteristicValue_organism_Talinum_fruticosum",
+      "@type": "PropertyValue",
+      "additionalType": "CharacteristicValue",
+      "name": "organism",
+      "value": "Talinum fruticosum",
+      "propertyID": "https://bioregistry.io/OBI:0100026",
+      "valueReference": "http://purl.obolibrary.org/obo/NCBITaxon_110664",
+      "columnIndex": "0"
+    },
+    {
+      "@id": "#CharacteristicValue_organism_part_leaf",
+      "@type": "PropertyValue",
+      "additionalType": "CharacteristicValue",
+      "name": "organism part",
+      "value": "leaf",
+      "propertyID": "https://bioregistry.io/EFO:0000635",
+      "valueReference": "https://www.ebi.ac.uk/ols4/ontologies/po/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPO_0025034",
+      "columnIndex": "1"
+    },
+    {
+      "@id": "#CharacteristicValue_plant_age_28_days_after_germination",
+      "@type": "PropertyValue",
+      "additionalType": "CharacteristicValue",
+      "name": "plant age",
+      "value": "28 days after germination",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000033",
+      "columnIndex": "2"
+    },
+    {
+      "@id": "#Source_DB_097",
+      "@type": "Sample",
+      "additionalType": "Source",
+      "name": "DB_097",
+      "additionalProperty": [
+        {
+          "@id": "#CharacteristicValue_organism_Talinum_fruticosum"
+        },
+        {
+          "@id": "#CharacteristicValue_organism_part_leaf"
+        },
+        {
+          "@id": "#CharacteristicValue_plant_age_28_days_after_germination"
+        }
+      ]
+    },
+    {
+      "@id": "#FactorValue_watering_exposure_12_days_drought",
+      "@type": "PropertyValue",
+      "additionalType": "FactorValue",
+      "name": "watering exposure",
+      "value": "12 days drought",
+      "propertyID": "https://bioregistry.io/PECO:0007383",
+      "columnIndex": "8"
+    },
+    {
+      "@id": "#FactorValue_Timepoint_MD",
+      "@type": "PropertyValue",
+      "additionalType": "FactorValue",
+      "name": "Timepoint",
+      "value": "MD",
+      "propertyID": "https://bioregistry.io/NCIT:C68568",
+      "columnIndex": "9"
+    },
+    {
+      "@id": "#FactorValue_timepoint-ZT_6",
+      "@type": "PropertyValue",
+      "additionalType": "FactorValue",
+      "name": "timepoint-ZT",
+      "value": "6",
+      "columnIndex": "10"
+    },
+    {
+      "@id": "#FactorValue_Photosynthesis_mode_CAM",
+      "@type": "PropertyValue",
+      "additionalType": "FactorValue",
+      "name": "Photosynthesis mode",
+      "value": "CAM",
+      "columnIndex": "11"
+    },
+    {
+      "@id": "#Sample_CAM_01",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "CAM_01",
+      "additionalProperty": [
+        {
+          "@id": "#FactorValue_watering_exposure_12_days_drought"
+        },
+        {
+          "@id": "#FactorValue_Timepoint_MD"
+        },
+        {
+          "@id": "#FactorValue_timepoint-ZT_6"
+        },
+        {
+          "@id": "#FactorValue_Photosynthesis_mode_CAM"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000164",
+      "@type": "DefinedTerm",
+      "name": "plant growth protocol",
+      "termCode": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000164"
+    },
+    {
+      "@id": "#Protocol_plant_material.md_plant_material",
+      "@type": "LabProtocol",
+      "name": "plant_material.md",
+      "intendedUse": {
+        "@id": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000164"
+      }
+    },
+    {
+      "@id": "#ParameterValue_growth_day_length_12_hr_light_/_12_hr_dark",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "growth day length",
+      "value": "12 hr light / 12 hr dark",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000041",
+      "columnIndex": "3"
+    },
+    {
+      "@id": "#ParameterValue_light_intensity_exposure_425",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "light intensity exposure",
+      "value": "425",
+      "propertyID": "https://bioregistry.io/PECO:0007224",
+      "unitCode": "https://bioregistry.io/UO:0000160",
+      "unitText": "microeinstein per square meter per second",
+      "columnIndex": "4"
+    },
+    {
+      "@id": "#ParameterValue_humidity_day_37",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "humidity day",
+      "value": "37",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000005",
+      "unitCode": "https://bioregistry.io/UO:0000187",
+      "unitText": "percent",
+      "columnIndex": "5"
+    },
+    {
+      "@id": "#ParameterValue_temperature_day_30",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "temperature day",
+      "value": "30",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000007",
+      "unitCode": "https://bioregistry.io/UO:0000027",
+      "unitText": "degree celsius",
+      "columnIndex": "6"
+    },
+    {
+      "@id": "#ParameterValue_temperature_night_22",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "temperature night",
+      "value": "22",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000008",
+      "unitCode": "https://bioregistry.io/UO:0000027",
+      "unitText": "degree celsius",
+      "columnIndex": "7"
+    },
+    {
+      "@id": "#Process_plant_material_0",
+      "@type": "LabProcess",
+      "name": "plant_material_0",
+      "object": {
+        "@id": "#Source_DB_097"
+      },
+      "result": {
+        "@id": "#Sample_CAM_01"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_plant_material.md_plant_material"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_growth_day_length_12_hr_light_/_12_hr_dark"
+        },
+        {
+          "@id": "#ParameterValue_light_intensity_exposure_425"
+        },
+        {
+          "@id": "#ParameterValue_humidity_day_37"
+        },
+        {
+          "@id": "#ParameterValue_temperature_day_30"
+        },
+        {
+          "@id": "#ParameterValue_temperature_night_22"
+        }
+      ]
+    },
+    {
+      "@id": "#Source_DB_099",
+      "@type": "Sample",
+      "additionalType": "Source",
+      "name": "DB_099",
+      "additionalProperty": [
+        {
+          "@id": "#CharacteristicValue_organism_Talinum_fruticosum"
+        },
+        {
+          "@id": "#CharacteristicValue_organism_part_leaf"
+        },
+        {
+          "@id": "#CharacteristicValue_plant_age_28_days_after_germination"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_CAM_02",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "CAM_02",
+      "additionalProperty": [
+        {
+          "@id": "#FactorValue_watering_exposure_12_days_drought"
+        },
+        {
+          "@id": "#FactorValue_Timepoint_MD"
+        },
+        {
+          "@id": "#FactorValue_timepoint-ZT_6"
+        },
+        {
+          "@id": "#FactorValue_Photosynthesis_mode_CAM"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_plant_material_1",
+      "@type": "LabProcess",
+      "name": "plant_material_1",
+      "object": {
+        "@id": "#Source_DB_099"
+      },
+      "result": {
+        "@id": "#Sample_CAM_02"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_plant_material.md_plant_material"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_growth_day_length_12_hr_light_/_12_hr_dark"
+        },
+        {
+          "@id": "#ParameterValue_light_intensity_exposure_425"
+        },
+        {
+          "@id": "#ParameterValue_humidity_day_37"
+        },
+        {
+          "@id": "#ParameterValue_temperature_day_30"
+        },
+        {
+          "@id": "#ParameterValue_temperature_night_22"
+        }
+      ]
+    },
+    {
+      "@id": "#Source_DB_103",
+      "@type": "Sample",
+      "additionalType": "Source",
+      "name": "DB_103",
+      "additionalProperty": [
+        {
+          "@id": "#CharacteristicValue_organism_Talinum_fruticosum"
+        },
+        {
+          "@id": "#CharacteristicValue_organism_part_leaf"
+        },
+        {
+          "@id": "#CharacteristicValue_plant_age_28_days_after_germination"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_CAM_03",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "CAM_03",
+      "additionalProperty": [
+        {
+          "@id": "#FactorValue_watering_exposure_12_days_drought"
+        },
+        {
+          "@id": "#FactorValue_Timepoint_MD"
+        },
+        {
+          "@id": "#FactorValue_timepoint-ZT_6"
+        },
+        {
+          "@id": "#FactorValue_Photosynthesis_mode_CAM"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_plant_material_2",
+      "@type": "LabProcess",
+      "name": "plant_material_2",
+      "object": {
+        "@id": "#Source_DB_103"
+      },
+      "result": {
+        "@id": "#Sample_CAM_03"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_plant_material.md_plant_material"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_growth_day_length_12_hr_light_/_12_hr_dark"
+        },
+        {
+          "@id": "#ParameterValue_light_intensity_exposure_425"
+        },
+        {
+          "@id": "#ParameterValue_humidity_day_37"
+        },
+        {
+          "@id": "#ParameterValue_temperature_day_30"
+        },
+        {
+          "@id": "#ParameterValue_temperature_night_22"
+        }
+      ]
+    },
+    {
+      "@id": "#Source_DB_161",
+      "@type": "Sample",
+      "additionalType": "Source",
+      "name": "DB_161",
+      "additionalProperty": [
+        {
+          "@id": "#CharacteristicValue_organism_Talinum_fruticosum"
+        },
+        {
+          "@id": "#CharacteristicValue_organism_part_leaf"
+        },
+        {
+          "@id": "#CharacteristicValue_plant_age_28_days_after_germination"
+        }
+      ]
+    },
+    {
+      "@id": "#FactorValue_watering_exposure_12_days_drought_+_2_days_rewatered",
+      "@type": "PropertyValue",
+      "additionalType": "FactorValue",
+      "name": "watering exposure",
+      "value": "12 days drought + 2 days rewatered",
+      "propertyID": "https://bioregistry.io/PECO:0007383",
+      "columnIndex": "8"
+    },
+    {
+      "@id": "#FactorValue_Photosynthesis_mode_reC3",
+      "@type": "PropertyValue",
+      "additionalType": "FactorValue",
+      "name": "Photosynthesis mode",
+      "value": "reC3",
+      "columnIndex": "11"
+    },
+    {
+      "@id": "#Sample_reC3_01",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "reC3_01",
+      "additionalProperty": [
+        {
+          "@id": "#FactorValue_watering_exposure_12_days_drought_+_2_days_rewatered"
+        },
+        {
+          "@id": "#FactorValue_Timepoint_MD"
+        },
+        {
+          "@id": "#FactorValue_timepoint-ZT_6"
+        },
+        {
+          "@id": "#FactorValue_Photosynthesis_mode_reC3"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_plant_material_3",
+      "@type": "LabProcess",
+      "name": "plant_material_3",
+      "object": {
+        "@id": "#Source_DB_161"
+      },
+      "result": {
+        "@id": "#Sample_reC3_01"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_plant_material.md_plant_material"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_growth_day_length_12_hr_light_/_12_hr_dark"
+        },
+        {
+          "@id": "#ParameterValue_light_intensity_exposure_425"
+        },
+        {
+          "@id": "#ParameterValue_humidity_day_37"
+        },
+        {
+          "@id": "#ParameterValue_temperature_day_30"
+        },
+        {
+          "@id": "#ParameterValue_temperature_night_22"
+        }
+      ]
+    },
+    {
+      "@id": "#Source_DB_163",
+      "@type": "Sample",
+      "additionalType": "Source",
+      "name": "DB_163",
+      "additionalProperty": [
+        {
+          "@id": "#CharacteristicValue_organism_Talinum_fruticosum"
+        },
+        {
+          "@id": "#CharacteristicValue_organism_part_leaf"
+        },
+        {
+          "@id": "#CharacteristicValue_plant_age_28_days_after_germination"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_reC3_02",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "reC3_02",
+      "additionalProperty": [
+        {
+          "@id": "#FactorValue_watering_exposure_12_days_drought_+_2_days_rewatered"
+        },
+        {
+          "@id": "#FactorValue_Timepoint_MD"
+        },
+        {
+          "@id": "#FactorValue_timepoint-ZT_6"
+        },
+        {
+          "@id": "#FactorValue_Photosynthesis_mode_reC3"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_plant_material_4",
+      "@type": "LabProcess",
+      "name": "plant_material_4",
+      "object": {
+        "@id": "#Source_DB_163"
+      },
+      "result": {
+        "@id": "#Sample_reC3_02"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_plant_material.md_plant_material"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_growth_day_length_12_hr_light_/_12_hr_dark"
+        },
+        {
+          "@id": "#ParameterValue_light_intensity_exposure_425"
+        },
+        {
+          "@id": "#ParameterValue_humidity_day_37"
+        },
+        {
+          "@id": "#ParameterValue_temperature_day_30"
+        },
+        {
+          "@id": "#ParameterValue_temperature_night_22"
+        }
+      ]
+    },
+    {
+      "@id": "#Source_DB_165",
+      "@type": "Sample",
+      "additionalType": "Source",
+      "name": "DB_165",
+      "additionalProperty": [
+        {
+          "@id": "#CharacteristicValue_organism_Talinum_fruticosum"
+        },
+        {
+          "@id": "#CharacteristicValue_organism_part_leaf"
+        },
+        {
+          "@id": "#CharacteristicValue_plant_age_28_days_after_germination"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_reC3_03",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "reC3_03",
+      "additionalProperty": [
+        {
+          "@id": "#FactorValue_watering_exposure_12_days_drought_+_2_days_rewatered"
+        },
+        {
+          "@id": "#FactorValue_Timepoint_MD"
+        },
+        {
+          "@id": "#FactorValue_timepoint-ZT_6"
+        },
+        {
+          "@id": "#FactorValue_Photosynthesis_mode_reC3"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_plant_material_5",
+      "@type": "LabProcess",
+      "name": "plant_material_5",
+      "object": {
+        "@id": "#Source_DB_165"
+      },
+      "result": {
+        "@id": "#Sample_reC3_03"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_plant_material.md_plant_material"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_growth_day_length_12_hr_light_/_12_hr_dark"
+        },
+        {
+          "@id": "#ParameterValue_light_intensity_exposure_425"
+        },
+        {
+          "@id": "#ParameterValue_humidity_day_37"
+        },
+        {
+          "@id": "#ParameterValue_temperature_day_30"
+        },
+        {
+          "@id": "#ParameterValue_temperature_night_22"
+        }
+      ]
+    },
+    {
+      "@id": "studies/TalinumSamples-STRI/",
+      "@type": "Dataset",
+      "additionalType": "Study",
+      "identifier": "TalinumSamples-STRI",
+      "creator": [
+        {
+          "@id": "http://orcid.org/0000-0001-9021-3197"
+        },
+        {
+          "@id": "#Person_Klaus_Winter"
+        }
+      ],
+      "dateModified": "2025-07-21T15:52:54.0668394",
+      "hasPart": [],
+      "about": [
+        {
+          "@id": "#Process_plant_material_0"
+        },
+        {
+          "@id": "#Process_plant_material_1"
+        },
+        {
+          "@id": "#Process_plant_material_2"
+        },
+        {
+          "@id": "#Process_plant_material_3"
+        },
+        {
+          "@id": "#Process_plant_material_4"
+        },
+        {
+          "@id": "#Process_plant_material_5"
+        }
+      ]
+    },
+    {
+      "@id": "#Person_Dominik_Brilhaus",
+      "@type": "Person",
+      "givenName": "Dominik",
+      "familyName": "Brilhaus",
+      "disambiguatingDescription": "Comment {Name = \"Worksheet\"}",
+      "affiliation": {
+        "@id": "#Organization_Institute_of_Plant_Biochemistry,_HHU_Düsseldorf"
+      },
+      "email": "dominik.brilhaus@hhu.de",
+      "jobTitle": {
+        "@id": "http://purl.org/spar/scoro/research-assistant"
+      },
+      "address": "HHU Düsseldorf, 22.07.U1.43, Universitätsstr. 1, 40225 Düsseldorf",
+      "telephone": "0211-8115523"
+    },
+    {
+      "@id": "#Person_Tabea_Mettler-Altmann",
+      "@type": "Person",
+      "givenName": "Tabea",
+      "familyName": "Mettler-Altmann",
+      "disambiguatingDescription": "Comment {Name = \"Worksheet\"}"
+    },
+    {
+      "@id": "#Person_Elisabeth_Klemp",
+      "@type": "Person",
+      "givenName": "Elisabeth",
+      "familyName": "Klemp",
+      "disambiguatingDescription": "Comment {Name = \"Worksheet\"}"
+    },
+    {
+      "@id": "#Person_Maria_Graf",
+      "@type": "Person",
+      "givenName": "Maria",
+      "familyName": "Graf",
+      "disambiguatingDescription": "Comment {Name = \"Worksheet\"}"
+    },
+    {
+      "@id": "#Person_Katrin_Weber",
+      "@type": "Person",
+      "givenName": "Katrin",
+      "familyName": "Weber",
+      "disambiguatingDescription": "Comment {Name = \"Worksheet\"}"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D"
+    },
+    {
+      "@id": "#Sample_DB23",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "DB23"
+    },
+    {
+      "@id": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000171",
+      "@type": "DefinedTerm",
+      "name": "extraction protocol",
+      "termCode": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000171"
+    },
+    {
+      "@id": "#Protocol_metabolite_extraction.md_metabolite_extraction",
+      "@type": "LabProtocol",
+      "name": "metabolite_extraction.md",
+      "intendedUse": {
+        "@id": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000171"
+      }
+    },
+    {
+      "@id": "#ParameterValue_Bio_entity_metabolites",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Bio entity",
+      "value": "metabolites",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000012",
+      "columnIndex": "0"
+    },
+    {
+      "@id": "#ParameterValue_Biosource_amount_6.1",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Biosource amount",
+      "value": "6.1",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000013",
+      "unitCode": "https://bioregistry.io/UO:0000022",
+      "unitText": "milligram",
+      "columnIndex": "1"
+    },
+    {
+      "@id": "#ParameterValue_Biosource_material_state_Dry_material",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Biosource material state",
+      "value": "Dry material",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0010009",
+      "valueReference": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0010011",
+      "columnIndex": "2"
+    },
+    {
+      "@id": "#ParameterValue_Extraction_buffer_water:methanol:chloroform_1:2.5:1_(v:v:v)",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Extraction buffer",
+      "value": "water:methanol:chloroform 1:2.5:1 (v:v:v)",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000050",
+      "columnIndex": "3"
+    },
+    {
+      "@id": "#ParameterValue_Extraction_buffer_volume_1500",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Extraction buffer volume",
+      "value": "1500",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000051",
+      "columnIndex": "4"
+    },
+    {
+      "@id": "#ParameterValue_Internal_standard_ribitol",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Internal standard",
+      "value": "ribitol",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0010012",
+      "valueReference": "https://bioregistry.io/CHEBI:15963",
+      "columnIndex": "5"
+    },
+    {
+      "@id": "#ParameterValue_Sample_volume_50",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Sample volume",
+      "value": "50",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0010013",
+      "unitCode": "https://bioregistry.io/UO:0000101",
+      "unitText": "microliter",
+      "columnIndex": "6"
+    },
+    {
+      "@id": "#ParameterValue_MS_sample_post-extraction_dried_in_vacuum_concentrator",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "MS sample post-extraction",
+      "value": "dried in vacuum concentrator",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000043",
+      "columnIndex": "7"
+    },
+    {
+      "@id": "#ParameterValue_MS_sample_resuspension_-",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "MS sample resuspension",
+      "value": "-",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000044",
+      "columnIndex": "8"
+    },
+    {
+      "@id": "#ParameterValue_MS_derivatization_(1)_with_10_μl_methoxyamine_hydrochloride_(Acros_organics;_freshly_prepared_at_20_mg/ml_in_pure_pyridine_(Sigma-Aldrich))_and_shaking_at_37_◦C\nfor_90_min,_(2)_adding_90_μl_N-Methyl-N-(trimethylsilyl)trifluoroacetamide_(MSTFA;_Macherey-Nagel)_and_shaking_at_37_◦C_for_30_min._",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "MS derivatization",
+      "value": "(1) with 10 μl methoxyamine hydrochloride (Acros organics; freshly prepared at 20 mg/ml in pure pyridine (Sigma-Aldrich)) and shaking at 37 ◦C\nfor 90 min, (2) adding 90 μl N-Methyl-N-(trimethylsilyl)trifluoroacetamide (MSTFA; Macherey-Nagel) and shaking at 37 ◦C for 30 min. ",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000052",
+      "columnIndex": "9"
+    },
+    {
+      "@id": "#Process_metabolite_extraction_0",
+      "@type": "LabProcess",
+      "name": "metabolite_extraction_0",
+      "object": {
+        "@id": "#Sample_CAM_01"
+      },
+      "result": {
+        "@id": "#Sample_DB23"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_metabolite_extraction.md_metabolite_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_Bio_entity_metabolites"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_amount_6.1"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_material_state_Dry_material"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_water:methanol:chloroform_1:2.5:1_(v:v:v)"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_volume_1500"
+        },
+        {
+          "@id": "#ParameterValue_Internal_standard_ribitol"
+        },
+        {
+          "@id": "#ParameterValue_Sample_volume_50"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_post-extraction_dried_in_vacuum_concentrator"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_resuspension_-"
+        },
+        {
+          "@id": "#ParameterValue_MS_derivatization_(1)_with_10_μl_methoxyamine_hydrochloride_(Acros_organics;_freshly_prepared_at_20_mg/ml_in_pure_pyridine_(Sigma-Aldrich))_and_shaking_at_37_◦C\nfor_90_min,_(2)_adding_90_μl_N-Methyl-N-(trimethylsilyl)trifluoroacetamide_(MSTFA;_Macherey-Nagel)_and_shaking_at_37_◦C_for_30_min._"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_DB24",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "DB24"
+    },
+    {
+      "@id": "#ParameterValue_Biosource_amount_5.2",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Biosource amount",
+      "value": "5.2",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000013",
+      "unitCode": "https://bioregistry.io/UO:0000022",
+      "unitText": "milligram",
+      "columnIndex": "1"
+    },
+    {
+      "@id": "#ParameterValue_MS_derivatization_10_μl_methoxyamine_hydrochloride_and_90_μl_N-Methyl-N-(trimethylsilyl)trifluoroacetamide_MSTFA",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "MS derivatization",
+      "value": "10 μl methoxyamine hydrochloride and 90 μl N-Methyl-N-(trimethylsilyl)trifluoroacetamide MSTFA",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000052",
+      "columnIndex": "9"
+    },
+    {
+      "@id": "#Process_metabolite_extraction_1",
+      "@type": "LabProcess",
+      "name": "metabolite_extraction_1",
+      "object": {
+        "@id": "#Sample_CAM_02"
+      },
+      "result": {
+        "@id": "#Sample_DB24"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_metabolite_extraction.md_metabolite_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_Bio_entity_metabolites"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_amount_5.2"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_material_state_Dry_material"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_water:methanol:chloroform_1:2.5:1_(v:v:v)"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_volume_1500"
+        },
+        {
+          "@id": "#ParameterValue_Internal_standard_ribitol"
+        },
+        {
+          "@id": "#ParameterValue_Sample_volume_50"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_post-extraction_dried_in_vacuum_concentrator"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_resuspension_-"
+        },
+        {
+          "@id": "#ParameterValue_MS_derivatization_10_μl_methoxyamine_hydrochloride_and_90_μl_N-Methyl-N-(trimethylsilyl)trifluoroacetamide_MSTFA"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_DB26",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "DB26"
+    },
+    {
+      "@id": "#ParameterValue_Biosource_amount_8.2",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Biosource amount",
+      "value": "8.2",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000013",
+      "unitCode": "https://bioregistry.io/UO:0000022",
+      "unitText": "milligram",
+      "columnIndex": "1"
+    },
+    {
+      "@id": "#ParameterValue_MS_derivatization_MaHCl_and_MSTFA",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "MS derivatization",
+      "value": "MaHCl and MSTFA",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000052",
+      "columnIndex": "9"
+    },
+    {
+      "@id": "#Process_metabolite_extraction_2",
+      "@type": "LabProcess",
+      "name": "metabolite_extraction_2",
+      "object": {
+        "@id": "#Sample_CAM_03"
+      },
+      "result": {
+        "@id": "#Sample_DB26"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_metabolite_extraction.md_metabolite_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_Bio_entity_metabolites"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_amount_8.2"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_material_state_Dry_material"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_water:methanol:chloroform_1:2.5:1_(v:v:v)"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_volume_1500"
+        },
+        {
+          "@id": "#ParameterValue_Internal_standard_ribitol"
+        },
+        {
+          "@id": "#ParameterValue_Sample_volume_50"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_post-extraction_dried_in_vacuum_concentrator"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_resuspension_-"
+        },
+        {
+          "@id": "#ParameterValue_MS_derivatization_MaHCl_and_MSTFA"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_DB39",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "DB39"
+    },
+    {
+      "@id": "#ParameterValue_Biosource_amount_4.9",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Biosource amount",
+      "value": "4.9",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000013",
+      "unitCode": "https://bioregistry.io/UO:0000022",
+      "unitText": "milligram",
+      "columnIndex": "1"
+    },
+    {
+      "@id": "#ParameterValue_MS_derivatization_methoxyamination_+_trimethylsylilation_(TMS)",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "MS derivatization",
+      "value": "methoxyamination + trimethylsylilation (TMS)",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000052",
+      "columnIndex": "9"
+    },
+    {
+      "@id": "#Process_metabolite_extraction_3",
+      "@type": "LabProcess",
+      "name": "metabolite_extraction_3",
+      "object": {
+        "@id": "#Sample_reC3_01"
+      },
+      "result": {
+        "@id": "#Sample_DB39"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_metabolite_extraction.md_metabolite_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_Bio_entity_metabolites"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_amount_4.9"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_material_state_Dry_material"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_water:methanol:chloroform_1:2.5:1_(v:v:v)"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_volume_1500"
+        },
+        {
+          "@id": "#ParameterValue_Internal_standard_ribitol"
+        },
+        {
+          "@id": "#ParameterValue_Sample_volume_50"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_post-extraction_dried_in_vacuum_concentrator"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_resuspension_-"
+        },
+        {
+          "@id": "#ParameterValue_MS_derivatization_methoxyamination_+_trimethylsylilation_(TMS)"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_DB40",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "DB40"
+    },
+    {
+      "@id": "#ParameterValue_Biosource_amount_6",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Biosource amount",
+      "value": "6",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000013",
+      "unitCode": "https://bioregistry.io/UO:0000022",
+      "unitText": "milligram",
+      "columnIndex": "1"
+    },
+    {
+      "@id": "#Process_metabolite_extraction_4",
+      "@type": "LabProcess",
+      "name": "metabolite_extraction_4",
+      "object": {
+        "@id": "#Sample_reC3_02"
+      },
+      "result": {
+        "@id": "#Sample_DB40"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_metabolite_extraction.md_metabolite_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_Bio_entity_metabolites"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_amount_6"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_material_state_Dry_material"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_water:methanol:chloroform_1:2.5:1_(v:v:v)"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_volume_1500"
+        },
+        {
+          "@id": "#ParameterValue_Internal_standard_ribitol"
+        },
+        {
+          "@id": "#ParameterValue_Sample_volume_50"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_post-extraction_dried_in_vacuum_concentrator"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_resuspension_-"
+        },
+        {
+          "@id": "#ParameterValue_MS_derivatization_methoxyamination_+_trimethylsylilation_(TMS)"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_DB41",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "DB41"
+    },
+    {
+      "@id": "#ParameterValue_Biosource_amount_6.2",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Biosource amount",
+      "value": "6.2",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000013",
+      "unitCode": "https://bioregistry.io/UO:0000022",
+      "unitText": "milligram",
+      "columnIndex": "1"
+    },
+    {
+      "@id": "#Process_metabolite_extraction_5",
+      "@type": "LabProcess",
+      "name": "metabolite_extraction_5",
+      "object": {
+        "@id": "#Sample_reC3_03"
+      },
+      "result": {
+        "@id": "#Sample_DB41"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_metabolite_extraction.md_metabolite_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_Bio_entity_metabolites"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_amount_6.2"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_material_state_Dry_material"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_water:methanol:chloroform_1:2.5:1_(v:v:v)"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_volume_1500"
+        },
+        {
+          "@id": "#ParameterValue_Internal_standard_ribitol"
+        },
+        {
+          "@id": "#ParameterValue_Sample_volume_50"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_post-extraction_dried_in_vacuum_concentrator"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_resuspension_-"
+        },
+        {
+          "@id": "#ParameterValue_MS_derivatization_methoxyamination_+_trimethylsylilation_(TMS)"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_Std._Mix_5µM",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "Std. Mix 5µM"
+    },
+    {
+      "@id": "#Sample_150112_03",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150112_03"
+    },
+    {
+      "@id": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000177",
+      "@type": "DefinedTerm",
+      "name": "assay protocol",
+      "termCode": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000177"
+    },
+    {
+      "@id": "#Protocol_gas_chromatography.md_gas_chromatography",
+      "@type": "LabProtocol",
+      "name": "gas_chromatography.md",
+      "intendedUse": {
+        "@id": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000177"
+      }
+    },
+    {
+      "@id": "#ParameterValue_MS_sample_type",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "MS sample type",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000045",
+      "columnIndex": "0"
+    },
+    {
+      "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Chromatography instrument model",
+      "value": "Agilent 7890B GC",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000046",
+      "columnIndex": "1"
+    },
+    {
+      "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Chromatography autosampler model",
+      "value": "GERSTEL MultiPurpose Sampler (MPS) Dual Head",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000047",
+      "columnIndex": "2"
+    },
+    {
+      "@id": "#ParameterValue_Chromatography_column_type_low_polarity",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Chromatography column type",
+      "value": "low polarity",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000053",
+      "columnIndex": "3"
+    },
+    {
+      "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Chromatography column model",
+      "value": "Agilent 19091S-433",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000048",
+      "columnIndex": "4"
+    },
+    {
+      "@id": "#ParameterValue_mobile_phase_helium(0)",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "mobile phase",
+      "value": "helium(0)",
+      "propertyID": "http://purl.obolibrary.org/obo/CHMO_0000995",
+      "valueReference": "https://bioregistry.io/CHEBI:33681",
+      "columnIndex": "5"
+    },
+    {
+      "@id": "#ParameterValue_Chromatography_injection_volume_1",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Chromatography injection volume",
+      "value": "1",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0010014",
+      "unitCode": "https://bioregistry.io/UO:0000101",
+      "unitText": "microliter",
+      "columnIndex": "6"
+    },
+    {
+      "@id": "#ParameterValue_Chromatography_injection_mode_splitless",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Chromatography injection mode",
+      "value": "splitless",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0010015",
+      "columnIndex": "7"
+    },
+    {
+      "@id": "#ParameterValue_Chromatography_gradient_gradient_elution",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Chromatography gradient",
+      "value": "gradient elution",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000081",
+      "columnIndex": "8"
+    },
+    {
+      "@id": "#Process_gas_chromatography_0",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_0",
+      "object": {
+        "@id": "#Sample_Std._Mix_5µM"
+      },
+      "result": {
+        "@id": "#Sample_150112_03"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_splitless"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150112_04",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150112_04"
+    },
+    {
+      "@id": "#ParameterValue_Chromatography_injection_mode_split",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Chromatography injection mode",
+      "value": "split",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0010015",
+      "valueReference": "https://bioregistry.io/PATO:0001786",
+      "columnIndex": "7"
+    },
+    {
+      "@id": "#Process_gas_chromatography_1",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_1",
+      "object": {
+        "@id": "#Sample_Std._Mix_5µM"
+      },
+      "result": {
+        "@id": "#Sample_150112_04"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_split"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_blank_1",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "blank 1"
+    },
+    {
+      "@id": "#Sample_150112_15",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150112_15"
+    },
+    {
+      "@id": "#Process_gas_chromatography_2",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_2",
+      "object": {
+        "@id": "#Sample_blank_1"
+      },
+      "result": {
+        "@id": "#Sample_150112_15"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_splitless"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150112_16",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150112_16"
+    },
+    {
+      "@id": "#Process_gas_chromatography_3",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_3",
+      "object": {
+        "@id": "#Sample_blank_1"
+      },
+      "result": {
+        "@id": "#Sample_150112_16"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_split"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150112_55",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150112_55"
+    },
+    {
+      "@id": "#ParameterValue_MS_sample_type_material_sample",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "MS sample type",
+      "value": "material sample",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000045",
+      "valueReference": "https://bioregistry.io/OBI:0000747",
+      "columnIndex": "0"
+    },
+    {
+      "@id": "#Process_gas_chromatography_4",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_4",
+      "object": {
+        "@id": "#Sample_DB23"
+      },
+      "result": {
+        "@id": "#Sample_150112_55"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_splitless"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150112_56",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150112_56"
+    },
+    {
+      "@id": "#Process_gas_chromatography_5",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_5",
+      "object": {
+        "@id": "#Sample_DB23"
+      },
+      "result": {
+        "@id": "#Sample_150112_56"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_split"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150112_61",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150112_61"
+    },
+    {
+      "@id": "#Process_gas_chromatography_6",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_6",
+      "object": {
+        "@id": "#Sample_DB24"
+      },
+      "result": {
+        "@id": "#Sample_150112_61"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_splitless"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150112_62",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150112_62"
+    },
+    {
+      "@id": "#Process_gas_chromatography_7",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_7",
+      "object": {
+        "@id": "#Sample_DB24"
+      },
+      "result": {
+        "@id": "#Sample_150112_62"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_split"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150112_65",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150112_65"
+    },
+    {
+      "@id": "#Process_gas_chromatography_8",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_8",
+      "object": {
+        "@id": "#Sample_DB26"
+      },
+      "result": {
+        "@id": "#Sample_150112_65"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_splitless"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150112_66",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150112_66"
+    },
+    {
+      "@id": "#Process_gas_chromatography_9",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_9",
+      "object": {
+        "@id": "#Sample_DB26"
+      },
+      "result": {
+        "@id": "#Sample_150112_66"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_split"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150115_03",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150115_03"
+    },
+    {
+      "@id": "#Process_gas_chromatography_10",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_10",
+      "object": {
+        "@id": "#Sample_Std._Mix_5µM"
+      },
+      "result": {
+        "@id": "#Sample_150115_03"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_splitless"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150115_04",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150115_04"
+    },
+    {
+      "@id": "#Process_gas_chromatography_11",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_11",
+      "object": {
+        "@id": "#Sample_Std._Mix_5µM"
+      },
+      "result": {
+        "@id": "#Sample_150115_04"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_split"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150115_11",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150115_11"
+    },
+    {
+      "@id": "#Process_gas_chromatography_12",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_12",
+      "object": {
+        "@id": "#Sample_DB39"
+      },
+      "result": {
+        "@id": "#Sample_150115_11"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_splitless"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150115_12",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150115_12"
+    },
+    {
+      "@id": "#Process_gas_chromatography_13",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_13",
+      "object": {
+        "@id": "#Sample_DB39"
+      },
+      "result": {
+        "@id": "#Sample_150115_12"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_split"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150115_13",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150115_13"
+    },
+    {
+      "@id": "#Process_gas_chromatography_14",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_14",
+      "object": {
+        "@id": "#Sample_DB40"
+      },
+      "result": {
+        "@id": "#Sample_150115_13"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_splitless"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150115_14",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150115_14"
+    },
+    {
+      "@id": "#Process_gas_chromatography_15",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_15",
+      "object": {
+        "@id": "#Sample_DB40"
+      },
+      "result": {
+        "@id": "#Sample_150115_14"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_split"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150115_15",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150115_15"
+    },
+    {
+      "@id": "#Process_gas_chromatography_16",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_16",
+      "object": {
+        "@id": "#Sample_DB41"
+      },
+      "result": {
+        "@id": "#Sample_150115_15"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_splitless"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150115_16",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150115_16"
+    },
+    {
+      "@id": "#Process_gas_chromatography_17",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_17",
+      "object": {
+        "@id": "#Sample_DB41"
+      },
+      "result": {
+        "@id": "#Sample_150115_16"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_split"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_blank_2",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "blank 2"
+    },
+    {
+      "@id": "#Sample_150115_25",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150115_25"
+    },
+    {
+      "@id": "#Process_gas_chromatography_18",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_18",
+      "object": {
+        "@id": "#Sample_blank_2"
+      },
+      "result": {
+        "@id": "#Sample_150115_25"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_splitless"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150115_26",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150115_26"
+    },
+    {
+      "@id": "#Process_gas_chromatography_19",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_19",
+      "object": {
+        "@id": "#Sample_blank_2"
+      },
+      "result": {
+        "@id": "#Sample_150115_26"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_split"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Protocol_mass_spec.md_mass_spec",
+      "@type": "LabProtocol",
+      "name": "mass_spec.md",
+      "intendedUse": {
+        "@id": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000177"
+      }
+    },
+    {
+      "@id": "#ParameterValue_scan_polarity_positive",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "scan polarity",
+      "value": "positive",
+      "propertyID": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1000465",
+      "columnIndex": "0"
+    },
+    {
+      "@id": "#ParameterValue_scan_window_lower_limit_60",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "scan window lower limit",
+      "value": "60",
+      "propertyID": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1000501",
+      "columnIndex": "1"
+    },
+    {
+      "@id": "#ParameterValue_scan_window_upper_limit_800",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "scan window upper limit",
+      "value": "800",
+      "propertyID": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1000500",
+      "columnIndex": "2"
+    },
+    {
+      "@id": "#ParameterValue_scan_rate_20",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "scan rate",
+      "value": "20",
+      "propertyID": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1000015",
+      "unitCode": "https://bioregistry.io/UO:0000106",
+      "unitText": "hertz",
+      "columnIndex": "3"
+    },
+    {
+      "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "instrument model",
+      "value": "7200 GC-QTOF (Agilent Technologies)",
+      "propertyID": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1000031",
+      "columnIndex": "4"
+    },
+    {
+      "@id": "#ParameterValue_ionization_type_electron_ionization",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "ionization type",
+      "value": "electron ionization",
+      "propertyID": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1000008",
+      "valueReference": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1000389",
+      "columnIndex": "5"
+    },
+    {
+      "@id": "#ParameterValue_mass_analyzer_type_quadrupole",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "mass analyzer type",
+      "value": "quadrupole",
+      "propertyID": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1000443",
+      "valueReference": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1000081",
+      "columnIndex": "6"
+    },
+    {
+      "@id": "#ParameterValue_detector_type_electron_multiplier",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "detector type",
+      "value": "electron multiplier",
+      "propertyID": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1000026",
+      "valueReference": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1000253",
+      "columnIndex": "7"
+    },
+    {
+      "@id": "#Process_mass_spec_0",
+      "@type": "LabProcess",
+      "name": "mass_spec_0",
+      "object": {
+        "@id": "#Sample_150112_03"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_03.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_mass_spec_1",
+      "@type": "LabProcess",
+      "name": "mass_spec_1",
+      "object": {
+        "@id": "#Sample_150112_04"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_04.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_mass_spec_2",
+      "@type": "LabProcess",
+      "name": "mass_spec_2",
+      "object": {
+        "@id": "#Sample_150112_15"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_15.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_mass_spec_3",
+      "@type": "LabProcess",
+      "name": "mass_spec_3",
+      "object": {
+        "@id": "#Sample_150112_16"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_16.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_mass_spec_4",
+      "@type": "LabProcess",
+      "name": "mass_spec_4",
+      "object": {
+        "@id": "#Sample_150112_55"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_55.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_mass_spec_5",
+      "@type": "LabProcess",
+      "name": "mass_spec_5",
+      "object": {
+        "@id": "#Sample_150112_56"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_56.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_mass_spec_6",
+      "@type": "LabProcess",
+      "name": "mass_spec_6",
+      "object": {
+        "@id": "#Sample_150112_61"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_61.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_mass_spec_7",
+      "@type": "LabProcess",
+      "name": "mass_spec_7",
+      "object": {
+        "@id": "#Sample_150112_62"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_62.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_mass_spec_8",
+      "@type": "LabProcess",
+      "name": "mass_spec_8",
+      "object": {
+        "@id": "#Sample_150112_65"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_65.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_mass_spec_9",
+      "@type": "LabProcess",
+      "name": "mass_spec_9",
+      "object": {
+        "@id": "#Sample_150112_66"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_66.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_mass_spec_10",
+      "@type": "LabProcess",
+      "name": "mass_spec_10",
+      "object": {
+        "@id": "#Sample_150115_03"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_03.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_mass_spec_11",
+      "@type": "LabProcess",
+      "name": "mass_spec_11",
+      "object": {
+        "@id": "#Sample_150115_04"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_04.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_mass_spec_12",
+      "@type": "LabProcess",
+      "name": "mass_spec_12",
+      "object": {
+        "@id": "#Sample_150115_11"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_11.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_mass_spec_13",
+      "@type": "LabProcess",
+      "name": "mass_spec_13",
+      "object": {
+        "@id": "#Sample_150115_12"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_12.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_mass_spec_14",
+      "@type": "LabProcess",
+      "name": "mass_spec_14",
+      "object": {
+        "@id": "#Sample_150115_13"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_13.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_mass_spec_15",
+      "@type": "LabProcess",
+      "name": "mass_spec_15",
+      "object": {
+        "@id": "#Sample_150115_14"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_14.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_mass_spec_16",
+      "@type": "LabProcess",
+      "name": "mass_spec_16",
+      "object": {
+        "@id": "#Sample_150115_15"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_15.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_mass_spec_17",
+      "@type": "LabProcess",
+      "name": "mass_spec_17",
+      "object": {
+        "@id": "#Sample_150115_16"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_16.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_mass_spec_18",
+      "@type": "LabProcess",
+      "name": "mass_spec_18",
+      "object": {
+        "@id": "#Sample_150115_25"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_25.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_mass_spec_19",
+      "@type": "LabProcess",
+      "name": "mass_spec_19",
+      "object": {
+        "@id": "#Sample_150115_26"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_26.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#PV_GCqTOF_targeted",
+      "@type": "PropertyValue",
+      "name": "GCqTOF targeted"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/",
+      "@type": "Dataset",
+      "additionalType": "Assay",
+      "identifier": "GCqTOF_targets",
+      "creator": [
+        {
+          "@id": "#Person_Dominik_Brilhaus"
+        },
+        {
+          "@id": "#Person_Tabea_Mettler-Altmann"
+        },
+        {
+          "@id": "#Person_Elisabeth_Klemp"
+        },
+        {
+          "@id": "#Person_Maria_Graf"
+        },
+        {
+          "@id": "#Person_Katrin_Weber"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#Process_metabolite_extraction_0"
+        },
+        {
+          "@id": "#Process_metabolite_extraction_1"
+        },
+        {
+          "@id": "#Process_metabolite_extraction_2"
+        },
+        {
+          "@id": "#Process_metabolite_extraction_3"
+        },
+        {
+          "@id": "#Process_metabolite_extraction_4"
+        },
+        {
+          "@id": "#Process_metabolite_extraction_5"
+        },
+        {
+          "@id": "#Process_gas_chromatography_0"
+        },
+        {
+          "@id": "#Process_gas_chromatography_1"
+        },
+        {
+          "@id": "#Process_gas_chromatography_2"
+        },
+        {
+          "@id": "#Process_gas_chromatography_3"
+        },
+        {
+          "@id": "#Process_gas_chromatography_4"
+        },
+        {
+          "@id": "#Process_gas_chromatography_5"
+        },
+        {
+          "@id": "#Process_gas_chromatography_6"
+        },
+        {
+          "@id": "#Process_gas_chromatography_7"
+        },
+        {
+          "@id": "#Process_gas_chromatography_8"
+        },
+        {
+          "@id": "#Process_gas_chromatography_9"
+        },
+        {
+          "@id": "#Process_gas_chromatography_10"
+        },
+        {
+          "@id": "#Process_gas_chromatography_11"
+        },
+        {
+          "@id": "#Process_gas_chromatography_12"
+        },
+        {
+          "@id": "#Process_gas_chromatography_13"
+        },
+        {
+          "@id": "#Process_gas_chromatography_14"
+        },
+        {
+          "@id": "#Process_gas_chromatography_15"
+        },
+        {
+          "@id": "#Process_gas_chromatography_16"
+        },
+        {
+          "@id": "#Process_gas_chromatography_17"
+        },
+        {
+          "@id": "#Process_gas_chromatography_18"
+        },
+        {
+          "@id": "#Process_gas_chromatography_19"
+        },
+        {
+          "@id": "#Process_mass_spec_0"
+        },
+        {
+          "@id": "#Process_mass_spec_1"
+        },
+        {
+          "@id": "#Process_mass_spec_2"
+        },
+        {
+          "@id": "#Process_mass_spec_3"
+        },
+        {
+          "@id": "#Process_mass_spec_4"
+        },
+        {
+          "@id": "#Process_mass_spec_5"
+        },
+        {
+          "@id": "#Process_mass_spec_6"
+        },
+        {
+          "@id": "#Process_mass_spec_7"
+        },
+        {
+          "@id": "#Process_mass_spec_8"
+        },
+        {
+          "@id": "#Process_mass_spec_9"
+        },
+        {
+          "@id": "#Process_mass_spec_10"
+        },
+        {
+          "@id": "#Process_mass_spec_11"
+        },
+        {
+          "@id": "#Process_mass_spec_12"
+        },
+        {
+          "@id": "#Process_mass_spec_13"
+        },
+        {
+          "@id": "#Process_mass_spec_14"
+        },
+        {
+          "@id": "#Process_mass_spec_15"
+        },
+        {
+          "@id": "#Process_mass_spec_16"
+        },
+        {
+          "@id": "#Process_mass_spec_17"
+        },
+        {
+          "@id": "#Process_mass_spec_18"
+        },
+        {
+          "@id": "#Process_mass_spec_19"
+        }
+      ],
+      "variableMeasured": {
+        "@id": "#PV_GCqTOF_targeted"
+      }
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/150112_03.D",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/150112_03.D"
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/150112_04.D",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/150112_04.D"
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/150112_15.D",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/150112_15.D"
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/150112_16.D",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/150112_16.D"
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/150112_55.D",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/150112_55.D"
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/150112_56.D",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/150112_56.D"
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/150112_61.D",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/150112_61.D"
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/150112_62.D",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/150112_62.D"
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/150112_65.D",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/150112_65.D"
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/150112_66.D",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/150112_66.D"
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/150115_03.D",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/150115_03.D"
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/150115_04.D",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/150115_04.D"
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/150115_11.D",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/150115_11.D"
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/150115_12.D",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/150115_12.D"
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/150115_13.D",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/150115_13.D"
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/150115_14.D",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/150115_14.D"
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/150115_15.D",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/150115_15.D"
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/150115_16.D",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/150115_16.D"
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/150115_25.D",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/150115_25.D"
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/150115_26.D",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/150115_26.D"
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantReports/22-0005_exp001.batch_a.bin/190614_QuantReport_ISTD_DB.xlsx",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantReports/22-0005_exp001.batch_a.bin/190614_QuantReport_ISTD_DB.xlsx"
+    },
+    {
+      "@id": "#Protocol_mh-quant-results",
+      "@type": "LabProtocol"
+    },
+    {
+      "@id": "#Process_mh-quant-results_0",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_0",
+      "object": {
+        "@id": "assays/MassHunter_targets/dataset/150112_03.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_mh-quant-results_1",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_1",
+      "object": {
+        "@id": "assays/MassHunter_targets/dataset/150112_04.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_mh-quant-results_2",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_2",
+      "object": {
+        "@id": "assays/MassHunter_targets/dataset/150112_15.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_mh-quant-results_3",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_3",
+      "object": {
+        "@id": "assays/MassHunter_targets/dataset/150112_16.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_mh-quant-results_4",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_4",
+      "object": {
+        "@id": "assays/MassHunter_targets/dataset/150112_55.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_mh-quant-results_5",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_5",
+      "object": {
+        "@id": "assays/MassHunter_targets/dataset/150112_56.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_mh-quant-results_6",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_6",
+      "object": {
+        "@id": "assays/MassHunter_targets/dataset/150112_61.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_mh-quant-results_7",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_7",
+      "object": {
+        "@id": "assays/MassHunter_targets/dataset/150112_62.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_mh-quant-results_8",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_8",
+      "object": {
+        "@id": "assays/MassHunter_targets/dataset/150112_65.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_mh-quant-results_9",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_9",
+      "object": {
+        "@id": "assays/MassHunter_targets/dataset/150112_66.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_mh-quant-results_10",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_10",
+      "object": {
+        "@id": "assays/MassHunter_targets/dataset/150115_03.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_mh-quant-results_11",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_11",
+      "object": {
+        "@id": "assays/MassHunter_targets/dataset/150115_04.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_mh-quant-results_12",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_12",
+      "object": {
+        "@id": "assays/MassHunter_targets/dataset/150115_11.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_mh-quant-results_13",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_13",
+      "object": {
+        "@id": "assays/MassHunter_targets/dataset/150115_12.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_mh-quant-results_14",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_14",
+      "object": {
+        "@id": "assays/MassHunter_targets/dataset/150115_13.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_mh-quant-results_15",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_15",
+      "object": {
+        "@id": "assays/MassHunter_targets/dataset/150115_14.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_mh-quant-results_16",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_16",
+      "object": {
+        "@id": "assays/MassHunter_targets/dataset/150115_15.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_mh-quant-results_17",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_17",
+      "object": {
+        "@id": "assays/MassHunter_targets/dataset/150115_16.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_mh-quant-results_18",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_18",
+      "object": {
+        "@id": "assays/MassHunter_targets/dataset/150115_25.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_mh-quant-results_19",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_19",
+      "object": {
+        "@id": "assays/MassHunter_targets/dataset/150115_26.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Protocol_mh-quant-report",
+      "@type": "LabProtocol"
+    },
+    {
+      "@id": "#Process_mh-quant-report",
+      "@type": "LabProcess",
+      "name": "mh-quant-report",
+      "object": {
+        "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantReports/22-0005_exp001.batch_a.bin/190614_QuantReport_ISTD_DB.xlsx"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-report"
+      }
+    },
+    {
+      "@id": "assays/MassHunter_targets/",
+      "@type": "Dataset",
+      "additionalType": "Assay",
+      "identifier": "MassHunter_targets",
+      "hasPart": [
+        {
+          "@id": "assays/MassHunter_targets/dataset/150112_03.D"
+        },
+        {
+          "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+        },
+        {
+          "@id": "assays/MassHunter_targets/dataset/150112_04.D"
+        },
+        {
+          "@id": "assays/MassHunter_targets/dataset/150112_15.D"
+        },
+        {
+          "@id": "assays/MassHunter_targets/dataset/150112_16.D"
+        },
+        {
+          "@id": "assays/MassHunter_targets/dataset/150112_55.D"
+        },
+        {
+          "@id": "assays/MassHunter_targets/dataset/150112_56.D"
+        },
+        {
+          "@id": "assays/MassHunter_targets/dataset/150112_61.D"
+        },
+        {
+          "@id": "assays/MassHunter_targets/dataset/150112_62.D"
+        },
+        {
+          "@id": "assays/MassHunter_targets/dataset/150112_65.D"
+        },
+        {
+          "@id": "assays/MassHunter_targets/dataset/150112_66.D"
+        },
+        {
+          "@id": "assays/MassHunter_targets/dataset/150115_03.D"
+        },
+        {
+          "@id": "assays/MassHunter_targets/dataset/150115_04.D"
+        },
+        {
+          "@id": "assays/MassHunter_targets/dataset/150115_11.D"
+        },
+        {
+          "@id": "assays/MassHunter_targets/dataset/150115_12.D"
+        },
+        {
+          "@id": "assays/MassHunter_targets/dataset/150115_13.D"
+        },
+        {
+          "@id": "assays/MassHunter_targets/dataset/150115_14.D"
+        },
+        {
+          "@id": "assays/MassHunter_targets/dataset/150115_15.D"
+        },
+        {
+          "@id": "assays/MassHunter_targets/dataset/150115_16.D"
+        },
+        {
+          "@id": "assays/MassHunter_targets/dataset/150115_25.D"
+        },
+        {
+          "@id": "assays/MassHunter_targets/dataset/150115_26.D"
+        },
+        {
+          "@id": "assays/MassHunter_targets/dataset/./assays/MassHunter_targets/dataset/QuantReports/22-0005_exp001.batch_a.bin/190614_QuantReport_ISTD_DB.xlsx"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#Process_mh-quant-results_0"
+        },
+        {
+          "@id": "#Process_mh-quant-results_1"
+        },
+        {
+          "@id": "#Process_mh-quant-results_2"
+        },
+        {
+          "@id": "#Process_mh-quant-results_3"
+        },
+        {
+          "@id": "#Process_mh-quant-results_4"
+        },
+        {
+          "@id": "#Process_mh-quant-results_5"
+        },
+        {
+          "@id": "#Process_mh-quant-results_6"
+        },
+        {
+          "@id": "#Process_mh-quant-results_7"
+        },
+        {
+          "@id": "#Process_mh-quant-results_8"
+        },
+        {
+          "@id": "#Process_mh-quant-results_9"
+        },
+        {
+          "@id": "#Process_mh-quant-results_10"
+        },
+        {
+          "@id": "#Process_mh-quant-results_11"
+        },
+        {
+          "@id": "#Process_mh-quant-results_12"
+        },
+        {
+          "@id": "#Process_mh-quant-results_13"
+        },
+        {
+          "@id": "#Process_mh-quant-results_14"
+        },
+        {
+          "@id": "#Process_mh-quant-results_15"
+        },
+        {
+          "@id": "#Process_mh-quant-results_16"
+        },
+        {
+          "@id": "#Process_mh-quant-results_17"
+        },
+        {
+          "@id": "#Process_mh-quant-results_18"
+        },
+        {
+          "@id": "#Process_mh-quant-results_19"
+        },
+        {
+          "@id": "#Process_mh-quant-report"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.org/spar/scoro/technician",
+      "@type": "DefinedTerm",
+      "name": "technician",
+      "termCode": "http://purl.org/spar/scoro/technician"
+    },
+    {
+      "@id": "#Person_Samantha_Kurz",
+      "@type": "Person",
+      "givenName": "Samantha",
+      "affiliation": {
+        "@id": "#Organization_Institute_of_Plant_Biochemistry,_HHU_Düsseldorf"
+      },
+      "familyName": "Kurz",
+      "jobTitle": {
+        "@id": "http://purl.org/spar/scoro/technician"
+      },
+      "address": "Universitätsstr. 1, 40225 Düsseldorf",
+      "disambiguatingDescription": "Comment {Name = \"Worksheet\"}"
+    },
+    {
+      "@id": "#Organization_Biological_Medical_Research_Centre,_HHU_Düsseldorf",
+      "@type": "Organization",
+      "name": "Biological Medical Research Centre, HHU Düsseldorf"
+    },
+    {
+      "@id": "#Person_Thorsten_Wachtmeister",
+      "@type": "Person",
+      "givenName": "Thorsten",
+      "affiliation": {
+        "@id": "#Organization_Biological_Medical_Research_Centre,_HHU_Düsseldorf"
+      },
+      "familyName": "Wachtmeister",
+      "jobTitle": {
+        "@id": "http://purl.org/spar/scoro/technician"
+      },
+      "address": "Universitätsstr. 1, 40225 Düsseldorf",
+      "disambiguatingDescription": "Comment {Name = \"Worksheet\"}"
+    },
+    {
+      "@id": "assays/RNASeq/dataset/DB_097_CAMMD_CAGATC_L001_R1_001.fastq.gz",
+      "@type": "File",
+      "name": "assays/RNASeq/dataset/DB_097_CAMMD_CAGATC_L001_R1_001.fastq.gz",
+      "sha256": "7f0b61abc9971ade750ce54f0f10aa50a6bc42a517be8ba60257e0cf6776d1c7"
+    },
+    {
+      "@id": "assays/RNASeq/dataset/DB_099_CAMMD_CTTGTA_L001_R1_001.fastq.gz",
+      "@type": "File",
+      "name": "assays/RNASeq/dataset/DB_099_CAMMD_CTTGTA_L001_R1_001.fastq.gz",
+      "sha256": "2d4200a78e57bc821b46c1b6c84b1c5bcf5889eaba82e6baff16cc35f2e77651"
+    },
+    {
+      "@id": "assays/RNASeq/dataset/DB_103_CAMMD_AGTCAA_L001_R1_001.fastq.gz",
+      "@type": "File",
+      "name": "assays/RNASeq/dataset/DB_103_CAMMD_AGTCAA_L001_R1_001.fastq.gz",
+      "sha256": "b7f7f26c5eb54c04aad9b4168b3104fcf17c6cbaff4ce4300d07c8955dbbeb28"
+    },
+    {
+      "@id": "assays/RNASeq/dataset/DB_161_reC3MD_GTCCGC_L001_R1_001.fastq.gz",
+      "@type": "File",
+      "name": "assays/RNASeq/dataset/DB_161_reC3MD_GTCCGC_L001_R1_001.fastq.gz",
+      "sha256": "827908c02722e3bf22ca4cdfaeda269d999a36ae82e54ffeefc1602f7d3938f5"
+    },
+    {
+      "@id": "assays/RNASeq/dataset/DB_163_reC3MD_GTGAAA_L001_R1_001.fastq.gz",
+      "@type": "File",
+      "name": "assays/RNASeq/dataset/DB_163_reC3MD_GTGAAA_L001_R1_001.fastq.gz",
+      "sha256": "08a331f71ef4ba111d5c8c0a76cb5e767b93b208ba9d50c93c4b632115bfea03"
+    },
+    {
+      "@id": "assays/RNASeq/dataset/DB_165_re-C3MD_GTGAAA_L002_R1_001.fastq.gz",
+      "@type": "File",
+      "name": "assays/RNASeq/dataset/DB_165_re-C3MD_GTGAAA_L002_R1_001.fastq.gz",
+      "sha256": "dc8e318352b10c72c032ebf1609ea14cd57c454e0f922a7a0c14f1d8f754dfb9"
+    },
+    {
+      "@id": "#Sample_CAM_01_ext",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "CAM_01_ext"
+    },
+    {
+      "@id": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000173",
+      "@type": "DefinedTerm",
+      "name": "RNA extraction protocol",
+      "termCode": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000173"
+    },
+    {
+      "@id": "#Protocol_rna_extraction.md_rna_extraction",
+      "@type": "LabProtocol",
+      "name": "rna_extraction.md",
+      "intendedUse": {
+        "@id": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000173"
+      }
+    },
+    {
+      "@id": "#ParameterValue_biosource_amount_80",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "biosource amount",
+      "value": "80",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000013",
+      "unitCode": "https://bioregistry.io/UO:0000022",
+      "unitText": "milligram",
+      "columnIndex": "0"
+    },
+    {
+      "@id": "#ParameterValue_extraction_method_Roboklon_EURx_GeneMATRIX_Universal_RNA_Purification_version_2.3_September_2011",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "extraction method",
+      "value": "Roboklon EURx GeneMATRIX Universal RNA Purification version 2.3 September 2011",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000054",
+      "columnIndex": "1"
+    },
+    {
+      "@id": "#ParameterValue_extraction_buffer_Roboklon_commercial_buffers",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "extraction buffer",
+      "value": "Roboklon commercial buffers",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000050",
+      "columnIndex": "2"
+    },
+    {
+      "@id": "#ParameterValue_extraction_buffer_volume_300",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "extraction buffer volume",
+      "value": "300",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000051",
+      "unitCode": "https://bioregistry.io/UO:0000101",
+      "unitText": "microliter",
+      "columnIndex": "3"
+    },
+    {
+      "@id": "#ParameterValue_RNA_quality_check_RIN_7.6_(Agilent_Bioanalyzer_2100_expert_Plant_RNA_Nano)",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "RNA quality check",
+      "value": "RIN 7.6 (Agilent Bioanalyzer 2100 expert_Plant RNA Nano)",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000062",
+      "columnIndex": "4"
+    },
+    {
+      "@id": "#Process_rna_extraction_0",
+      "@type": "LabProcess",
+      "name": "rna_extraction_0",
+      "object": {
+        "@id": "#Sample_CAM_01"
+      },
+      "result": {
+        "@id": "#Sample_CAM_01_ext"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_rna_extraction.md_rna_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_biosource_amount_80"
+        },
+        {
+          "@id": "#ParameterValue_extraction_method_Roboklon_EURx_GeneMATRIX_Universal_RNA_Purification_version_2.3_September_2011"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_Roboklon_commercial_buffers"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_volume_300"
+        },
+        {
+          "@id": "#ParameterValue_RNA_quality_check_RIN_7.6_(Agilent_Bioanalyzer_2100_expert_Plant_RNA_Nano)"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_CAM_02_ext",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "CAM_02_ext"
+    },
+    {
+      "@id": "#ParameterValue_biosource_amount_78",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "biosource amount",
+      "value": "78",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000013",
+      "unitCode": "https://bioregistry.io/UO:0000022",
+      "unitText": "milligram",
+      "columnIndex": "0"
+    },
+    {
+      "@id": "#ParameterValue_RNA_quality_check_RIN_7.7_(Agilent_Bioanalyzer_2100_expert_Plant_RNA_Nano)",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "RNA quality check",
+      "value": "RIN 7.7 (Agilent Bioanalyzer 2100 expert_Plant RNA Nano)",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000062",
+      "columnIndex": "4"
+    },
+    {
+      "@id": "#Process_rna_extraction_1",
+      "@type": "LabProcess",
+      "name": "rna_extraction_1",
+      "object": {
+        "@id": "#Sample_CAM_02"
+      },
+      "result": {
+        "@id": "#Sample_CAM_02_ext"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_rna_extraction.md_rna_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_biosource_amount_78"
+        },
+        {
+          "@id": "#ParameterValue_extraction_method_Roboklon_EURx_GeneMATRIX_Universal_RNA_Purification_version_2.3_September_2011"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_Roboklon_commercial_buffers"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_volume_300"
+        },
+        {
+          "@id": "#ParameterValue_RNA_quality_check_RIN_7.7_(Agilent_Bioanalyzer_2100_expert_Plant_RNA_Nano)"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_CAM_03_ext",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "CAM_03_ext"
+    },
+    {
+      "@id": "#ParameterValue_biosource_amount_93",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "biosource amount",
+      "value": "93",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000013",
+      "unitCode": "https://bioregistry.io/UO:0000022",
+      "unitText": "milligram",
+      "columnIndex": "0"
+    },
+    {
+      "@id": "#ParameterValue_RNA_quality_check_RIN_6.5_(Agilent_Bioanalyzer_2100_expert_Plant_RNA_Nano)",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "RNA quality check",
+      "value": "RIN 6.5 (Agilent Bioanalyzer 2100 expert_Plant RNA Nano)",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000062",
+      "columnIndex": "4"
+    },
+    {
+      "@id": "#Process_rna_extraction_2",
+      "@type": "LabProcess",
+      "name": "rna_extraction_2",
+      "object": {
+        "@id": "#Sample_CAM_03"
+      },
+      "result": {
+        "@id": "#Sample_CAM_03_ext"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_rna_extraction.md_rna_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_biosource_amount_93"
+        },
+        {
+          "@id": "#ParameterValue_extraction_method_Roboklon_EURx_GeneMATRIX_Universal_RNA_Purification_version_2.3_September_2011"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_Roboklon_commercial_buffers"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_volume_300"
+        },
+        {
+          "@id": "#ParameterValue_RNA_quality_check_RIN_6.5_(Agilent_Bioanalyzer_2100_expert_Plant_RNA_Nano)"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_reC3_01_ext",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "reC3_01_ext"
+    },
+    {
+      "@id": "#ParameterValue_biosource_amount_82",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "biosource amount",
+      "value": "82",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000013",
+      "unitCode": "https://bioregistry.io/UO:0000022",
+      "unitText": "milligram",
+      "columnIndex": "0"
+    },
+    {
+      "@id": "#ParameterValue_RNA_quality_check_RIN_7.8_(Agilent_Bioanalyzer_2100_expert_Plant_RNA_Nano)",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "RNA quality check",
+      "value": "RIN 7.8 (Agilent Bioanalyzer 2100 expert_Plant RNA Nano)",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000062",
+      "columnIndex": "4"
+    },
+    {
+      "@id": "#Process_rna_extraction_3",
+      "@type": "LabProcess",
+      "name": "rna_extraction_3",
+      "object": {
+        "@id": "#Sample_reC3_01"
+      },
+      "result": {
+        "@id": "#Sample_reC3_01_ext"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_rna_extraction.md_rna_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_biosource_amount_82"
+        },
+        {
+          "@id": "#ParameterValue_extraction_method_Roboklon_EURx_GeneMATRIX_Universal_RNA_Purification_version_2.3_September_2011"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_Roboklon_commercial_buffers"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_volume_300"
+        },
+        {
+          "@id": "#ParameterValue_RNA_quality_check_RIN_7.8_(Agilent_Bioanalyzer_2100_expert_Plant_RNA_Nano)"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_reC3_02_ext",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "reC3_02_ext"
+    },
+    {
+      "@id": "#ParameterValue_biosource_amount_96",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "biosource amount",
+      "value": "96",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000013",
+      "unitCode": "https://bioregistry.io/UO:0000022",
+      "unitText": "milligram",
+      "columnIndex": "0"
+    },
+    {
+      "@id": "#Process_rna_extraction_4",
+      "@type": "LabProcess",
+      "name": "rna_extraction_4",
+      "object": {
+        "@id": "#Sample_reC3_02"
+      },
+      "result": {
+        "@id": "#Sample_reC3_02_ext"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_rna_extraction.md_rna_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_biosource_amount_96"
+        },
+        {
+          "@id": "#ParameterValue_extraction_method_Roboklon_EURx_GeneMATRIX_Universal_RNA_Purification_version_2.3_September_2011"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_Roboklon_commercial_buffers"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_volume_300"
+        },
+        {
+          "@id": "#ParameterValue_RNA_quality_check_RIN_7.6_(Agilent_Bioanalyzer_2100_expert_Plant_RNA_Nano)"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_reC3_03_ext",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "reC3_03_ext"
+    },
+    {
+      "@id": "#Process_rna_extraction_5",
+      "@type": "LabProcess",
+      "name": "rna_extraction_5",
+      "object": {
+        "@id": "#Sample_reC3_03"
+      },
+      "result": {
+        "@id": "#Sample_reC3_03_ext"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_rna_extraction.md_rna_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_biosource_amount_78"
+        },
+        {
+          "@id": "#ParameterValue_extraction_method_Roboklon_EURx_GeneMATRIX_Universal_RNA_Purification_version_2.3_September_2011"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_Roboklon_commercial_buffers"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_volume_300"
+        },
+        {
+          "@id": "#ParameterValue_RNA_quality_check_RIN_7.6_(Agilent_Bioanalyzer_2100_expert_Plant_RNA_Nano)"
+        }
+      ]
+    },
+    {
+      "@id": "#Protocol_illumina.md_illumina",
+      "@type": "LabProtocol",
+      "name": "illumina.md",
+      "intendedUse": {
+        "@id": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000177"
+      }
+    },
+    {
+      "@id": "#ParameterValue_library_strategy_RNA-seq",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "library strategy",
+      "value": "RNA-seq",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000035",
+      "valueReference": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000003",
+      "columnIndex": "0"
+    },
+    {
+      "@id": "#ParameterValue_library_selection_cDNA_method",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "library selection",
+      "value": "cDNA method",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000036",
+      "columnIndex": "1"
+    },
+    {
+      "@id": "#ParameterValue_library_layout_single-end",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "library layout",
+      "value": "single-end",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000015",
+      "valueReference": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000086",
+      "columnIndex": "2"
+    },
+    {
+      "@id": "#ParameterValue_library_preparation_kit_Illumina_TruSeq_RNA_Sample_Prep_Kit",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "library preparation kit",
+      "value": "Illumina TruSeq RNA Sample Prep Kit",
+      "propertyID": "http://purl.obolibrary.org/obo/GENEPIO_0000085",
+      "columnIndex": "3"
+    },
+    {
+      "@id": "#ParameterValue_library_preparation_kit_version_version_2",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "library preparation kit version",
+      "value": "version 2",
+      "propertyID": "http://purl.obolibrary.org/obo/GENEPIO_0000149",
+      "columnIndex": "4"
+    },
+    {
+      "@id": "#ParameterValue_adapter_sequence_CAGATC",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "adapter sequence",
+      "value": "CAGATC",
+      "propertyID": "http://purl.obolibrary.org/obo/GENEPIO_0000083",
+      "columnIndex": "5"
+    },
+    {
+      "@id": "#ParameterValue_next_generation_sequencing_instrument_model_Illumina_HiSeq_2000",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "next generation sequencing instrument model",
+      "value": "Illumina HiSeq 2000",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000040",
+      "valueReference": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000041",
+      "columnIndex": "6"
+    },
+    {
+      "@id": "#ParameterValue_base-calling_software_Illumina_Cassava",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "base-calling software",
+      "value": "Illumina Cassava",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000017",
+      "columnIndex": "7"
+    },
+    {
+      "@id": "#ParameterValue_base-calling_software_version_v1.8.2",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "base-calling software version",
+      "value": "v1.8.2",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000018",
+      "columnIndex": "8"
+    },
+    {
+      "@id": "#ParameterValue_Raw_data_file_format_*.fastq.gz",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Raw data file format",
+      "value": "*.fastq.gz",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000021",
+      "columnIndex": "9"
+    },
+    {
+      "@id": "#Process_illumina_0",
+      "@type": "LabProcess",
+      "name": "illumina_0",
+      "object": {
+        "@id": "#Sample_CAM_01_ext"
+      },
+      "result": {
+        "@id": "assays/RNASeq/dataset/DB_097_CAMMD_CAGATC_L001_R1_001.fastq.gz"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_illumina.md_illumina"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_library_strategy_RNA-seq"
+        },
+        {
+          "@id": "#ParameterValue_library_selection_cDNA_method"
+        },
+        {
+          "@id": "#ParameterValue_library_layout_single-end"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_Illumina_TruSeq_RNA_Sample_Prep_Kit"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_version_version_2"
+        },
+        {
+          "@id": "#ParameterValue_adapter_sequence_CAGATC"
+        },
+        {
+          "@id": "#ParameterValue_next_generation_sequencing_instrument_model_Illumina_HiSeq_2000"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_Illumina_Cassava"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_version_v1.8.2"
+        },
+        {
+          "@id": "#ParameterValue_Raw_data_file_format_*.fastq.gz"
+        }
+      ]
+    },
+    {
+      "@id": "#ParameterValue_adapter_sequence_CTTGTA",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "adapter sequence",
+      "value": "CTTGTA",
+      "propertyID": "http://purl.obolibrary.org/obo/GENEPIO_0000083",
+      "columnIndex": "5"
+    },
+    {
+      "@id": "#Process_illumina_1",
+      "@type": "LabProcess",
+      "name": "illumina_1",
+      "object": {
+        "@id": "#Sample_CAM_02_ext"
+      },
+      "result": {
+        "@id": "assays/RNASeq/dataset/DB_099_CAMMD_CTTGTA_L001_R1_001.fastq.gz"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_illumina.md_illumina"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_library_strategy_RNA-seq"
+        },
+        {
+          "@id": "#ParameterValue_library_selection_cDNA_method"
+        },
+        {
+          "@id": "#ParameterValue_library_layout_single-end"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_Illumina_TruSeq_RNA_Sample_Prep_Kit"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_version_version_2"
+        },
+        {
+          "@id": "#ParameterValue_adapter_sequence_CTTGTA"
+        },
+        {
+          "@id": "#ParameterValue_next_generation_sequencing_instrument_model_Illumina_HiSeq_2000"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_Illumina_Cassava"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_version_v1.8.2"
+        },
+        {
+          "@id": "#ParameterValue_Raw_data_file_format_*.fastq.gz"
+        }
+      ]
+    },
+    {
+      "@id": "#ParameterValue_adapter_sequence_AGTCAA",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "adapter sequence",
+      "value": "AGTCAA",
+      "propertyID": "http://purl.obolibrary.org/obo/GENEPIO_0000083",
+      "columnIndex": "5"
+    },
+    {
+      "@id": "#Process_illumina_2",
+      "@type": "LabProcess",
+      "name": "illumina_2",
+      "object": {
+        "@id": "#Sample_CAM_03_ext"
+      },
+      "result": {
+        "@id": "assays/RNASeq/dataset/DB_103_CAMMD_AGTCAA_L001_R1_001.fastq.gz"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_illumina.md_illumina"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_library_strategy_RNA-seq"
+        },
+        {
+          "@id": "#ParameterValue_library_selection_cDNA_method"
+        },
+        {
+          "@id": "#ParameterValue_library_layout_single-end"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_Illumina_TruSeq_RNA_Sample_Prep_Kit"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_version_version_2"
+        },
+        {
+          "@id": "#ParameterValue_adapter_sequence_AGTCAA"
+        },
+        {
+          "@id": "#ParameterValue_next_generation_sequencing_instrument_model_Illumina_HiSeq_2000"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_Illumina_Cassava"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_version_v1.8.2"
+        },
+        {
+          "@id": "#ParameterValue_Raw_data_file_format_*.fastq.gz"
+        }
+      ]
+    },
+    {
+      "@id": "#ParameterValue_adapter_sequence_GTCCGC",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "adapter sequence",
+      "value": "GTCCGC",
+      "propertyID": "http://purl.obolibrary.org/obo/GENEPIO_0000083",
+      "columnIndex": "5"
+    },
+    {
+      "@id": "#Process_illumina_3",
+      "@type": "LabProcess",
+      "name": "illumina_3",
+      "object": {
+        "@id": "#Sample_reC3_01_ext"
+      },
+      "result": {
+        "@id": "assays/RNASeq/dataset/DB_161_reC3MD_GTCCGC_L001_R1_001.fastq.gz"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_illumina.md_illumina"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_library_strategy_RNA-seq"
+        },
+        {
+          "@id": "#ParameterValue_library_selection_cDNA_method"
+        },
+        {
+          "@id": "#ParameterValue_library_layout_single-end"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_Illumina_TruSeq_RNA_Sample_Prep_Kit"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_version_version_2"
+        },
+        {
+          "@id": "#ParameterValue_adapter_sequence_GTCCGC"
+        },
+        {
+          "@id": "#ParameterValue_next_generation_sequencing_instrument_model_Illumina_HiSeq_2000"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_Illumina_Cassava"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_version_v1.8.2"
+        },
+        {
+          "@id": "#ParameterValue_Raw_data_file_format_*.fastq.gz"
+        }
+      ]
+    },
+    {
+      "@id": "#ParameterValue_adapter_sequence_GTGAAA",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "adapter sequence",
+      "value": "GTGAAA",
+      "propertyID": "http://purl.obolibrary.org/obo/GENEPIO_0000083",
+      "columnIndex": "5"
+    },
+    {
+      "@id": "#Process_illumina_4",
+      "@type": "LabProcess",
+      "name": "illumina_4",
+      "object": {
+        "@id": "#Sample_reC3_02_ext"
+      },
+      "result": {
+        "@id": "assays/RNASeq/dataset/DB_163_reC3MD_GTGAAA_L001_R1_001.fastq.gz"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_illumina.md_illumina"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_library_strategy_RNA-seq"
+        },
+        {
+          "@id": "#ParameterValue_library_selection_cDNA_method"
+        },
+        {
+          "@id": "#ParameterValue_library_layout_single-end"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_Illumina_TruSeq_RNA_Sample_Prep_Kit"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_version_version_2"
+        },
+        {
+          "@id": "#ParameterValue_adapter_sequence_GTGAAA"
+        },
+        {
+          "@id": "#ParameterValue_next_generation_sequencing_instrument_model_Illumina_HiSeq_2000"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_Illumina_Cassava"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_version_v1.8.2"
+        },
+        {
+          "@id": "#ParameterValue_Raw_data_file_format_*.fastq.gz"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_illumina_5",
+      "@type": "LabProcess",
+      "name": "illumina_5",
+      "object": {
+        "@id": "#Sample_reC3_03_ext"
+      },
+      "result": {
+        "@id": "assays/RNASeq/dataset/DB_165_re-C3MD_GTGAAA_L002_R1_001.fastq.gz"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_illumina.md_illumina"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_library_strategy_RNA-seq"
+        },
+        {
+          "@id": "#ParameterValue_library_selection_cDNA_method"
+        },
+        {
+          "@id": "#ParameterValue_library_layout_single-end"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_Illumina_TruSeq_RNA_Sample_Prep_Kit"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_version_version_2"
+        },
+        {
+          "@id": "#ParameterValue_adapter_sequence_GTGAAA"
+        },
+        {
+          "@id": "#ParameterValue_next_generation_sequencing_instrument_model_Illumina_HiSeq_2000"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_Illumina_Cassava"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_version_v1.8.2"
+        },
+        {
+          "@id": "#ParameterValue_Raw_data_file_format_*.fastq.gz"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C101293",
+      "@type": "DefinedTerm",
+      "name": "Next Generation Sequencing",
+      "termCode": "http://purl.obolibrary.org/obo/NCIT_C101293"
+    },
+    {
+      "@id": "#OA_Illumina_HiSeq_2500",
+      "@type": "DefinedTerm",
+      "name": "Illumina HiSeq 2500"
+    },
+    {
+      "@id": "#PV_mRNA_Sequencing",
+      "@type": "PropertyValue",
+      "name": "mRNA Sequencing",
+      "propertyID": "http://purl.obolibrary.org/obo/NCIT_C129432"
+    },
+    {
+      "@id": "assays/RNASeq/",
+      "@type": "Dataset",
+      "additionalType": "Assay",
+      "identifier": "RNASeq",
+      "creator": [
+        {
+          "@id": "#Person_Dominik_Brilhaus"
+        },
+        {
+          "@id": "#Person_Klaus_Winter"
+        },
+        {
+          "@id": "#Person_Samantha_Kurz"
+        },
+        {
+          "@id": "#Person_Thorsten_Wachtmeister"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "assays/RNASeq/dataset/DB_097_CAMMD_CAGATC_L001_R1_001.fastq.gz"
+        },
+        {
+          "@id": "assays/RNASeq/dataset/DB_099_CAMMD_CTTGTA_L001_R1_001.fastq.gz"
+        },
+        {
+          "@id": "assays/RNASeq/dataset/DB_103_CAMMD_AGTCAA_L001_R1_001.fastq.gz"
+        },
+        {
+          "@id": "assays/RNASeq/dataset/DB_161_reC3MD_GTCCGC_L001_R1_001.fastq.gz"
+        },
+        {
+          "@id": "assays/RNASeq/dataset/DB_163_reC3MD_GTGAAA_L001_R1_001.fastq.gz"
+        },
+        {
+          "@id": "assays/RNASeq/dataset/DB_165_re-C3MD_GTGAAA_L002_R1_001.fastq.gz"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#Process_rna_extraction_0"
+        },
+        {
+          "@id": "#Process_rna_extraction_1"
+        },
+        {
+          "@id": "#Process_rna_extraction_2"
+        },
+        {
+          "@id": "#Process_rna_extraction_3"
+        },
+        {
+          "@id": "#Process_rna_extraction_4"
+        },
+        {
+          "@id": "#Process_rna_extraction_5"
+        },
+        {
+          "@id": "#Process_illumina_0"
+        },
+        {
+          "@id": "#Process_illumina_1"
+        },
+        {
+          "@id": "#Process_illumina_2"
+        },
+        {
+          "@id": "#Process_illumina_3"
+        },
+        {
+          "@id": "#Process_illumina_4"
+        },
+        {
+          "@id": "#Process_illumina_5"
+        }
+      ],
+      "measurementMethod": {
+        "@id": "http://purl.obolibrary.org/obo/NCIT_C101293"
+      },
+      "measurementTechnique": {
+        "@id": "#OA_Illumina_HiSeq_2500"
+      },
+      "variableMeasured": {
+        "@id": "#PV_mRNA_Sequencing"
+      }
+    },
+    {
+      "@id": "10.1104/pp.15.01076",
+      "@type": "PropertyValue",
+      "name": "DOI",
+      "value": "10.1104/pp.15.01076",
+      "propertyID": "http://purl.obolibrary.org/obo/OBI_0002110"
+    },
+    {
+      "@id": "26530316",
+      "@type": "PropertyValue",
+      "name": "PubMedID",
+      "value": "26530316",
+      "propertyID": "http://purl.obolibrary.org/obo/OBI_0001617"
+    },
+    {
+      "@id": "#Person_Brilhaus",
+      "@type": "Person",
+      "givenName": "Brilhaus"
+    },
+    {
+      "@id": "#Person__Dominik;_Bräutigam",
+      "@type": "Person",
+      "givenName": " Dominik; Bräutigam"
+    },
+    {
+      "@id": "#Person__Andrea;_Mettler-Altmann",
+      "@type": "Person",
+      "givenName": " Andrea; Mettler-Altmann"
+    },
+    {
+      "@id": "#Person__Tabea;_Winter",
+      "@type": "Person",
+      "givenName": " Tabea; Winter"
+    },
+    {
+      "@id": "#Person__Klaus;_Weber",
+      "@type": "Person",
+      "givenName": " Klaus; Weber"
+    },
+    {
+      "@id": "#Person__Andreas_P_M",
+      "@type": "Person",
+      "givenName": " Andreas P M"
+    },
+    {
+      "@id": "#OA_Published",
+      "@type": "DefinedTerm",
+      "name": "Published"
+    },
+    {
+      "@id": "#Reversible_Burst_of_Transcriptional_Changes_during_Induction_of_Crassulacean_Acid_Metabolism_in_Talinum_triangulare.",
+      "@type": "ScholarlyArticle",
+      "headline": "Reversible Burst of Transcriptional Changes during Induction of Crassulacean Acid Metabolism in Talinum triangulare.",
+      "identifier": [
+        {
+          "@id": "10.1104/pp.15.01076"
+        },
+        {
+          "@id": "26530316"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#Person_Brilhaus"
+        },
+        {
+          "@id": "#Person__Dominik;_Bräutigam"
+        },
+        {
+          "@id": "#Person__Andrea;_Mettler-Altmann"
+        },
+        {
+          "@id": "#Person__Tabea;_Winter"
+        },
+        {
+          "@id": "#Person__Klaus;_Weber"
+        },
+        {
+          "@id": "#Person__Andreas_P_M"
+        }
+      ],
+      "creativeWorkStatus": {
+        "@id": "#OA_Published"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "additionalType": "Investigation",
+      "identifier": "Facultative-CAM-in-Talinum",
+      "creator": [
+        {
+          "@id": "http://orcid.org/0000-0001-9021-3197"
+        },
+        {
+          "@id": "http://orcid.org/0000-0002-5309-0527"
+        },
+        {
+          "@id": "http://orcid.org/0000-0002-9161-4889"
+        },
+        {
+          "@id": "#Person_Klaus_Winter"
+        },
+        {
+          "@id": "http://orcid.org/0000-0003-0970-4672"
+        }
+      ],
+      "datePublished": "2025-07-21T15:52:54.0708863",
+      "description": "Drought tolerance is a key factor for agriculture in the 21st century as it is a major determinant of plant survival in natural ecosystems as well as crop productivity. Plants have evolved a range of mechanisms to cope with drought, including a specialized type of photosynthesis termed Crassulacean acid metabolism (CAM). CAM is associated with stomatal closure during the day as atmospheric CO2 is assimilated primarily during the night, thus reducing transpirational water loss. The tropical herbaceous perennial species Talinum triangulare is capable of transitioning, in a facultative, reversible manner, from C3 photosynthesis to weakly expressed CAM in response to drought stress. The transcriptional regulation of this transition has been studied. Combining mRNA-Seq with targeted metabolite measurements, we found highly elevated levels of CAM-cycle enzyme transcripts and their metabolic products in T. triangulare leaves upon water deprivation. The carbohydrate metabolism is rewired to reduce the use of reserves for growth to support the CAM-cycle and the synthesis of compatible solutes. This large-scale expression dataset of drought-induced CAM demonstrates transcriptional regulation of the C3–CAM transition. We identified candidate transcription factors to mediate this photosynthetic plasticity, which may contribute in the future to the design of more drought-tolerant crops via engineered CAM.\n\n<<Test ARC registry>>",
+      "hasPart": [
+        {
+          "@id": "studies/TalinumGenomeDraft/"
+        },
+        {
+          "@id": "studies/TalinumSamples-STRI/"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/"
+        },
+        {
+          "@id": "assays/MassHunter_targets/"
+        },
+        {
+          "@id": "assays/RNASeq/"
+        }
+      ],
+      "name": "Facultative CAM in Talinum triangulare",
+      "citation": {
+        "@id": "#Reversible_Burst_of_Transcriptional_Changes_during_Induction_of_Crassulacean_Acid_Metabolism_in_Talinum_triangulare."
+      },
+      "license": "ALL RIGHTS RESERVED BY THE AUTHORS"
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    }
+  ]
+}
