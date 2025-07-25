@@ -1,9 +1,9 @@
 export const dirname = (filePath) => {
-  return filePath.split('/').slice(0, -1).join('/') || '.';
+  return new Error('path.dirname is mocked for Storybook.');
 };
 
 export const join = (...paths) => {
-  return paths.flat().join('/').replace(/\/+/g, '/');
+  return new Error('path.join is mocked for Storybook.');
 };
 
 export default {

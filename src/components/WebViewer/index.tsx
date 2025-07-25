@@ -5,8 +5,10 @@ import FileViewer from '../FileViewer'
 import FileTable from '../FileTable'
 import FileBreadcrumbs from '../FileBreadcrumbs'
 import {Stack} from '@primer/react'
-import { type TreeNode } from '../../util/types'
+import { type SearchCache, type TreeNode } from '../../util/types'
 import readme from '../../assets/README.md?raw'
+import TreeSearch from '../TreeSearch'
+import { useSearchCacheContext } from '../../contexts'
 
 function pathsToFileTree(paths: string[]) {
   const root: TreeNode = { name: "root", id: "", type: "folder", children: [] };
@@ -69,12 +71,25 @@ async function fetchFileByNode(tree: TreeNode) {
   return "Fetching file for tree node not implemented yet: fetchFileByPath"
 }
 
+function flattenTreeToSearchCache(node: TreeNode, path: SearchCache[] = []): SearchCache[] {
+  if(node.type === 'file') {
+    return [ { name: node.name, path: node.id }];
+  }
+
+  if(node.type === 'folder' && node.children) {
+    return [ ...node.children.flatMap(child => flattenTreeToSearchCache(child, path)) ];
+  }
+
+  return []
+}
+
 export default function WebViewer() {
 
   const [arc, setArc] = useState<ARC | null>(null)
   const [tree, setTree] = useState<TreeNode | null>(null)
   const [currentTreeNode, setCurrentTreeNode] = useState<TreeNode | null>(null)
   const [loading, setLoading] = useState(true)
+  const {setCache} = useSearchCacheContext()
 
   useEffect(() => {
     // This is just to simulate a data fetch, in a real application you would fetch this
@@ -85,6 +100,8 @@ export default function WebViewer() {
     const tree = pathsToFileTree(paths)
     setTree(tree)
     setCurrentTreeNode(tree)
+    const flattenedSearchCache = flattenTreeToSearchCache(tree);
+    setCache(flattenedSearchCache);
     setLoading(false)
   }, [])
 
@@ -100,6 +117,7 @@ export default function WebViewer() {
 
   return (
     <Stack>
+      <TreeSearch navigateTo={navigateTo} />
       {currentTreeNode && arc && arc.Title && <FileBreadcrumbs currentTreeNode={currentTreeNode} navigateTo={navigateTo} title={arc.Title} />}
       {
         currentTreeNode && currentTreeNode.type === 'file'

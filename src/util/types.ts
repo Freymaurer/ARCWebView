@@ -21,3 +21,13 @@ export type FileCacheContextType = {
     files: FileCache;
     setFile: (key: string, file: FileTypes) => void;
 };
+
+export interface SearchCache {
+  name: string
+  path: string
+}; // adjust based on your file types
+
+export type SearchCacheContextType = {
+    cache: SearchCache[];
+    setCache: (sortCache: SearchCache[]) => void;
+};

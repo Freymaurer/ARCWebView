@@ -1,4 +1,4 @@
-import {IconButton, Link, useResponsiveValue, type ResponsiveValue,} from '@primer/react'
+import {IconButton, Link, useResponsiveValue } from '@primer/react'
 import {Table, DataTable} from '@primer/react/experimental'
 import { type TreeNode } from '../../util/types'
 
