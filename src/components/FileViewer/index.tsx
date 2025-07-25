@@ -1,40 +1,74 @@
-import { useEffect, useState } from "react";
-import type { TreeNode } from "../../util/types";
+import type { ContentType, FileTypes, FileViewerContent } from "../../util/types";
+import {SkeletonText, UnderlinePanels} from '@primer/react/experimental'
+import { useCachedFiles } from "../../hooks/useCachedFiles";
+import MarkdownRender from "../MarkdownRender";
 
-interface FileViewerProps {
-  node: TreeNode;
+interface FileViewerContentProps {
+  file: FileTypes;
+  contentType: ContentType;
 }
 
-export default function FileViewer ({node}: FileViewerProps) {
+interface FileViewerProps {
+  nodes: FileViewerContent[]
+}
 
-  const [,] = useState<unknown>(null);
-  useEffect(() => {
-    console.log("FileViewer component mounted with node:", node);
-  }, [node]);
-  
-  // useEffect(() => {
-  //   async function fetchFile() {
-  //     if (!fetchUrl) return;
-  //     try {
-  //       const response = await fetch(fetchUrl);
-  //       if (!response.ok) {
-  //         throw new Error(`HTTP error! status: ${response.status}`);
-  //       }
-  //       const data = await response.json();
-  //       console.log(data);
-  //       setFile(data);
-  //     } catch (error) {
-  //       console.error("Error fetching file:", error);
-  //     }
-  //   }
-  //   fetchFile();
-  // }, [fetchUrl]);
-
+function FileViewerContent({ file, contentType }: FileViewerContentProps) {
   return (
     <div>
-      <h1>File Viewer</h1>
-      <p>This component is under construction.</p>
-      {/* Additional content can be added here */}
+      {file && (typeof file === "string") &&
+        contentType === "markdown" 
+          ? <MarkdownRender content={file as string} /> 
+          : <div>{file as string}</div>
+      }
+      {(file instanceof File) &&
+        <div>
+          <strong>File:</strong> {file.name} ({file.type}, {file.size} bytes)
+        </div>
+      }
+      {(file instanceof Blob && !(file instanceof File)) &&
+        <div>
+          <strong>Blob:</strong> {file.type} ({file.size} bytes)
+        </div>
+      }
+    </div>
+  );
+}
+
+export default function FileViewer ({nodes}: FileViewerProps) {
+
+  const { files, loading, errors } = useCachedFiles(
+    nodes.map(node => node.node.id),
+    async (key: string) => {
+      const node = nodes.find(node => node.node.id === key);
+      if (!node) {
+        throw new Error(`Node with id ${key} not found`);
+      }
+      return node.content();
+    }
+  )
+
+  return (
+    <div className="border rounded-2">
+      {loading  
+        ? <SkeletonText lines={10} />
+        : <UnderlinePanels className="border-bottom" aria-label="Select a file" id="panels">
+          {nodes.map((node) => (
+            <UnderlinePanels.Tab key={node.node.id} onSelect={event => console.log(event)}>{node.node.name}</UnderlinePanels.Tab>
+          ))}
+          {nodes.map((node) => (
+            <UnderlinePanels.Panel key={node.node.id} className="p-5">
+              {
+                errors[node.node.id] 
+                  ? <div className="text-danger">Error loading file: {errors[node.node.id].message}</div>
+                  : <FileViewerContent
+                    file={files[node.node.id]}
+                    contentType={node.contentType || "text"}
+                  />
+              }
+            </UnderlinePanels.Panel>
+          ))}
+        </UnderlinePanels>
+      }
     </div>
   )
 }

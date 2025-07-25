@@ -1,4 +1,4 @@
-import {IconButton, Link,} from '@primer/react'
+import {IconButton, Link, useResponsiveValue, type ResponsiveValue,} from '@primer/react'
 import {Table, DataTable} from '@primer/react/experimental'
 import { type TreeNode } from '../../util/types'
 
@@ -51,9 +51,10 @@ function sortTreeNode(node: TreeNode | null): TreeNode[] {
 
 interface HeaderProps {
   navigateTo: (path: string) => void;
+  responsiveValue: "narrow" | "regular" | "wide"
 }
 
-const header = ({navigateTo}: HeaderProps) => {
+const mkHeader = ({navigateTo, responsiveValue}: HeaderProps) => {
     return [
       {
         id: 'icon',
@@ -99,10 +100,12 @@ const header = ({navigateTo}: HeaderProps) => {
           );
         }
       },
-      {
-        header: 'Path',
-        field: 'id',
-      },
+      ...(
+        responsiveValue !== 'narrow' ? [{
+          header: 'Path',
+          field: 'id',
+        }] : []
+      ),
       {
         id: 'actions',
         width: 'auto',
@@ -146,6 +149,15 @@ interface FileTableProps {
 
 export default function FileTable({ loading, currentTreeNode, navigateTo }: FileTableProps) {
 
+  const headerVal = useResponsiveValue(
+    {
+      narrow: mkHeader({ navigateTo, responsiveValue: 'narrow' }),
+      regular: mkHeader({ navigateTo, responsiveValue: 'regular' }),
+      wide: mkHeader({ navigateTo, responsiveValue: 'wide' }),
+    }, 
+    mkHeader({ navigateTo, responsiveValue: 'regular' })
+  )
+
   return (
       <Table.Container>
         {/* <Table.Actions>
@@ -157,7 +169,7 @@ export default function FileTable({ loading, currentTreeNode, navigateTo }: File
             cellPadding="condensed"
             rows={10}
             //@ts-expect-error Too lazy to figure out why exactly the component is unhappy with the type
-            columns={header({ navigateTo })}
+            columns={headerVal}
           />
           : <DataTable
             aria-labelledby="repositories-default-headerAction"
@@ -165,7 +177,7 @@ export default function FileTable({ loading, currentTreeNode, navigateTo }: File
             cellPadding="condensed"
             data={sortTreeNode(currentTreeNode)}
             //@ts-expect-error Too lazy to figure out why exactly the component is unhappy with the type
-            columns={header({ navigateTo })}
+            columns={headerVal}
           />
         }
       </Table.Container>

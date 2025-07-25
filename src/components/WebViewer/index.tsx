@@ -7,7 +7,6 @@ import FileBreadcrumbs from '../FileBreadcrumbs'
 import {Stack} from '@primer/react'
 import { type TreeNode } from '../../util/types'
 import readme from '../../assets/README.md?raw'
-import MarkdownRender from '../MarkdownRender'
 
 function pathsToFileTree(paths: string[]) {
   const root: TreeNode = { name: "root", id: "", type: "folder", children: [] };
@@ -59,9 +58,15 @@ function findNodeAtPath(tree: TreeNode, targetPath: string): TreeNode | null {
   return current;
 }
 
-async function findReadme(tree: TreeNode): Promise<string | null> {
-  if (tree.name !== "root") return null;
+async function findReadme(tree: TreeNode): Promise<string> {
+  if (tree.name !== "root") 
+    return "No Readme found";
   return readme;
+}
+
+async function fetchFileByNode(tree: TreeNode) {
+  console.log("Fetching file for tree node not implemented yet:", tree);
+  return "Fetching file for tree node not implemented yet: fetchFileByPath"
 }
 
 export default function WebViewer() {
@@ -98,11 +103,15 @@ export default function WebViewer() {
       {currentTreeNode && arc && arc.Title && <FileBreadcrumbs currentTreeNode={currentTreeNode} navigateTo={navigateTo} title={arc.Title} />}
       {
         currentTreeNode && currentTreeNode.type === 'file'
-          ? <FileViewer node={currentTreeNode} />
+          ? <FileViewer nodes={[{ node: currentTreeNode, content: () => fetchFileByNode(currentTreeNode) }]} />
           : <FileTable loading={loading} currentTreeNode={currentTreeNode} navigateTo={navigateTo} />
       }
-      {tree && currentTreeNode && currentTreeNode.type === 'folder' && 
-        <MarkdownRender content={() => findReadme(currentTreeNode)} />
+      {tree && currentTreeNode && currentTreeNode.type === 'folder' &&
+        <FileViewer nodes={[
+          { node: {id: "readme", name: "README.md", type: "file"}, contentType: "markdown", content: () => findReadme(currentTreeNode) },
+          { node: {id: "test", name: "Test File", type: "file"}, contentType: "text", content: async () => "aklsöjdkalsöjd" },
+          { node: {id: "error testing", name: "Error file", type: "file"}, contentType: "text", content: async () => { throw new Error("Error loading file"); } }
+        ]}  />
       }
     </Stack>
   )
