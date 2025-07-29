@@ -1,14 +1,19 @@
 import jsonString from '../../assets/arc-ro-crate-metadata.json?raw'
 import { useEffect, useState } from 'react'
-import { JsonController, ARC } from '@nfdi4plants/arctrl'
+import { JsonController, ARC, OntologyAnnotation, ArcInvestigation } from '@nfdi4plants/arctrl'
 import FileViewer from '../FileViewer'
 import FileTable from '../FileTable'
 import FileBreadcrumbs from '../FileBreadcrumbs'
 import {Stack} from '@primer/react'
-import { type SearchCache, type TreeNode } from '../../util/types'
+import { type ContentType, type SearchCache, type TreeNode } from '../../util/types'
 import readme from '../../assets/README.md?raw'
 import TreeSearch from '../TreeSearch'
 import { useSearchCacheContext } from '../../contexts'
+import AnnotationTable from '../AnnotationTable'
+import AssayMetadata from '../Metadata/AssayMetadata'
+import StudyMetadata from '../Metadata/StudyMetadata'
+import ARCMetadata from '../Metadata/ARCMetadata'
+
 
 function pathsToFileTree(paths: string[]) {
   const root: TreeNode = { name: "root", id: "", type: "folder", children: [] };
@@ -66,14 +71,14 @@ async function findReadme(tree: TreeNode): Promise<string> {
   return readme;
 }
 
-async function fetchFileByNode(tree: TreeNode) {
-  console.log("Fetching file for tree node not implemented yet:", tree);
-  return "Fetching file for tree node not implemented yet: fetchFileByPath"
+async function fetchFileByNode(tree: TreeNode, arc: ArcInvestigation) {
+  console.warn("Fetching file by node not implemented yet: fetchFileByNode", tree, arc);
+  return "This feature is not implemented yet. At the moment you can only view metadata files."
 }
 
 function flattenTreeToSearchCache(node: TreeNode, path: SearchCache[] = []): SearchCache[] {
   if(node.type === 'file') {
-    return [ { name: node.name, path: node.id }];
+    return [ { name: node.name, path: node.id, type: "file" } ];
   }
 
   if(node.type === 'folder' && node.children) {
@@ -81,6 +86,151 @@ function flattenTreeToSearchCache(node: TreeNode, path: SearchCache[] = []): Sea
   }
 
   return []
+}
+
+
+async function asyncDataToSearchCache(tree: TreeNode, arc: ARC, setCache: React.Dispatch<React.SetStateAction<SearchCache[]>>): Promise<void> {
+  const treeCache = flattenTreeToSearchCache(tree);
+  setCache(treeCache);
+  const headers = new Set<SearchCache>();
+  arc.Assays.forEach(assay => {
+    const path = `assays/${assay.Identifier}/isa.assay.xlsx`;
+    headers.add({ name: assay.Identifier, path, type: "isa-title" });
+    assay.Performers.forEach(contact => {
+      if (contact.ORCID) {
+        headers.add({ name: contact.ORCID, path, type: "person" });
+      }
+      const name = [contact.FirstName, contact.MidInitials, contact.LastName].filter(Boolean).join(" ")
+      if (name) {
+        headers.add({ name, path, type: "person" });
+      }
+    })
+    assay.tables.forEach(table => {
+      headers.add({ name: table.Name, path, type: "isa-table" });
+      table.Headers.forEach(header => {
+        const term = header.TryGetTerm();
+        if (!term) {
+          headers.add({ name: header.toString(), path, type: "header" });        
+        } 
+        if (term) {
+          const nametext = (term as OntologyAnnotation).NameText;
+          if (nametext) {
+            headers.add({ name: nametext, path, type: "header" });
+          }
+        }
+      });
+    });
+  });
+  arc.Studies.forEach(study => {
+    const path = `studies/${study.Identifier}/isa.study.xlsx`;
+    headers.add({ name: study.Identifier, path, type: "isa-title" });
+    study.Contacts.forEach(contact => {
+      if (contact.ORCID) {
+        headers.add({ name: contact.ORCID, path, type: "person" });
+      }
+      const name = [contact.FirstName, contact.MidInitials, contact.LastName].filter(Boolean).join(" ")
+      if (name) {
+        headers.add({ name, path, type: "person" });
+      }
+    })
+    study.tables.forEach(table => {
+      headers.add({ name: table.Name, path, type: "isa-table" });
+      table.Headers.forEach(header => {
+        const term = header.TryGetTerm();
+        if (!term) {
+          headers.add({ name: header.toString(), path, type: "header" });
+        }
+        if (term) {
+          const nametext = (term as OntologyAnnotation).NameText;
+          if (nametext) {
+            headers.add({ name: nametext, path, type: "header" });
+          }
+        }
+      });
+    });
+  });
+  const investigationPath = `isa.investigation.xlsx`;
+  arc.Contacts.forEach(contact => {
+    if (contact.ORCID) {
+      headers.add({ name: contact.ORCID, path: investigationPath, type: "person" });
+    }
+    const name = [contact.FirstName, contact.MidInitials, contact.LastName].filter(Boolean).join(" ")
+    if (name) {
+      headers.add({ name, path: investigationPath, type: "person" });
+    }
+  })
+  setCache(prevCache => [...prevCache, ...Array.from(headers)]);
+  return;
+}
+
+function FileViewerAssay({currentTreeNode, arc}: {currentTreeNode: TreeNode, arc: ARC}): JSX.Element {
+
+  const assayIdent = currentTreeNode.id.match(/assays\/([^/]+)\/isa\.assay\.xlsx/)
+
+  const assay = arc.Assays.find(a => a.Identifier === assayIdent?.[1]);
+
+  if (!assay) {
+    return <div>Assay not found</div>;
+  }
+
+  return (
+    <FileViewer nodes={[
+      { node: currentTreeNode, name: "Metadata", component: <AssayMetadata assay={assay}/>, contentType: "jsx" },
+      ...(assay.Tables.map(table => ({
+        node: currentTreeNode,
+        name: table.Name,
+        contentType: "jsx" as ContentType,
+        component: <AnnotationTable table={table} />
+      })))
+    ]} />
+  );
+}
+
+function FileViewerStudy({currentTreeNode, arc}: {currentTreeNode: TreeNode, arc: ARC}): JSX.Element {
+
+  const studyIdent = currentTreeNode.id.match(/studies\/([^/]+)\/isa\.study\.xlsx/)
+
+  const study = arc.Studies.find(s => s.Identifier === studyIdent?.[1]);
+
+  if (!study) {
+    return <div>Study not found</div>;
+  }
+
+  return (
+    <FileViewer nodes={[
+      { node: currentTreeNode, component: <StudyMetadata study={study}/>, contentType: "jsx" },
+      ...(study.Tables.map(table => ({
+        node: currentTreeNode,
+        name: table.Name,
+        contentType: "jsx" as ContentType,
+        component: <AnnotationTable table={table} />
+      })))
+    ]} />
+  );
+}
+
+function FileViewerInvestigation({currentTreeNode, arc}: {currentTreeNode: TreeNode, arc: ARC}): JSX.Element {
+
+  return (
+    <FileViewer nodes={[
+      { node: currentTreeNode, component: <ARCMetadata arc={arc} />, contentType: "jsx" }
+    ]} />
+  );
+}
+
+function renderFileComponentByName(currentTreeNode: TreeNode, arc: ARC): JSX.Element {
+  switch (currentTreeNode.name) {
+    case "isa.investigation.xlsx":
+      return <FileViewerInvestigation currentTreeNode={currentTreeNode} arc={arc} />;
+    case "isa.study.xlsx":
+      return <FileViewerStudy currentTreeNode={currentTreeNode} arc={arc} />;
+    case "isa.assay.xlsx":
+      return <FileViewerAssay currentTreeNode={currentTreeNode} arc={arc} />;
+    default:
+      return <FileViewer nodes={[
+        { node: currentTreeNode, content: () => fetchFileByNode(currentTreeNode, arc) }]
+      } />
+  }
 }
 
 export default function WebViewer() {
@@ -100,10 +250,9 @@ export default function WebViewer() {
     const tree = pathsToFileTree(paths)
     setTree(tree)
     setCurrentTreeNode(tree)
-    const flattenedSearchCache = flattenTreeToSearchCache(tree);
-    setCache(flattenedSearchCache);
+    asyncDataToSearchCache(tree, arc, setCache);
     setLoading(false)
-  }, [])
+  }, [setCache])
 
   function navigateTo(path: string) {
     if (!tree) return;
@@ -120,15 +269,13 @@ export default function WebViewer() {
       <TreeSearch navigateTo={navigateTo} />
       {currentTreeNode && arc && arc.Title && <FileBreadcrumbs currentTreeNode={currentTreeNode} navigateTo={navigateTo} title={arc.Title} />}
       {
-        currentTreeNode && currentTreeNode.type === 'file'
-          ? <FileViewer nodes={[{ node: currentTreeNode, content: () => fetchFileByNode(currentTreeNode) }]} />
+        currentTreeNode && currentTreeNode.type === 'file' && arc
+          ? (renderFileComponentByName(currentTreeNode, arc)) 
           : <FileTable loading={loading} currentTreeNode={currentTreeNode} navigateTo={navigateTo} />
       }
-      {tree && currentTreeNode && currentTreeNode.type === 'folder' &&
+      {tree && currentTreeNode && currentTreeNode.name === "root" && currentTreeNode.type === 'folder' &&
         <FileViewer nodes={[
-          { node: {id: "readme", name: "README.md", type: "file"}, contentType: "markdown", content: () => findReadme(currentTreeNode) },
-          { node: {id: "test", name: "Test File", type: "file"}, contentType: "text", content: async () => "aklsöjdkalsöjd" },
-          { node: {id: "error testing", name: "Error file", type: "file"}, contentType: "text", content: async () => { throw new Error("Error loading file"); } }
+          { node: {id: currentTreeNode.name + "readme", name: "README.md", type: "file"}, contentType: "markdown", content: async () => findReadme(currentTreeNode) },
         ]}  />
       }
     </Stack>

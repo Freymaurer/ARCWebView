@@ -8,6 +8,9 @@ import { globalIgnores } from 'eslint/config'
 export default tseslint.config([
   globalIgnores(['dist']),
   {
+    rules: {
+      "@typescript-eslint/no-explicit-any": 'off',
+    },
     files: ['**/*.{ts,tsx}'],
     extends: [
       js.configs.recommended,

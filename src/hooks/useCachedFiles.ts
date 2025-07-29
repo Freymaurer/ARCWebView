@@ -20,6 +20,8 @@ export const useCachedFiles = (
     const [errors, setErrors] = useState<Record<string, Error>>({});
     const [results, setResults] = useState<Record<string, FileTypes>>({});
 
+    const keyString = keys.join(',');
+
     useEffect(() => {
         let isMounted = true;
 
@@ -66,7 +68,7 @@ export const useCachedFiles = (
         return () => {
             isMounted = false;
         };
-    }, [keys.join(','), Object.keys(files).length]);
+    }, [keyString]);
 
     return { files: results, loading, errors };
 };

@@ -2,6 +2,7 @@ import type { ContentType, FileTypes, FileViewerContent } from "../../util/types
 import {SkeletonText, UnderlinePanels} from '@primer/react/experimental'
 import { useCachedFiles } from "../../hooks/useCachedFiles";
 import MarkdownRender from "../MarkdownRender";
+import { useState } from "react";
 
 interface FileViewerContentProps {
   file: FileTypes;
@@ -15,6 +16,7 @@ interface FileViewerProps {
 function FileViewerContent({ file, contentType }: FileViewerContentProps) {
   return (
     <div>
+      {/* {file && (typeof file === "jsx") && file} */}
       {file && (typeof file === "string") &&
         contentType === "markdown" 
           ? <MarkdownRender content={file as string} /> 
@@ -36,16 +38,20 @@ function FileViewerContent({ file, contentType }: FileViewerContentProps) {
 
 export default function FileViewer ({nodes}: FileViewerProps) {
 
+  const filteredNodes = nodes.filter(node => !!node.content);
+
   const { files, loading, errors } = useCachedFiles(
-    nodes.map(node => node.node.id),
+    filteredNodes.map(node => node.node.id),
     async (key: string) => {
-      const node = nodes.find(node => node.node.id === key);
+      const node = filteredNodes.find(node => node.node.id === key);
       if (!node) {
         throw new Error(`Node with id ${key} not found`);
       }
-      return node.content();
+      return node.content ? await node.content() : await (async () => "none")();
     }
   )
+
+  const [selectedTab, setSelectedTab] = useState<string | null>(null);
 
   return (
     <div className="border rounded-2">
@@ -53,13 +59,15 @@ export default function FileViewer ({nodes}: FileViewerProps) {
         ? <SkeletonText lines={10} />
         : <UnderlinePanels className="border-bottom" aria-label="Select a file" id="panels">
           {nodes.map((node) => (
-            <UnderlinePanels.Tab key={node.node.id} onSelect={event => console.log(event)}>{node.node.name}</UnderlinePanels.Tab>
+            <UnderlinePanels.Tab key={node.node.id + node.name} aria-selected={selectedTab === node.node.id + node.name} onSelect={() => setSelectedTab(node.node.id + node.name)}>{node.name || node.node.name}</UnderlinePanels.Tab>
           ))}
           {nodes.map((node) => (
-            <UnderlinePanels.Panel key={node.node.id} className="p-5">
+            <UnderlinePanels.Panel key={node.node.id + node.name} className="p-5">
               {
                 errors[node.node.id] 
                   ? <div className="text-danger">Error loading file: {errors[node.node.id].message}</div>
+                  : node.component
+                  ? node.component
                   : <FileViewerContent
                     file={files[node.node.id]}
                     contentType={node.contentType || "text"}
