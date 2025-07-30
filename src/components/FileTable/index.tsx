@@ -98,10 +98,11 @@ const mkHeader = ({navigateTo, responsiveValue}: HeaderProps) => {
                   const url = `https://lfs-resolver.nfdi4plants.org/presigned-url/?oid=${row.sha256}`;
                   const link = document.createElement('a');
                   link.href = url;
-                  link.target = '_blank';
                   link.rel = 'noopener';
-                  link.download = '';
+                  link.download = row.name;
+                  document.body.appendChild(link);
                   link.click();
+                  document.body.removeChild(link);
                 }} />
               : <small>unavailable</small>
           )
