@@ -28,7 +28,7 @@ export default function MarkdownRender({content}: MarkdownRenderProps) {
       mermaid.contentLoaded();
       setLoading(false);
     }
-  });
+  }, [renderedContent]);
 
   return (
       loading

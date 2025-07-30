@@ -1,10 +1,10 @@
 import jsonString from '../../assets/arc-ro-crate-metadata.json?raw'
-import { useEffect, useState } from 'react'
-import { JsonController, ARC, OntologyAnnotation, ArcInvestigation } from '@nfdi4plants/arctrl'
+import { useEffect, useMemo, useState } from 'react'
+import { JsonController, ARC, OntologyAnnotation, ArcInvestigation, ROCrate } from '@nfdi4plants/arctrl'
 import FileViewer from '../FileViewer'
 import FileTable from '../FileTable'
 import FileBreadcrumbs from '../FileBreadcrumbs'
-import {PageLayout, Stack} from '@primer/react'
+import { SplitPageLayout, Stack, IconButton, useResponsiveValue, Dialog} from '@primer/react'
 import { type ContentType, type SearchCache, type TreeNode } from '../../util/types'
 import readme from '../../assets/README.md?raw'
 import TreeSearch from '../TreeSearch'
@@ -13,9 +13,10 @@ import AnnotationTable from '../AnnotationTable'
 import AssayMetadata from '../Metadata/AssayMetadata'
 import StudyMetadata from '../Metadata/StudyMetadata'
 import ARCMetadata from '../Metadata/ARCMetadata'
+import FileTree from '../FileTree'
+import Icons from '../Icons'
 
-
-function pathsToFileTree(paths: string[]) {
+function pathsToFileTree(paths: string[], shaMap: Map<string, string>) {
   const root: TreeNode = { name: "root", id: "", type: "folder", children: [] };
 
   const preFilteredPaths = paths.filter(p => !p.endsWith(".gitkeep"));
@@ -37,6 +38,7 @@ function pathsToFileTree(paths: string[]) {
         existing = {
           name: part,
           id: pathSoFar,
+          sha256: shaMap.get(pathSoFar) || undefined, // Use sha256 if available
           ...(isFile
             ? { type: "file" }
             : { type: "folder", children: [] })
@@ -233,6 +235,45 @@ function renderFileComponentByName(currentTreeNode: TreeNode, arc: ARC): JSX.Ele
   }
 }
 
+interface SideSheetProps {
+  close: () => void;
+  children?: React.ReactNode;
+}
+
+function SideSheet({close, children}: SideSheetProps) {
+
+  return (
+    <Dialog title="My Dialog" onClose={close} position="left" >
+      {children}
+    </Dialog>
+  )
+}
+
+// Helper to find the path to the currentId (returns list of folder IDs)
+function findPathToNode(tree: TreeNode[], targetId: string, path: string[] = []): string[] | null {
+  for (const node of tree) {
+    if (node.id === targetId) {
+      console.log("Found node:", node);
+      return path;
+    }
+    if (node.type === "folder" && node.children) {
+      const result = findPathToNode(node.children, targetId, [...path, node.id]);
+      if (result) return result;
+    }
+  }
+  return null;
+}
+
+function navigateToPathInTree(path: string, tree: TreeNode | null, setCurrentTreeNode: React.Dispatch<React.SetStateAction<TreeNode | null>>) {
+  if (!tree) return;
+  const node = findNodeAtPath(tree, path);
+  if (node) {
+    setCurrentTreeNode(node);
+  } else {
+    console.warn(`Node not found for path: ${path}`);
+  }
+}
+
 export default function WebViewer() {
 
   const [arc, setArc] = useState<ARC | null>(null)
@@ -241,41 +282,83 @@ export default function WebViewer() {
   const [loading, setLoading] = useState(true)
   const {setCache} = useSearchCacheContext()
 
+  const [sidebarActive, setSidebarActive] = useState(false);
+
+  const isSmallScreen = useResponsiveValue({
+    narrow: true,
+    regular: true,
+    wide: false
+  }, false)
+
+  const navigateTo = useMemo(() => {
+    return (path: string) => {
+      navigateToPathInTree(path, tree, setCurrentTreeNode);
+      if (isSmallScreen) {
+        setSidebarActive(false);
+      }
+    }
+  }, [tree, isSmallScreen]);
+
   useEffect(() => {
     // This is just to simulate a data fetch, in a real application you would fetch this
     // data from an API or some other source.
-    // const g = JsonController.LDGraph.fromROCrateJsonString(jsonString);
-    const arc = JsonController.ARC.fromROCrateJsonString(jsonString)
+    const g = JsonController.LDGraph.fromROCrateJsonString(jsonString);
+    const arc = JsonController.ARC.fromROCrateJsonString(jsonString);
+    const files = g.Nodes.filter(n => ROCrate.LDFile.validate(n, g.TryGetContext() as any));
+    const fileIdShaMap = new Map<string, string>();
+    files.forEach(file => {
+      const id = file.id;
+      const sha = file.TryGetProperty('https://schema.org/sha256', g.TryGetContext() as any);
+      if (id && sha) {
+        fileIdShaMap.set(id, sha);
+      }
+    });
     setArc(arc)
     const paths = arc.FileSystem.Tree.ToFilePaths(true)
-    const tree = pathsToFileTree(paths)
+    const tree = pathsToFileTree(paths, fileIdShaMap);
     setTree(tree)
     setCurrentTreeNode(tree)
     asyncDataToSearchCache(tree, arc, setCache);
     setLoading(false)
   }, [setCache])
 
-  function navigateTo(path: string) {
-    if (!tree) return;
-    const node = findNodeAtPath(tree, path);
-    if (node) {
-      setCurrentTreeNode(node);
-    } else {
-      console.warn(`Node not found for path: ${path}`);
-    }
-  }
+  const expandedFolderIds = useMemo(() => {
+    return currentTreeNode?.id ? findPathToNode(tree?.children || [], currentTreeNode.id) ?? [] : []; 
+  }, [tree, currentTreeNode]);
+
+  const renderedTree = useMemo(() => (
+    <FileTree tree={tree} currentTreeNode={currentTreeNode} expandedFolderIds={expandedFolderIds} navigateTo={navigateTo} />
+  ), [tree, currentTreeNode, expandedFolderIds, navigateTo]);
 
   return (
-    <PageLayout>
-      <PageLayout.Header >
-        <Stack direction="horizontal" align="center">
-          <TreeSearch navigateTo={navigateTo} />
-          {currentTreeNode && arc && arc.Title && <FileBreadcrumbs currentTreeNode={currentTreeNode} navigateTo={navigateTo} title={arc.Title} />}
-        </Stack>
-      </PageLayout.Header>
-      <PageLayout.Content>
-        {/* <Placeholder height={400}>Content</Placeholder> */}
+    <SplitPageLayout>
+      {/* <SplitPageLayout.Header >
+      </SplitPageLayout.Header> */}
+      <div className="z-2">
+        { sidebarActive && isSmallScreen as boolean && (
+          <SideSheet close={() => setSidebarActive(false)} >
+            {renderedTree}
+          </SideSheet>
+        )}
+      </div>
+      <SplitPageLayout.Pane 
+        aria-label="Sidebar" 
+        resizable={true} 
+        widthStorageKey={"arc-webviewer-sidebar-width"}
+        hidden={!sidebarActive || isSmallScreen as boolean} 
+        sticky={true}
+      >
+        {renderedTree}
+      </SplitPageLayout.Pane>
+      <SplitPageLayout.Content>
         <Stack>
+          <div className="bgColor-default py-2 position-sticky top-0 z-1">
+            <Stack direction="horizontal" align="center" >
+              <IconButton aria-label="Expand sidebar" variant='invisible' icon={sidebarActive ? Icons.SidebarCollapseIcon : Icons.SidebarExpandIcon} onClick={() => setSidebarActive(!sidebarActive)} />
+              <TreeSearch navigateTo={navigateTo} />
+              {currentTreeNode && arc && arc.Title && <FileBreadcrumbs currentTreeNode={currentTreeNode} navigateTo={navigateTo} title={arc.Title} />}
+            </Stack>
+          </div>
           {
             currentTreeNode && currentTreeNode.type === 'file' && arc
               ? (renderFileComponentByName(currentTreeNode, arc)) 
@@ -287,13 +370,7 @@ export default function WebViewer() {
             ]}  />
           }
         </Stack>
-      </PageLayout.Content>
-      {/* <PageLayout.Pane>
-        <Placeholder height={200}>Pane</Placeholder>
-      </PageLayout.Pane> */}
-      {/* <PageLayout.Footer>
-        <Placeholder height={64}>Footer</Placeholder>
-      </PageLayout.Footer> */}
-    </PageLayout>
+      </SplitPageLayout.Content>
+    </SplitPageLayout>
   )
 }
