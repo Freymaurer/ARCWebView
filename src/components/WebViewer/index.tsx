@@ -4,7 +4,7 @@ import { JsonController, ARC, OntologyAnnotation, ArcInvestigation } from '@nfdi
 import FileViewer from '../FileViewer'
 import FileTable from '../FileTable'
 import FileBreadcrumbs from '../FileBreadcrumbs'
-import {Stack} from '@primer/react'
+import {PageLayout, Stack} from '@primer/react'
 import { type ContentType, type SearchCache, type TreeNode } from '../../util/types'
 import readme from '../../assets/README.md?raw'
 import TreeSearch from '../TreeSearch'
@@ -244,6 +244,7 @@ export default function WebViewer() {
   useEffect(() => {
     // This is just to simulate a data fetch, in a real application you would fetch this
     // data from an API or some other source.
+    // const g = JsonController.LDGraph.fromROCrateJsonString(jsonString);
     const arc = JsonController.ARC.fromROCrateJsonString(jsonString)
     setArc(arc)
     const paths = arc.FileSystem.Tree.ToFilePaths(true)
@@ -265,19 +266,34 @@ export default function WebViewer() {
   }
 
   return (
-    <Stack>
-      <TreeSearch navigateTo={navigateTo} />
-      {currentTreeNode && arc && arc.Title && <FileBreadcrumbs currentTreeNode={currentTreeNode} navigateTo={navigateTo} title={arc.Title} />}
-      {
-        currentTreeNode && currentTreeNode.type === 'file' && arc
-          ? (renderFileComponentByName(currentTreeNode, arc)) 
-          : <FileTable loading={loading} currentTreeNode={currentTreeNode} navigateTo={navigateTo} />
-      }
-      {tree && currentTreeNode && currentTreeNode.name === "root" && currentTreeNode.type === 'folder' &&
-        <FileViewer nodes={[
-          { node: {id: currentTreeNode.name + "readme", name: "README.md", type: "file"}, contentType: "markdown", content: async () => findReadme(currentTreeNode) },
-        ]}  />
-      }
-    </Stack>
+    <PageLayout>
+      <PageLayout.Header >
+        <Stack direction="horizontal" align="center">
+          <TreeSearch navigateTo={navigateTo} />
+          {currentTreeNode && arc && arc.Title && <FileBreadcrumbs currentTreeNode={currentTreeNode} navigateTo={navigateTo} title={arc.Title} />}
+        </Stack>
+      </PageLayout.Header>
+      <PageLayout.Content>
+        {/* <Placeholder height={400}>Content</Placeholder> */}
+        <Stack>
+          {
+            currentTreeNode && currentTreeNode.type === 'file' && arc
+              ? (renderFileComponentByName(currentTreeNode, arc)) 
+              : <FileTable loading={loading} currentTreeNode={currentTreeNode} navigateTo={navigateTo} />
+          }
+          {tree && currentTreeNode && currentTreeNode.name === "root" && currentTreeNode.type === 'folder' &&
+            <FileViewer nodes={[
+              { node: {id: currentTreeNode.name + "readme", name: "README.md", type: "file"}, contentType: "markdown", content: async () => findReadme(currentTreeNode) },
+            ]}  />
+          }
+        </Stack>
+      </PageLayout.Content>
+      {/* <PageLayout.Pane>
+        <Placeholder height={200}>Pane</Placeholder>
+      </PageLayout.Pane> */}
+      {/* <PageLayout.Footer>
+        <Placeholder height={64}>Footer</Placeholder>
+      </PageLayout.Footer> */}
+    </PageLayout>
   )
 }

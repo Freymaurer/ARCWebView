@@ -2,7 +2,7 @@ import { Autocomplete, FormControl, ActionList, useFocusZone } from '@primer/rea
 import { Dialog } from '@primer/react/experimental'
 import { useSearchCacheContext } from '../../contexts'
 import type { SearchCache } from '../../util/types'
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 
 interface TreeSearchProps {
@@ -34,10 +34,12 @@ const PersonIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" heig
 	<path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12m-8 8v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13t3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2V20z" />
 </svg>
 
-const SearchIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
-	<rect width="24" height="24" fill="none" />
-	<path fill="currentColor" d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14" />
-</svg>
+const SearchIcon = () => <div className='d-flex align-items-center justify-content-center'>
+  <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
+    <rect width="24" height="24" fill="none" />
+    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314" />
+  </svg>
+</div>
 
 interface MyMenuItem {
     text: string;
@@ -124,6 +126,9 @@ function SearchResultsDialog({ searchResults, onDialogClose, returnFocus, onSele
 function findItemsFromCache(cache: SearchCache[], text: string): MyMenuItem[] {
     if (text.length < 3) {
       const filteredItems = cacheArrayToDistinctMenuItems(cache.filter(item => item.type === "file"));
+      if (filteredItems.length > 10) {
+        return filteredItems.sort((a, b) => a.text.localeCompare(b.text)).slice(0, 10);
+      }
       return filteredItems;
     } else {
       const filteredCache = cache.filter(item => item.name.toLowerCase().includes(text.toLowerCase()));
@@ -139,7 +144,7 @@ export default function TreeSearch({ navigateTo }: TreeSearchProps) {
     const { cache } = useSearchCacheContext()
     
     const [loading, setLoading] = useState(false);
-    const fileItems = cacheArrayToDistinctMenuItems(cache.filter(item => item.type === "file"));
+    const fileItems = cacheArrayToDistinctMenuItems(cache.filter(item => item.type === "file").slice(0, 10));
     const [items, setItems] = useState<MyMenuItem[]>(fileItems);
     const [multiSelectOptions, setMultiSelectOptions] = useState<SearchCache[]>([]);
     const inputRef = useRef<any>(null);
@@ -188,6 +193,19 @@ export default function TreeSearch({ navigateTo }: TreeSearchProps) {
             navigateTo(item.path);
         }
     }
+
+    useEffect(() => {
+      const handleKeyDown = (e: KeyboardEvent) => {
+        if (e.key === 't' && document.activeElement !== inputRef.current) {
+          e.preventDefault(); // optional
+          inputRef.current?.focus();
+        }
+      };
+
+      window.addEventListener('keydown', handleKeyDown);
+      return () => window.removeEventListener('keydown', handleKeyDown);
+    }, []);
+
     return (
         <div>
           {
@@ -209,7 +227,7 @@ export default function TreeSearch({ navigateTo }: TreeSearchProps) {
             <FormControl>
                 <FormControl.Label visuallyHidden id="autocompleteLabel-arc-search">Autocomplete search for ARC</FormControl.Label>
                 <Autocomplete>
-                    <Autocomplete.Input ref={inputRef} onChange={onChange} trailingVisual={<SearchIcon />} />
+                    <Autocomplete.Input ref={inputRef} onChange={onChange} leadingVisual={<SearchIcon />} trailingVisual={() => <kbd>t</kbd>} />
                     <Autocomplete.Overlay style={{width: "max-content"}}>
                         <Autocomplete.Menu
                             onOpenChange={onOpenChange}

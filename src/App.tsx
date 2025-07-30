@@ -24,21 +24,7 @@ import WebViewer from './components/WebViewer';
 function App() {
 
   return (
-    <PageLayout>
-      {/* <PageLayout.Header>
-        <Placeholder height={64}>Header</Placeholder>
-      </PageLayout.Header> */}
-      <PageLayout.Content>
-        {/* <Placeholder height={400}>Content</Placeholder> */}
-        <WebViewer />
-      </PageLayout.Content>
-      {/* <PageLayout.Pane>
-        <Placeholder height={200}>Pane</Placeholder>
-      </PageLayout.Pane> */}
-      {/* <PageLayout.Footer>
-        <Placeholder height={64}>Footer</Placeholder>
-      </PageLayout.Footer> */}
-    </PageLayout>
+    <WebViewer />
   )
 }
 
