@@ -5,6 +5,7 @@ export type TreeNode = {
   type: "file" | "folder";
   children?: TreeNode[];
   sha256?: string; // Optional, used for file download
+  contentSize?: string; // Optional, used for file size display
 };
 
 export type FileTypes = File | Blob | string;

@@ -1,0 +1,1 @@
+export {default as WebViewer} from './components/WebViewer';

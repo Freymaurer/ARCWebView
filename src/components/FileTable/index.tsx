@@ -81,29 +81,52 @@ const mkHeader = ({navigateTo, responsiveValue}: HeaderProps) => {
         }] : []
       ),
       {
+        id: 'fileSize',
+        width: 'auto',
+        minWidth: '50px',
+        align: 'end',
+        header: "File Size",
+        renderCell: (row: TreeNode) => {
+          return (
+            row.contentSize 
+              ? <div style={{width: "content-min"}}>
+                <Truncate title={row.contentSize} maxWidth="200px">{row.contentSize}</Truncate >
+              </div>
+              : <small>unknown</small>
+          )
+        },
+      },
+      {
         id: 'actions',
         width: 'auto',
         minWidth: '50px',
         align: 'end',
-        header: "Download",
+        header: () => (
+            <div
+              style={{
+                clipPath: 'inset(50%)',
+                height: '1px',
+                overflow: 'hidden',
+                position: 'absolute',
+                whiteSpace: 'nowrap',
+                width: '1px',
+              }}
+            >
+              download
+            </div>
+        ),
         renderCell: (row: TreeNode) => {
           return (
             row.sha256 
               ? <IconButton
+                as='a'
+                href={`https://lfs-resolver.nfdi4plants.org/presigned-url/?oid=${row.sha256}`}
+                target='_blank'
                 aria-label={`Download: ${row.name}`}
                 title={`Download: ${row.name}`}
                 icon={Icons.DownloadIcon}
                 variant="invisible"
-                onClick={() => {
-                  const url = `https://lfs-resolver.nfdi4plants.org/presigned-url/?oid=${row.sha256}`;
-                  const link = document.createElement('a');
-                  link.href = url;
-                  link.rel = 'noopener';
-                  link.download = row.name;
-                  document.body.appendChild(link);
-                  link.click();
-                  document.body.removeChild(link);
-                }} />
+              />
               : <small>unavailable</small>
           )
         },

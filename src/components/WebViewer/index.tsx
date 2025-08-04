@@ -1,4 +1,3 @@
-import jsonString from '../../assets/arc-ro-crate-metadata.json?raw'
 import { useEffect, useMemo, useState } from 'react'
 import { JsonController, ARC, OntologyAnnotation, ArcInvestigation, ROCrate } from '@nfdi4plants/arctrl'
 import FileViewer from '../FileViewer'
@@ -6,7 +5,7 @@ import FileTable from '../FileTable'
 import FileBreadcrumbs from '../FileBreadcrumbs'
 import { SplitPageLayout, Stack, IconButton, useResponsiveValue, Dialog} from '@primer/react'
 import { type ContentType, type SearchCache, type TreeNode } from '../../util/types'
-import readme from '../../assets/README.md?raw'
+// import readme from '../../assets/README.md?raw'
 import TreeSearch from '../TreeSearch'
 import { useSearchCacheContext } from '../../contexts'
 import AnnotationTable from '../AnnotationTable'
@@ -16,7 +15,7 @@ import ARCMetadata from '../Metadata/ARCMetadata'
 import FileTree from '../FileTree'
 import Icons from '../Icons'
 
-function pathsToFileTree(paths: string[], shaMap: Map<string, string>) {
+function pathsToFileTree(paths: string[], exportMetadataMap: Map<string, ARCExportMetadata>) {
   const root: TreeNode = { name: "root", id: "", type: "folder", children: [] };
 
   const preFilteredPaths = paths.filter(p => !p.endsWith(".gitkeep"));
@@ -38,7 +37,8 @@ function pathsToFileTree(paths: string[], shaMap: Map<string, string>) {
         existing = {
           name: part,
           id: pathSoFar,
-          sha256: shaMap.get(pathSoFar) || undefined, // Use sha256 if available
+          sha256: exportMetadataMap.get(pathSoFar)?.sha256 || undefined, // Use sha256 if available
+          contentSize: exportMetadataMap.get(pathSoFar)?.contentSize || undefined, // Use contentSize if available
           ...(isFile
             ? { type: "file" }
             : { type: "folder", children: [] })
@@ -67,11 +67,11 @@ function findNodeAtPath(tree: TreeNode, targetPath: string): TreeNode | null {
   return current;
 }
 
-async function findReadme(tree: TreeNode): Promise<string> {
-  if (tree.name !== "root") 
-    return "No Readme found";
-  return readme;
-}
+// async function findReadme(tree: TreeNode): Promise<string> {
+//   if (tree.name !== "root") 
+//     return "No Readme found";
+//   return readme;
+// }
 
 async function fetchFileByNode(tree: TreeNode, arc: ArcInvestigation) {
   console.warn("Fetching file by node not implemented yet: fetchFileByNode", tree, arc);
@@ -274,7 +274,38 @@ function navigateToPathInTree(path: string, tree: TreeNode | null, setCurrentTre
   }
 }
 
-export default function WebViewer() {
+
+interface WebViewerProps {
+  jsonString: string;
+  readmefetch?: () => Promise<string>;
+  licensefetch?: () => Promise<string>;
+}
+
+function formatFileSize(input: string): string {
+  const match = input.match(/^(\d+)(b|B)$/);
+  if (!match) return input;
+
+  const bytes = parseInt(match[1], 10);
+  if (isNaN(bytes)) return input;
+
+  const units = ["B", "KB", "MB", "GB", "TB", "PB"];
+  let i = 0;
+  let size = bytes;
+
+  while (size >= 1024 && i < units.length - 1) {
+    size /= 1024;
+    i++;
+  }
+
+  return `${size.toFixed(2)} ${units[i]}`;
+}
+
+interface ARCExportMetadata {
+  sha256: string;
+  contentSize: string | undefined;
+}
+
+export default function WebViewer({ jsonString }: WebViewerProps) {
 
   const [arc, setArc] = useState<ARC | null>(null)
   const [tree, setTree] = useState<TreeNode | null>(null)
@@ -305,22 +336,23 @@ export default function WebViewer() {
     const g = JsonController.LDGraph.fromROCrateJsonString(jsonString);
     const arc = JsonController.ARC.fromROCrateJsonString(jsonString);
     const files = g.Nodes.filter(n => ROCrate.LDFile.validate(n, g.TryGetContext() as any));
-    const fileIdShaMap = new Map<string, string>();
+    const fileIdExportMetadataMap = new Map<string, ARCExportMetadata>();
     files.forEach(file => {
       const id = file.id;
-      const sha = file.TryGetProperty('https://schema.org/sha256', g.TryGetContext() as any);
+      const sha = file.TryGetProperty('http://schema.org/sha256', g.TryGetContext() as any);
       if (id && sha) {
-        fileIdShaMap.set(id, sha);
+        const contentSize = file.TryGetProperty("contentSize");
+        fileIdExportMetadataMap.set(id, { sha256: sha, contentSize: contentSize ? formatFileSize(contentSize) : undefined });
       }
     });
     setArc(arc)
     const paths = arc.FileSystem.Tree.ToFilePaths(true)
-    const tree = pathsToFileTree(paths, fileIdShaMap);
+    const tree = pathsToFileTree(paths, fileIdExportMetadataMap);
     setTree(tree)
     setCurrentTreeNode(tree)
     asyncDataToSearchCache(tree, arc, setCache);
     setLoading(false)
-  }, [setCache])
+  }, [setCache, jsonString])
 
   const expandedFolderIds = useMemo(() => {
     return currentTreeNode?.id ? findPathToNode(tree?.children || [], currentTreeNode.id) ?? [] : []; 
@@ -352,10 +384,12 @@ export default function WebViewer() {
       </SplitPageLayout.Pane>
       <SplitPageLayout.Content>
         <Stack>
-          <div className="bgColor-default py-2 position-sticky top-0 z-1">
-            <Stack direction="horizontal" align="center" >
-              <IconButton aria-label="Expand sidebar" variant='invisible' icon={sidebarActive ? Icons.SidebarCollapseIcon : Icons.SidebarExpandIcon} onClick={() => setSidebarActive(!sidebarActive)} />
-              <TreeSearch navigateTo={navigateTo} />
+          <div className="bgColor-default py-2 position-sticky top-0 z-1 d-flex flex-items-start">
+            <Stack className="flex-column flex-sm-row flex-items-start flex-sm-items-center" >
+              <div className="d-flex flex-row" style={{ gap: "0.5rem" }}>
+                <IconButton aria-label="Expand sidebar" variant='invisible' icon={sidebarActive ? Icons.SidebarCollapseIcon : Icons.SidebarExpandIcon} onClick={() => setSidebarActive(!sidebarActive)} />
+                <TreeSearch navigateTo={navigateTo} />
+              </div>
               {currentTreeNode && arc && arc.Title && <FileBreadcrumbs currentTreeNode={currentTreeNode} navigateTo={navigateTo} title={arc.Title} />}
             </Stack>
           </div>
@@ -364,11 +398,11 @@ export default function WebViewer() {
               ? (renderFileComponentByName(currentTreeNode, arc)) 
               : <FileTable loading={loading} currentTreeNode={currentTreeNode} navigateTo={navigateTo} />
           }
-          {tree && currentTreeNode && currentTreeNode.name === "root" && currentTreeNode.type === 'folder' &&
+          {/* {tree && currentTreeNode && currentTreeNode.name === "root" && currentTreeNode.type === 'folder' &&
             <FileViewer nodes={[
               { node: {id: currentTreeNode.name + "readme", name: "README.md", type: "file"}, contentType: "markdown", content: async () => findReadme(currentTreeNode) },
             ]}  />
-          }
+          } */}
         </Stack>
       </SplitPageLayout.Content>
     </SplitPageLayout>
