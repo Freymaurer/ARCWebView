@@ -8,7 +8,9 @@ Displays basic information about an ARC ([Annotated Research Context](https://ar
 
 # Install
 
-`npm i @nfdi4plants/arc-web-view`
+```bash
+npm i @nfdi4plants/arc-web-view
+```
 
 ```tsx
 import { StrictMode } from 'react'
