@@ -1,0 +1,12234 @@
+const a=`{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "Sample": "https://bioschemas.org/Sample",
+      "additionalProperty": "http://schema.org/additionalProperty",
+      "intendedUse": "https://bioschemas.org/intendedUse",
+      "computationalTool": "https://bioschemas.org/computationalTool",
+      "labEquipment": "https://bioschemas.org/labEquipment",
+      "reagent": "https://bioschemas.org/reagent",
+      "LabProtocol": "https://bioschemas.org/LabProtocol",
+      "executesLabProtocol": "https://bioschemas.org/executesLabProtocol",
+      "parameterValue": "https://bioschemas.org/parameterValue",
+      "LabProcess": "https://bioschemas.org/LabProcess",
+      "measurementMethod": "http://schema.org/measurementMethod",
+      "sha256": "http://schema.org/sha256"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "#Organization_Institute_of_Plant_Biochemistry,_HHU_Düsseldorf",
+      "@type": "Organization",
+      "name": "Institute of Plant Biochemistry, HHU Düsseldorf"
+    },
+    {
+      "@id": "http://purl.org/spar/scoro/research-assistant",
+      "@type": "DefinedTerm",
+      "name": "research assistant",
+      "termCode": "http://purl.org/spar/scoro/research-assistant"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-9021-3197",
+      "@type": "Person",
+      "givenName": "Dominik",
+      "affiliation": {
+        "@id": "#Organization_Institute_of_Plant_Biochemistry,_HHU_Düsseldorf"
+      },
+      "email": [
+        "dominik.brilhaus@hhu.de",
+        "brilhaus@hhu.de"
+      ],
+      "familyName": "Brilhaus",
+      "jobTitle": {
+        "@id": "http://purl.org/spar/scoro/research-assistant"
+      },
+      "address": "HHU Düsseldorf, 22.07.U1.43, Universitätsstr. 1, 40225 Düsseldorf",
+      "telephone": "0211-8115523"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-5309-0527",
+      "@type": "Person",
+      "givenName": "Andrea",
+      "affiliation": {
+        "@id": "#Organization_Institute_of_Plant_Biochemistry,_HHU_Düsseldorf"
+      },
+      "email": "andrea.brauetigam@hhu.de",
+      "familyName": "Bräutigam",
+      "jobTitle": {
+        "@id": "http://purl.org/spar/scoro/research-assistant"
+      },
+      "address": "Universitätsstr. 1, 40225 Düsseldorf"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-9161-4889",
+      "@type": "Person",
+      "givenName": "Tabea",
+      "affiliation": {
+        "@id": "#Organization_Institute_of_Plant_Biochemistry,_HHU_Düsseldorf"
+      },
+      "email": "tabea.mettler@hhu.de",
+      "familyName": "Mettler-Altmann",
+      "jobTitle": {
+        "@id": "http://purl.org/spar/scoro/research-assistant"
+      },
+      "address": "Universitätsstr. 1, 40225 Düsseldorf"
+    },
+    {
+      "@id": "#Organization_Smithsonian_Tropical_Research_Institute,_Panama",
+      "@type": "Organization",
+      "name": "Smithsonian Tropical Research Institute, Panama"
+    },
+    {
+      "@id": "http://purl.org/spar/scoro/co-investigator",
+      "@type": "DefinedTerm",
+      "name": "co-investigator",
+      "termCode": "http://purl.org/spar/scoro/co-investigator"
+    },
+    {
+      "@id": "#Person_Klaus_Winter",
+      "@type": "Person",
+      "givenName": "Klaus",
+      "affiliation": {
+        "@id": "#Organization_Smithsonian_Tropical_Research_Institute,_Panama"
+      },
+      "email": "winterk@si.edu",
+      "familyName": "Winter",
+      "jobTitle": {
+        "@id": "http://purl.org/spar/scoro/co-investigator"
+      },
+      "address": "Balboa, Ancón, Republic of Panama",
+      "disambiguatingDescription": "Comment {Name = \\"Worksheet\\"}"
+    },
+    {
+      "@id": "http://purl.org/spar/scoro/principal-investigator",
+      "@type": "DefinedTerm",
+      "name": "principal investigator",
+      "termCode": "http://purl.org/spar/scoro/principal-investigator"
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-0970-4672",
+      "@type": "Person",
+      "givenName": "Andreas",
+      "affiliation": {
+        "@id": "#Organization_Institute_of_Plant_Biochemistry,_HHU_Düsseldorf"
+      },
+      "email": "aweber@hhu.de",
+      "familyName": "Weber",
+      "jobTitle": {
+        "@id": "http://purl.org/spar/scoro/principal-investigator"
+      },
+      "additionalName": "P M",
+      "address": "Universitätsstr. 1, 40225 Düsseldorf"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-9062-3516",
+      "@type": "Person",
+      "givenName": "Eva",
+      "affiliation": {
+        "@id": "#Organization_Institute_of_Plant_Biochemistry,_HHU_Düsseldorf"
+      },
+      "familyName": "Maleckova",
+      "jobTitle": {
+        "@id": "http://purl.org/spar/scoro/research-assistant"
+      },
+      "address": "Universitätsstr. 1, 40225 Düsseldorf"
+    },
+    {
+      "@id": "#Person_Alisandra_Denton",
+      "@type": "Person",
+      "givenName": "Alisandra",
+      "affiliation": {
+        "@id": "#Organization_Institute_of_Plant_Biochemistry,_HHU_Düsseldorf"
+      },
+      "familyName": "Denton",
+      "jobTitle": {
+        "@id": "http://purl.org/spar/scoro/research-assistant"
+      },
+      "additionalName": "K",
+      "address": "Universitätsstr. 1, 40225 Düsseldorf"
+    },
+    {
+      "@id": "studies/TalinumGenomeDraft/resources/Talinum.gm.CDS.nt.fa",
+      "@type": "File",
+      "name": "studies/TalinumGenomeDraft/resources/Talinum.gm.CDS.nt.fa",
+      "sha256": "29dca7b3f0807548db82f227157cdea39427e700b348e9fb2266ee985a71e609",
+      "contentSize": "38610478b"
+    },
+    {
+      "@id": "#Source_VariousTalinumData[WIP]",
+      "@type": "Sample",
+      "additionalType": "Source",
+      "name": "VariousTalinumData[WIP]"
+    },
+    {
+      "@id": "#Protocol_TalinumGenomeDraft_TalinumGenomeDraft",
+      "@type": "LabProtocol",
+      "name": "TalinumGenomeDraft"
+    },
+    {
+      "@id": "#Process_S_TalinumGenomeDraft_TalinumGenomeDraft_0",
+      "@type": "LabProcess",
+      "name": "TalinumGenomeDraft",
+      "object": {
+        "@id": "#Source_VariousTalinumData[WIP]"
+      },
+      "result": {
+        "@id": "studies/TalinumGenomeDraft/resources/Talinum.gm.CDS.nt.fa"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_TalinumGenomeDraft_TalinumGenomeDraft"
+      }
+    },
+    {
+      "@id": "studies/TalinumGenomeDraft/",
+      "@type": "Dataset",
+      "additionalType": "Study",
+      "identifier": "TalinumGenomeDraft",
+      "creator": [
+        {
+          "@id": "http://orcid.org/0000-0001-9062-3516"
+        },
+        {
+          "@id": "http://orcid.org/0000-0001-9021-3197"
+        },
+        {
+          "@id": "#Person_Alisandra_Denton"
+        },
+        {
+          "@id": "http://orcid.org/0000-0003-0970-4672"
+        }
+      ],
+      "dateModified": "2025-07-31T17:41:41.5528438",
+      "hasPart": {
+        "@id": "studies/TalinumGenomeDraft/resources/Talinum.gm.CDS.nt.fa"
+      },
+      "about": {
+        "@id": "#Process_S_TalinumGenomeDraft_TalinumGenomeDraft_0"
+      }
+    },
+    {
+      "@id": "#CharacteristicValue_organism_Talinum_fruticosum",
+      "@type": "PropertyValue",
+      "additionalType": "CharacteristicValue",
+      "name": "organism",
+      "value": "Talinum fruticosum",
+      "propertyID": "https://bioregistry.io/OBI:0100026",
+      "valueReference": "http://purl.obolibrary.org/obo/NCBITaxon_110664",
+      "columnIndex": "0"
+    },
+    {
+      "@id": "#CharacteristicValue_organism_part_leaf",
+      "@type": "PropertyValue",
+      "additionalType": "CharacteristicValue",
+      "name": "organism part",
+      "value": "leaf",
+      "propertyID": "https://bioregistry.io/EFO:0000635",
+      "valueReference": "https://www.ebi.ac.uk/ols4/ontologies/po/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPO_0025034",
+      "columnIndex": "1"
+    },
+    {
+      "@id": "#CharacteristicValue_plant_age_28_days_after_germination",
+      "@type": "PropertyValue",
+      "additionalType": "CharacteristicValue",
+      "name": "plant age",
+      "value": "28 days after germination",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000033",
+      "columnIndex": "2"
+    },
+    {
+      "@id": "#Source_DB_097",
+      "@type": "Sample",
+      "additionalType": "Source",
+      "name": "DB_097",
+      "additionalProperty": [
+        {
+          "@id": "#CharacteristicValue_organism_Talinum_fruticosum"
+        },
+        {
+          "@id": "#CharacteristicValue_organism_part_leaf"
+        },
+        {
+          "@id": "#CharacteristicValue_plant_age_28_days_after_germination"
+        }
+      ]
+    },
+    {
+      "@id": "#FactorValue_watering_exposure_12_days_drought",
+      "@type": "PropertyValue",
+      "additionalType": "FactorValue",
+      "name": "watering exposure",
+      "value": "12 days drought",
+      "propertyID": "https://bioregistry.io/PECO:0007383",
+      "columnIndex": "8"
+    },
+    {
+      "@id": "#FactorValue_Timepoint_MD",
+      "@type": "PropertyValue",
+      "additionalType": "FactorValue",
+      "name": "Timepoint",
+      "value": "MD",
+      "propertyID": "https://bioregistry.io/NCIT:C68568",
+      "columnIndex": "9"
+    },
+    {
+      "@id": "#FactorValue_timepoint-ZT_6",
+      "@type": "PropertyValue",
+      "additionalType": "FactorValue",
+      "name": "timepoint-ZT",
+      "value": "6",
+      "columnIndex": "10"
+    },
+    {
+      "@id": "#FactorValue_Photosynthesis_mode_CAM",
+      "@type": "PropertyValue",
+      "additionalType": "FactorValue",
+      "name": "Photosynthesis mode",
+      "value": "CAM",
+      "columnIndex": "11"
+    },
+    {
+      "@id": "#Sample_CAM_01",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "CAM_01",
+      "additionalProperty": [
+        {
+          "@id": "#FactorValue_watering_exposure_12_days_drought"
+        },
+        {
+          "@id": "#FactorValue_Timepoint_MD"
+        },
+        {
+          "@id": "#FactorValue_timepoint-ZT_6"
+        },
+        {
+          "@id": "#FactorValue_Photosynthesis_mode_CAM"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000164",
+      "@type": "DefinedTerm",
+      "name": "plant growth protocol",
+      "termCode": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000164"
+    },
+    {
+      "@id": "#Protocol_plant_material.md_plant_material",
+      "@type": "LabProtocol",
+      "name": "plant_material.md",
+      "intendedUse": {
+        "@id": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000164"
+      }
+    },
+    {
+      "@id": "#ParameterValue_growth_day_length_12_hr_light_/_12_hr_dark",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "growth day length",
+      "value": "12 hr light / 12 hr dark",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000041",
+      "columnIndex": "3"
+    },
+    {
+      "@id": "#ParameterValue_light_intensity_exposure_425",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "light intensity exposure",
+      "value": "425",
+      "propertyID": "https://bioregistry.io/PECO:0007224",
+      "unitCode": "https://bioregistry.io/UO:0000160",
+      "unitText": "microeinstein per square meter per second",
+      "columnIndex": "4"
+    },
+    {
+      "@id": "#ParameterValue_humidity_day_37",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "humidity day",
+      "value": "37",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000005",
+      "unitCode": "https://bioregistry.io/UO:0000187",
+      "unitText": "percent",
+      "columnIndex": "5"
+    },
+    {
+      "@id": "#ParameterValue_temperature_day_30",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "temperature day",
+      "value": "30",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000007",
+      "unitCode": "https://bioregistry.io/UO:0000027",
+      "unitText": "degree celsius",
+      "columnIndex": "6"
+    },
+    {
+      "@id": "#ParameterValue_temperature_night_22",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "temperature night",
+      "value": "22",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000008",
+      "unitCode": "https://bioregistry.io/UO:0000027",
+      "unitText": "degree celsius",
+      "columnIndex": "7"
+    },
+    {
+      "@id": "#Process_S_TalinumSamples-STRI_plant_material_0",
+      "@type": "LabProcess",
+      "name": "plant_material_0",
+      "object": {
+        "@id": "#Source_DB_097"
+      },
+      "result": {
+        "@id": "#Sample_CAM_01"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_plant_material.md_plant_material"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_growth_day_length_12_hr_light_/_12_hr_dark"
+        },
+        {
+          "@id": "#ParameterValue_light_intensity_exposure_425"
+        },
+        {
+          "@id": "#ParameterValue_humidity_day_37"
+        },
+        {
+          "@id": "#ParameterValue_temperature_day_30"
+        },
+        {
+          "@id": "#ParameterValue_temperature_night_22"
+        }
+      ]
+    },
+    {
+      "@id": "#Source_DB_099",
+      "@type": "Sample",
+      "additionalType": "Source",
+      "name": "DB_099",
+      "additionalProperty": [
+        {
+          "@id": "#CharacteristicValue_organism_Talinum_fruticosum"
+        },
+        {
+          "@id": "#CharacteristicValue_organism_part_leaf"
+        },
+        {
+          "@id": "#CharacteristicValue_plant_age_28_days_after_germination"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_CAM_02",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "CAM_02",
+      "additionalProperty": [
+        {
+          "@id": "#FactorValue_watering_exposure_12_days_drought"
+        },
+        {
+          "@id": "#FactorValue_Timepoint_MD"
+        },
+        {
+          "@id": "#FactorValue_timepoint-ZT_6"
+        },
+        {
+          "@id": "#FactorValue_Photosynthesis_mode_CAM"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_S_TalinumSamples-STRI_plant_material_1",
+      "@type": "LabProcess",
+      "name": "plant_material_1",
+      "object": {
+        "@id": "#Source_DB_099"
+      },
+      "result": {
+        "@id": "#Sample_CAM_02"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_plant_material.md_plant_material"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_growth_day_length_12_hr_light_/_12_hr_dark"
+        },
+        {
+          "@id": "#ParameterValue_light_intensity_exposure_425"
+        },
+        {
+          "@id": "#ParameterValue_humidity_day_37"
+        },
+        {
+          "@id": "#ParameterValue_temperature_day_30"
+        },
+        {
+          "@id": "#ParameterValue_temperature_night_22"
+        }
+      ]
+    },
+    {
+      "@id": "#Source_DB_103",
+      "@type": "Sample",
+      "additionalType": "Source",
+      "name": "DB_103",
+      "additionalProperty": [
+        {
+          "@id": "#CharacteristicValue_organism_Talinum_fruticosum"
+        },
+        {
+          "@id": "#CharacteristicValue_organism_part_leaf"
+        },
+        {
+          "@id": "#CharacteristicValue_plant_age_28_days_after_germination"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_CAM_03",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "CAM_03",
+      "additionalProperty": [
+        {
+          "@id": "#FactorValue_watering_exposure_12_days_drought"
+        },
+        {
+          "@id": "#FactorValue_Timepoint_MD"
+        },
+        {
+          "@id": "#FactorValue_timepoint-ZT_6"
+        },
+        {
+          "@id": "#FactorValue_Photosynthesis_mode_CAM"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_S_TalinumSamples-STRI_plant_material_2",
+      "@type": "LabProcess",
+      "name": "plant_material_2",
+      "object": {
+        "@id": "#Source_DB_103"
+      },
+      "result": {
+        "@id": "#Sample_CAM_03"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_plant_material.md_plant_material"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_growth_day_length_12_hr_light_/_12_hr_dark"
+        },
+        {
+          "@id": "#ParameterValue_light_intensity_exposure_425"
+        },
+        {
+          "@id": "#ParameterValue_humidity_day_37"
+        },
+        {
+          "@id": "#ParameterValue_temperature_day_30"
+        },
+        {
+          "@id": "#ParameterValue_temperature_night_22"
+        }
+      ]
+    },
+    {
+      "@id": "#Source_DB_161",
+      "@type": "Sample",
+      "additionalType": "Source",
+      "name": "DB_161",
+      "additionalProperty": [
+        {
+          "@id": "#CharacteristicValue_organism_Talinum_fruticosum"
+        },
+        {
+          "@id": "#CharacteristicValue_organism_part_leaf"
+        },
+        {
+          "@id": "#CharacteristicValue_plant_age_28_days_after_germination"
+        }
+      ]
+    },
+    {
+      "@id": "#FactorValue_watering_exposure_12_days_drought_+_2_days_rewatered",
+      "@type": "PropertyValue",
+      "additionalType": "FactorValue",
+      "name": "watering exposure",
+      "value": "12 days drought + 2 days rewatered",
+      "propertyID": "https://bioregistry.io/PECO:0007383",
+      "columnIndex": "8"
+    },
+    {
+      "@id": "#FactorValue_Photosynthesis_mode_reC3",
+      "@type": "PropertyValue",
+      "additionalType": "FactorValue",
+      "name": "Photosynthesis mode",
+      "value": "reC3",
+      "columnIndex": "11"
+    },
+    {
+      "@id": "#Sample_reC3_01",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "reC3_01",
+      "additionalProperty": [
+        {
+          "@id": "#FactorValue_watering_exposure_12_days_drought_+_2_days_rewatered"
+        },
+        {
+          "@id": "#FactorValue_Timepoint_MD"
+        },
+        {
+          "@id": "#FactorValue_timepoint-ZT_6"
+        },
+        {
+          "@id": "#FactorValue_Photosynthesis_mode_reC3"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_S_TalinumSamples-STRI_plant_material_3",
+      "@type": "LabProcess",
+      "name": "plant_material_3",
+      "object": {
+        "@id": "#Source_DB_161"
+      },
+      "result": {
+        "@id": "#Sample_reC3_01"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_plant_material.md_plant_material"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_growth_day_length_12_hr_light_/_12_hr_dark"
+        },
+        {
+          "@id": "#ParameterValue_light_intensity_exposure_425"
+        },
+        {
+          "@id": "#ParameterValue_humidity_day_37"
+        },
+        {
+          "@id": "#ParameterValue_temperature_day_30"
+        },
+        {
+          "@id": "#ParameterValue_temperature_night_22"
+        }
+      ]
+    },
+    {
+      "@id": "#Source_DB_163",
+      "@type": "Sample",
+      "additionalType": "Source",
+      "name": "DB_163",
+      "additionalProperty": [
+        {
+          "@id": "#CharacteristicValue_organism_Talinum_fruticosum"
+        },
+        {
+          "@id": "#CharacteristicValue_organism_part_leaf"
+        },
+        {
+          "@id": "#CharacteristicValue_plant_age_28_days_after_germination"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_reC3_02",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "reC3_02",
+      "additionalProperty": [
+        {
+          "@id": "#FactorValue_watering_exposure_12_days_drought_+_2_days_rewatered"
+        },
+        {
+          "@id": "#FactorValue_Timepoint_MD"
+        },
+        {
+          "@id": "#FactorValue_timepoint-ZT_6"
+        },
+        {
+          "@id": "#FactorValue_Photosynthesis_mode_reC3"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_S_TalinumSamples-STRI_plant_material_4",
+      "@type": "LabProcess",
+      "name": "plant_material_4",
+      "object": {
+        "@id": "#Source_DB_163"
+      },
+      "result": {
+        "@id": "#Sample_reC3_02"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_plant_material.md_plant_material"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_growth_day_length_12_hr_light_/_12_hr_dark"
+        },
+        {
+          "@id": "#ParameterValue_light_intensity_exposure_425"
+        },
+        {
+          "@id": "#ParameterValue_humidity_day_37"
+        },
+        {
+          "@id": "#ParameterValue_temperature_day_30"
+        },
+        {
+          "@id": "#ParameterValue_temperature_night_22"
+        }
+      ]
+    },
+    {
+      "@id": "#Source_DB_165",
+      "@type": "Sample",
+      "additionalType": "Source",
+      "name": "DB_165",
+      "additionalProperty": [
+        {
+          "@id": "#CharacteristicValue_organism_Talinum_fruticosum"
+        },
+        {
+          "@id": "#CharacteristicValue_organism_part_leaf"
+        },
+        {
+          "@id": "#CharacteristicValue_plant_age_28_days_after_germination"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_reC3_03",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "reC3_03",
+      "additionalProperty": [
+        {
+          "@id": "#FactorValue_watering_exposure_12_days_drought_+_2_days_rewatered"
+        },
+        {
+          "@id": "#FactorValue_Timepoint_MD"
+        },
+        {
+          "@id": "#FactorValue_timepoint-ZT_6"
+        },
+        {
+          "@id": "#FactorValue_Photosynthesis_mode_reC3"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_S_TalinumSamples-STRI_plant_material_5",
+      "@type": "LabProcess",
+      "name": "plant_material_5",
+      "object": {
+        "@id": "#Source_DB_165"
+      },
+      "result": {
+        "@id": "#Sample_reC3_03"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_plant_material.md_plant_material"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_growth_day_length_12_hr_light_/_12_hr_dark"
+        },
+        {
+          "@id": "#ParameterValue_light_intensity_exposure_425"
+        },
+        {
+          "@id": "#ParameterValue_humidity_day_37"
+        },
+        {
+          "@id": "#ParameterValue_temperature_day_30"
+        },
+        {
+          "@id": "#ParameterValue_temperature_night_22"
+        }
+      ]
+    },
+    {
+      "@id": "studies/TalinumSamples-STRI/",
+      "@type": "Dataset",
+      "additionalType": "Study",
+      "identifier": "TalinumSamples-STRI",
+      "creator": [
+        {
+          "@id": "http://orcid.org/0000-0001-9021-3197"
+        },
+        {
+          "@id": "#Person_Klaus_Winter"
+        }
+      ],
+      "dateModified": "2025-07-31T17:41:41.5538662",
+      "hasPart": [],
+      "about": [
+        {
+          "@id": "#Process_S_TalinumSamples-STRI_plant_material_0"
+        },
+        {
+          "@id": "#Process_S_TalinumSamples-STRI_plant_material_1"
+        },
+        {
+          "@id": "#Process_S_TalinumSamples-STRI_plant_material_2"
+        },
+        {
+          "@id": "#Process_S_TalinumSamples-STRI_plant_material_3"
+        },
+        {
+          "@id": "#Process_S_TalinumSamples-STRI_plant_material_4"
+        },
+        {
+          "@id": "#Process_S_TalinumSamples-STRI_plant_material_5"
+        }
+      ]
+    },
+    {
+      "@id": "#Person_Dominik_Brilhaus",
+      "@type": "Person",
+      "givenName": "Dominik",
+      "familyName": "Brilhaus",
+      "disambiguatingDescription": "Comment {Name = \\"Worksheet\\"}",
+      "affiliation": {
+        "@id": "#Organization_Institute_of_Plant_Biochemistry,_HHU_Düsseldorf"
+      },
+      "email": "dominik.brilhaus@hhu.de",
+      "jobTitle": {
+        "@id": "http://purl.org/spar/scoro/research-assistant"
+      },
+      "address": "HHU Düsseldorf, 22.07.U1.43, Universitätsstr. 1, 40225 Düsseldorf",
+      "telephone": "0211-8115523"
+    },
+    {
+      "@id": "#Person_Tabea_Mettler-Altmann",
+      "@type": "Person",
+      "givenName": "Tabea",
+      "familyName": "Mettler-Altmann",
+      "disambiguatingDescription": "Comment {Name = \\"Worksheet\\"}"
+    },
+    {
+      "@id": "#Person_Elisabeth_Klemp",
+      "@type": "Person",
+      "givenName": "Elisabeth",
+      "familyName": "Klemp",
+      "disambiguatingDescription": "Comment {Name = \\"Worksheet\\"}"
+    },
+    {
+      "@id": "#Person_Maria_Graf",
+      "@type": "Person",
+      "givenName": "Maria",
+      "familyName": "Graf",
+      "disambiguatingDescription": "Comment {Name = \\"Worksheet\\"}"
+    },
+    {
+      "@id": "#Person_Katrin_Weber",
+      "@type": "Person",
+      "givenName": "Katrin",
+      "familyName": "Weber",
+      "disambiguatingDescription": "Comment {Name = \\"Worksheet\\"}"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/GC.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/GC.ini",
+      "sha256": "70cf7c95e660d5cd458957234954db655291321eb798f713d2b454cdf169dae6",
+      "contentSize": "9996b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/acqmeth.txt",
+      "sha256": "7a4ea98560f7b535f23bc4421a61dc81c1ec103a289ff69ae25280e818e56987",
+      "contentSize": "21098b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/checksum.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/checksum.xml",
+      "sha256": "1f8e1ea149c19ce37aa9ebbe577c92f6ae642ec9a63d42785f59af5d519dc16d",
+      "contentSize": "570b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/pre_post.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/pre_post.ini",
+      "sha256": "e2c1b339274d0f046b0f924781958588b3081ade3b0f53b431e4adc5fcb9b5d8",
+      "contentSize": "623b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/runstart.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/runstart.txt",
+      "sha256": "6ad2a4e47e40ca8969eb9106b4a4567befd419de6e24ce722720c8fa7c25dca2",
+      "contentSize": "1923b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "sha256": "48f5fd1485f6aab7ef3a555fd5a849ba9cdfe6cd3fbaac8e57db92b9dcbaa5c4",
+      "contentSize": "14204b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/Contents.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/Contents.xml",
+      "sha256": "44f636d91583f6d190a638cc6dbb7d77fb71b5680052db7d9a4cb078de2d7361",
+      "contentSize": "903b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/DefaultMassCal.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/DefaultMassCal.xml",
+      "sha256": "8764003e61a03e950748755ea406ea50fae442a6b6e6d2053c49c469a353224d",
+      "contentSize": "1524b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/Devices.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/Devices.xml",
+      "sha256": "e78742a9e0d04cd914ac7317cf32488c431c7a39d22f8030a464a4bace8ba611",
+      "contentSize": "552b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/MSPeak.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/MSPeak.bin",
+      "sha256": "bb8bb06ba37d14c3a72c097159c2f0bd6c948ebd92196a1f2bd866e92e16e242",
+      "contentSize": "243430500b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/MSScan.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/MSScan.bin",
+      "sha256": "3de0862ba13f2116a662f3c20cc35de686854d6540aaafdec961c9d5b13ed1c1",
+      "contentSize": "1286916b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/MSScan.xsd",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/MSScan.xsd",
+      "sha256": "8355e33676837225403a942df0e8af8fbf21463b8bc579aca7701e3cdff5e7c8",
+      "contentSize": "4234b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/MSTS.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/MSTS.xml",
+      "sha256": "75541e7c2740fc5089bf7eae4cbeb3d09965c79226f3ece41fbe9018875f7b01",
+      "contentSize": "470b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/TDA.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/TDA.bin",
+      "sha256": "245d594e65d17c39ed3d701da6304fcbae3b068090518b1c74cc2b2579195310",
+      "contentSize": "276205584b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/TDASpec.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/TDASpec.bin",
+      "sha256": "b3ad8054570398511a39a50184661e2f050e52031b2421fbf6c1cba135558abe",
+      "contentSize": "243650936b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/TOFDataIndex.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/TOFDataIndex.bin",
+      "sha256": "d4afde325d42c3bdd0522b1ca9c348ecd1633465c41e6e526f89ff61ae45cc00",
+      "contentSize": "163111b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/sample_info.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/sample_info.xml",
+      "sha256": "0496f7802a13dfe3bb02e3beab5e34927c1e074f3b501a8af3adff559bdf1b19",
+      "contentSize": "5828b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/sequence.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/sequence.xml",
+      "sha256": "a48aebda2ccb75bd8e6130827f6c6c247d9573e4caeec3dde52389fe3ae329ff",
+      "contentSize": "2384b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin",
+      "sha256": "2cf37230ab009bb3c82e35052c3542ccfd5a5cb982afa712c97d4a14dcbe8905",
+      "contentSize": "75688b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml",
+      "sha256": "cc166cbcdc99fd1fecc47098f774928f1e92a387f930467edc64bb5cbd910aec",
+      "contentSize": "6714b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml",
+      "sha256": "0c09806308067de40a791dffe75e85031b8ddf280ca2444f49cd81132db83db2",
+      "contentSize": "1529b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml",
+      "sha256": "048d1a78faa50cdb9ed687b881a4006777d4956838339f3c6cba8bb5e44994f5",
+      "contentSize": "1010b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt",
+      "sha256": "e9441cc06439e8e3183f49945cfbfae3eca18b2bde51ec51b7979a37f3154874",
+      "contentSize": "13509b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac",
+      "sha256": "6e957e28579af6e0132713d3c38b02118c4af3159eb5544b0d913bb7148fb4d7",
+      "contentSize": "174b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl",
+      "sha256": "75f8f3208cc6ba48c0d641c4858b85a6884d6fe92867c4489b67fb035af4c630",
+      "contentSize": "100b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt",
+      "sha256": "37d9769fe3bbb1649efb894ce7d860e768f47d1a31a4f56d3d87d40586717d57",
+      "contentSize": "21098b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth",
+      "sha256": "6cc85dfb23342b3795f4b4b8aa988eac262953cdd8bbefe1da119110e3596688",
+      "contentSize": "20053b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini",
+      "sha256": "a67a49baeebe8f580894574dd684587b03830741dedad783df17e0e31805da28",
+      "contentSize": "96b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac",
+      "sha256": "571efe62cf19c1429bd57febecf31859f48f5f830f25ca6e0edb0bca35a07575",
+      "contentSize": "244b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt",
+      "sha256": "7113f9b53c854d439d468139d0b26be06047decdd6252fa4f4cd468a86f0bfe3",
+      "contentSize": "1446b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml",
+      "sha256": "17cb95bd03006f5baa59b3a16f79bc6dd0ec506dffda967a629eaab92d2e163f",
+      "contentSize": "138b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac",
+      "sha256": "03da4bfab37dfbc2026e29ab18f179f09cad6ced01050a68438240b779341567",
+      "contentSize": "79b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml",
+      "sha256": "34ba5ea1c379051ad092673205624db1cb00edcdf16656a718433228bbf4a38d",
+      "contentSize": "3281b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "sha256": "7cb1d1f7726daa3e8d8080829400d6030fb9e053849c675586a000edde9a4b1f",
+      "contentSize": "1431b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_03.D",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "assays/GCqTOF_targets/dataset/150112_03.D",
+      "hasPart": [
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/GC.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/checksum.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/pre_post.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/runstart.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/Atunes2GHz.ei.tune.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/Contents.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/DefaultMassCal.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/Devices.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/MSPeak.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/MSScan.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/MSScan.xsd"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/MSTS.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/TDA.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/TDASpec.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/TOFDataIndex.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/sample_info.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/sequence.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt"
+        }
+      ]
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/GC.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/GC.ini",
+      "sha256": "6e61396fd58b07fcb646fed7389ce0b61e1284b3eedd9ac09448c799ab2649e5",
+      "contentSize": "9991b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/acqmeth.txt",
+      "sha256": "3b8cc8a2923e010938538cabdf87b902dddafcac6a733f0d36a78b74adbc5ea4",
+      "contentSize": "13130b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/checksum.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/checksum.xml",
+      "sha256": "07585fd35ce5b860ba149cacb5aac5341a2dfd504853dd0f72711722d3169820",
+      "contentSize": "570b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/pre_post.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/pre_post.ini",
+      "sha256": "fa1b210f77f861fdfe8db1d2938aa74eb82500be3ced35d322b4d919f43b83df",
+      "contentSize": "612b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/runstart.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/runstart.txt",
+      "sha256": "31d1743c45aa68d6ae467bf6f6b56f942d8fd56d156938e55a9d5d0ab5b0d24b",
+      "contentSize": "1912b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "sha256": "48f5fd1485f6aab7ef3a555fd5a849ba9cdfe6cd3fbaac8e57db92b9dcbaa5c4",
+      "contentSize": "14204b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/Contents.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/Contents.xml",
+      "sha256": "79e4243dfcc3d546604bb0ea8a9fe87183df762338d9d8b8a74d41ab4f91ce16",
+      "contentSize": "903b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/DefaultMassCal.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/DefaultMassCal.xml",
+      "sha256": "8764003e61a03e950748755ea406ea50fae442a6b6e6d2053c49c469a353224d",
+      "contentSize": "1524b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/Devices.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/Devices.xml",
+      "sha256": "e78742a9e0d04cd914ac7317cf32488c431c7a39d22f8030a464a4bace8ba611",
+      "contentSize": "552b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/MSPeak.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/MSPeak.bin",
+      "sha256": "f4fbf59817ed37f5c44a939b66e9d772fb4f7c85e059263178f8f6446ed2be1f",
+      "contentSize": "192623780b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/MSScan.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/MSScan.bin",
+      "sha256": "7682c84fbd4a36e0847be8c52fc656b81d3f3380ff924eb724b0f71e083ffc13",
+      "contentSize": "1295028b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/MSScan.xsd",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/MSScan.xsd",
+      "sha256": "8355e33676837225403a942df0e8af8fbf21463b8bc579aca7701e3cdff5e7c8",
+      "contentSize": "4234b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/MSTS.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/MSTS.xml",
+      "sha256": "3f073ee1a77485106a4c93cf622e07c58ea41da3990c3f571f6b6f6169fc1974",
+      "contentSize": "464b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/TDA.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/TDA.bin",
+      "sha256": "410cbcd4d98d89215876f3cc69ca42822e63bb12946fd5ddf46615cac286b42e",
+      "contentSize": "221859872b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/TDASpec.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/TDASpec.bin",
+      "sha256": "a5f0e9d4cab03e15f20cf4b510c7ddcf0b393bea1cdba2f58bad734885d8823f",
+      "contentSize": "192847528b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/TOFDataIndex.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/TOFDataIndex.bin",
+      "sha256": "77b5b97b6459f4b60a58c0de8c0a166eafbb0c8b96f891bb0b166a09991127bf",
+      "contentSize": "164047b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/sample_info.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/sample_info.xml",
+      "sha256": "ca2aa5aa054d325287320823666f18779c573195d0ce10b3c0eb350d7edaa7f7",
+      "contentSize": "5818b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/sequence.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/sequence.xml",
+      "sha256": "65c93910b5815f35539a2f0429657167b2c80c1fc9d6b8fca63d5b4fd64b1cf0",
+      "contentSize": "2381b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin",
+      "sha256": "7bdc10a9437bda57ef8112c24c65508e49613705911f1c7ed82a0bc3b53ee212",
+      "contentSize": "75676b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml",
+      "sha256": "cc166cbcdc99fd1fecc47098f774928f1e92a387f930467edc64bb5cbd910aec",
+      "contentSize": "6714b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml",
+      "sha256": "0c09806308067de40a791dffe75e85031b8ddf280ca2444f49cd81132db83db2",
+      "contentSize": "1529b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml",
+      "sha256": "048d1a78faa50cdb9ed687b881a4006777d4956838339f3c6cba8bb5e44994f5",
+      "contentSize": "1010b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt",
+      "sha256": "258f4c395fa4d4300a5b86e720f5a410b09dcae391cfe11213368b3866195d73",
+      "contentSize": "11933b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac",
+      "sha256": "623ed0b55fb0e5a10828577fb46c4e83034ee3341fad63aec2d1acb58936e6e6",
+      "contentSize": "174b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl",
+      "sha256": "75f8f3208cc6ba48c0d641c4858b85a6884d6fe92867c4489b67fb035af4c630",
+      "contentSize": "100b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt",
+      "sha256": "a584931166cd82bf8a2a855cb550b8fab8e5e336524d4b09f3083541ce2393fc",
+      "contentSize": "13130b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth",
+      "sha256": "2f2fea0c502273266f26c60402133204a9582b9306d767be7970e04d6179b4e0",
+      "contentSize": "17589b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$",
+      "sha256": "fcd50360a864f234224a2f326a484ede97c1b9165a8d69446e5d05d3df662661",
+      "contentSize": "232b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini",
+      "sha256": "4bbee3ead43b538817457b5f5ebfcd8a6887866240a32734c9ca32211e174388",
+      "contentSize": "96b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac",
+      "sha256": "fcd50360a864f234224a2f326a484ede97c1b9165a8d69446e5d05d3df662661",
+      "contentSize": "232b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt",
+      "sha256": "75a6289ca65f7ea0d11596c2146a69f9db81b04ffab2387739f97fc18f7fa56c",
+      "contentSize": "2315b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml",
+      "sha256": "dd3e025b8cc61d7bf9cf76af79fa9f3e3972867627841b64429f8bc7c0338a66",
+      "contentSize": "125b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac",
+      "sha256": "03da4bfab37dfbc2026e29ab18f179f09cad6ced01050a68438240b779341567",
+      "contentSize": "79b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml",
+      "sha256": "a578c4aed064603a7679569e831fafa402093b9ba8796f51152a76b39480fe7c",
+      "contentSize": "2591b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "sha256": "7cb1d1f7726daa3e8d8080829400d6030fb9e053849c675586a000edde9a4b1f",
+      "contentSize": "1431b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_04.D",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "assays/GCqTOF_targets/dataset/150112_04.D",
+      "hasPart": [
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/GC.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/checksum.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/pre_post.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/runstart.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/Atunes2GHz.ei.tune.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/Contents.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/DefaultMassCal.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/Devices.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/MSPeak.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/MSScan.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/MSScan.xsd"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/MSTS.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/TDA.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/TDASpec.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/TOFDataIndex.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/sample_info.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/sequence.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt"
+        }
+      ]
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/GC.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/GC.ini",
+      "sha256": "ca8474e055c26335b4bd6232a32ba7585b88b55fbcbae112f44f1dab3fe1cb00",
+      "contentSize": "9995b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/acqmeth.txt",
+      "sha256": "d53ad8ac904883d342886c6651120bc776d80ff4de5c13b53cc5a13873f724c2",
+      "contentSize": "13058b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/checksum.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/checksum.xml",
+      "sha256": "d6c6925cf074138ba4efe95847fdf277b629e7a3eb2e2dd0a521181e85e3f743",
+      "contentSize": "570b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/pre_post.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/pre_post.ini",
+      "sha256": "8ae01981c51d5f363921a5762b028033975705304bf4f0a3578cb01bc3453405",
+      "contentSize": "615b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/runstart.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/runstart.txt",
+      "sha256": "0a4640d19227a05ec4a8f269359e5f8bbc2f572e0528afa61b5650e5371a8c9e",
+      "contentSize": "1903b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "sha256": "48f5fd1485f6aab7ef3a555fd5a849ba9cdfe6cd3fbaac8e57db92b9dcbaa5c4",
+      "contentSize": "14204b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/Contents.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/Contents.xml",
+      "sha256": "b26000557e7d3f058e31e6fd5d0dac974222236ee01af01491503c534c9e8d2a",
+      "contentSize": "903b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/DefaultMassCal.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/DefaultMassCal.xml",
+      "sha256": "2e77fae8346abf384d4c1a64289939ebec7531a7814c96eff19a756c5d714a9b",
+      "contentSize": "1526b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/Devices.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/Devices.xml",
+      "sha256": "e78742a9e0d04cd914ac7317cf32488c431c7a39d22f8030a464a4bace8ba611",
+      "contentSize": "552b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/MSPeak.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/MSPeak.bin",
+      "sha256": "471398b712d6e3536d60a750a8b1563e9950bbe024a01b67455d69b8214630d7",
+      "contentSize": "219285540b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/MSScan.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/MSScan.bin",
+      "sha256": "bedf7be36221a48a9b4615a81938483a17d48a4ab36fd9d0f304ce15264cfefc",
+      "contentSize": "1295028b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/MSScan.xsd",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/MSScan.xsd",
+      "sha256": "8355e33676837225403a942df0e8af8fbf21463b8bc579aca7701e3cdff5e7c8",
+      "contentSize": "4234b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/MSTS.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/MSTS.xml",
+      "sha256": "7cb4e38d6a24e80489ccf5ae089349743345830bcf0a31c2dd6413cb061b8bc5",
+      "contentSize": "470b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/TDA.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/TDA.bin",
+      "sha256": "4dd0c931aabbbd6d1d29e42f3ab16a4081413f6973bf13025bbf70ff0d8d9552",
+      "contentSize": "250749384b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/TDASpec.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/TDASpec.bin",
+      "sha256": "10cdc86c9872b8faeef903c8f3adfdcbec01e7c5b4e550eb7acb8958fab81027",
+      "contentSize": "219509360b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/TOFDataIndex.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/TOFDataIndex.bin",
+      "sha256": "939f96f538bf83303df3d57316f3447bfeb4c33aaebf3a7bb550474b326371dc",
+      "contentSize": "164047b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/sample_info.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/sample_info.xml",
+      "sha256": "78c47c73b4afe041364eb090c116f3f0a9571a82639315ff3950fe6abf94cb90",
+      "contentSize": "5814b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/sequence.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/sequence.xml",
+      "sha256": "3c71afe2ca71908cdd0da2f6e50b1f9014a4ce651bddccd9b377f75763393c6c",
+      "contentSize": "2370b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/7890Method.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/7890Method.bin",
+      "sha256": "c0b3d972be667df4d09df1e3edc2ff0f0aae094c85fd106ebcc96253529c274d",
+      "contentSize": "75686b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/Acq.Monitors.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/Acq.Monitors.xml",
+      "sha256": "cc166cbcdc99fd1fecc47098f774928f1e92a387f930467edc64bb5cbd910aec",
+      "contentSize": "6714b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/Acq.RTP.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/Acq.RTP.xml",
+      "sha256": "ae12063b277a6b676bc3782f8255230bbfbbf0ac7449dde09852f8ea884a966e",
+      "contentSize": "1527b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/Acq.RTPGC.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/Acq.RTPGC.xml",
+      "sha256": "048d1a78faa50cdb9ed687b881a4006777d4956838339f3c6cba8bb5e44994f5",
+      "contentSize": "1010b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/Audit.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/Audit.txt",
+      "sha256": "27c2a3d2094c434b802960c53cc7f27a9cae8da67ac525054b340b581b760185",
+      "contentSize": "12181b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/LastData.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/LastData.mac",
+      "sha256": "86b1626ac4ba666728ef0392dcd62724efcac92f0dbfbf851d4d07c6cc0da11f",
+      "contentSize": "174b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/acq.ctl",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/acq.ctl",
+      "sha256": "75f8f3208cc6ba48c0d641c4858b85a6884d6fe92867c4489b67fb035af4c630",
+      "contentSize": "100b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/acqmeth.txt",
+      "sha256": "fc9b059f7641276d7b5f659c54c344d166957b0ed55a28714ff0c30ebfe050a4",
+      "contentSize": "13058b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/maestro.mth",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/maestro.mth",
+      "sha256": "0a3f16e2aaed100102316dfa2d437a755c82aac354710f9dae4d34c4b73f8b77",
+      "contentSize": "17592b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/method.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/method.ini",
+      "sha256": "fa5e7dfbe945e34d531491ec61e1fb6fe5a37101b43e40fdb4a8b228a3cdc0dd",
+      "contentSize": "96b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/method.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/method.mac",
+      "sha256": "ca4a6d96b465d390531c56859d21a4b485c8abab72238e7a702b14002ecd04af",
+      "contentSize": "254b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/method.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/method.txt",
+      "sha256": "75a6289ca65f7ea0d11596c2146a69f9db81b04ffab2387739f97fc18f7fa56c",
+      "contentSize": "2315b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/method.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/method.xml",
+      "sha256": "dd3e025b8cc61d7bf9cf76af79fa9f3e3972867627841b64429f8bc7c0338a66",
+      "contentSize": "125b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/methver.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/methver.mac",
+      "sha256": "03da4bfab37dfbc2026e29ab18f179f09cad6ced01050a68438240b779341567",
+      "contentSize": "79b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/msacqmethod.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/msacqmethod.xml",
+      "sha256": "a578c4aed064603a7679569e831fafa402093b9ba8796f51152a76b39480fe7c",
+      "contentSize": "2591b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "sha256": "7cb1d1f7726daa3e8d8080829400d6030fb9e053849c675586a000edde9a4b1f",
+      "contentSize": "1431b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_15.D",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "assays/GCqTOF_targets/dataset/150112_15.D",
+      "hasPart": [
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/GC.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/checksum.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/pre_post.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/runstart.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/Atunes2GHz.ei.tune.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/Contents.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/DefaultMassCal.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/Devices.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/MSPeak.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/MSScan.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/MSScan.xsd"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/MSTS.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/TDA.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/TDASpec.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/TOFDataIndex.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/sample_info.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/sequence.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/7890Method.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/Acq.Monitors.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/Acq.RTP.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/Acq.RTPGC.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/Audit.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/LastData.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/acq.ctl"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/maestro.mth"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/method.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/method.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/method.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/method.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/methver.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/msacqmethod.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D/AcqData/inject_EC5_2GHz_Fiensplitless.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt"
+        }
+      ]
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/GC.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/GC.ini",
+      "sha256": "e9c52cd6ac6e5cdb3825e7ba2e590efe0ada2dd2fc53a0d33198ce828c9930de",
+      "contentSize": "9991b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/acqmeth.txt",
+      "sha256": "29ee73cfa44ae89633ccd33a4653105186b0a38092b088bcec6a91ac186d75fe",
+      "contentSize": "13130b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/checksum.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/checksum.xml",
+      "sha256": "90b2f1bccb54c9644de9c8f7ecb944ba2706705c51bad241335604a840f16470",
+      "contentSize": "570b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/pre_post.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/pre_post.ini",
+      "sha256": "ef406fd80390bbd60f7b12dd935fee21b69026ffc3b3b5c49c3ed162a635e7bc",
+      "contentSize": "612b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/runstart.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/runstart.txt",
+      "sha256": "83c6d23602c0bd4e5f8a6ca2434266462ec0d3b7d0801ce48f8b8cf9018719b1",
+      "contentSize": "1900b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "sha256": "48f5fd1485f6aab7ef3a555fd5a849ba9cdfe6cd3fbaac8e57db92b9dcbaa5c4",
+      "contentSize": "14204b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/Contents.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/Contents.xml",
+      "sha256": "102e2ece229b48beb1944199f746f7626eb80e07964714c66af0ad6ebff50e3c",
+      "contentSize": "903b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/DefaultMassCal.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/DefaultMassCal.xml",
+      "sha256": "2e77fae8346abf384d4c1a64289939ebec7531a7814c96eff19a756c5d714a9b",
+      "contentSize": "1526b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/Devices.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/Devices.xml",
+      "sha256": "e78742a9e0d04cd914ac7317cf32488c431c7a39d22f8030a464a4bace8ba611",
+      "contentSize": "552b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/MSPeak.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/MSPeak.bin",
+      "sha256": "d083b7d1a989b6f609ce35a8a8aaeaf1b4ec9628ab27e509db00ed1ef5f875e2",
+      "contentSize": "194351524b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/MSScan.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/MSScan.bin",
+      "sha256": "b9ab093136d76084cf15e4a7bae4ed5debdb0bc10cf1d99b59c6785f053228d8",
+      "contentSize": "1294820b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/MSScan.xsd",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/MSScan.xsd",
+      "sha256": "8355e33676837225403a942df0e8af8fbf21463b8bc579aca7701e3cdff5e7c8",
+      "contentSize": "4234b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/MSTS.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/MSTS.xml",
+      "sha256": "e3f20bccec5410c327457c979240a5b727443de4768e70945b12e2f54fcae093",
+      "contentSize": "464b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/TDA.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/TDA.bin",
+      "sha256": "70a6f7c26b6c18783e62c077cc1b93f720e1d5cfc9e92a83b14ebbf966ce7d95",
+      "contentSize": "221365912b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/TDASpec.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/TDASpec.bin",
+      "sha256": "2f8522775d85acb67cb64cd58ea275e8a8105be04d7067ba99b291ff5b5355ce",
+      "contentSize": "194575308b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/TOFDataIndex.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/TOFDataIndex.bin",
+      "sha256": "fde62bb894abb2b845d6bbe36d459fb2cda79960989e11cb94b93466ab6c6774",
+      "contentSize": "164023b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/sample_info.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/sample_info.xml",
+      "sha256": "f6e91a6c558c920a5d2f9f1c1f0f23aa7f6b312d7a28380c65be3333cab782a6",
+      "contentSize": "5811b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/sequence.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/sequence.xml",
+      "sha256": "3dd624307b60232e995c463c4928f40d58cc8d42b71385746ab5bc02adaa6728",
+      "contentSize": "2367b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin",
+      "sha256": "7bdc10a9437bda57ef8112c24c65508e49613705911f1c7ed82a0bc3b53ee212",
+      "contentSize": "75676b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml",
+      "sha256": "cc166cbcdc99fd1fecc47098f774928f1e92a387f930467edc64bb5cbd910aec",
+      "contentSize": "6714b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml",
+      "sha256": "0c09806308067de40a791dffe75e85031b8ddf280ca2444f49cd81132db83db2",
+      "contentSize": "1529b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml",
+      "sha256": "048d1a78faa50cdb9ed687b881a4006777d4956838339f3c6cba8bb5e44994f5",
+      "contentSize": "1010b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt",
+      "sha256": "258f4c395fa4d4300a5b86e720f5a410b09dcae391cfe11213368b3866195d73",
+      "contentSize": "11933b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac",
+      "sha256": "d4fa9f9846f9e439d976c116c9ecaf9d50d7f5b62fb98d4ef82d4e8710ed175c",
+      "contentSize": "174b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl",
+      "sha256": "75f8f3208cc6ba48c0d641c4858b85a6884d6fe92867c4489b67fb035af4c630",
+      "contentSize": "100b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt",
+      "sha256": "a584931166cd82bf8a2a855cb550b8fab8e5e336524d4b09f3083541ce2393fc",
+      "contentSize": "13130b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth",
+      "sha256": "2f2fea0c502273266f26c60402133204a9582b9306d767be7970e04d6179b4e0",
+      "contentSize": "17589b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$",
+      "sha256": "fcd50360a864f234224a2f326a484ede97c1b9165a8d69446e5d05d3df662661",
+      "contentSize": "232b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini",
+      "sha256": "4bbee3ead43b538817457b5f5ebfcd8a6887866240a32734c9ca32211e174388",
+      "contentSize": "96b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac",
+      "sha256": "fcd50360a864f234224a2f326a484ede97c1b9165a8d69446e5d05d3df662661",
+      "contentSize": "232b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt",
+      "sha256": "75a6289ca65f7ea0d11596c2146a69f9db81b04ffab2387739f97fc18f7fa56c",
+      "contentSize": "2315b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml",
+      "sha256": "dd3e025b8cc61d7bf9cf76af79fa9f3e3972867627841b64429f8bc7c0338a66",
+      "contentSize": "125b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac",
+      "sha256": "03da4bfab37dfbc2026e29ab18f179f09cad6ced01050a68438240b779341567",
+      "contentSize": "79b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml",
+      "sha256": "a578c4aed064603a7679569e831fafa402093b9ba8796f51152a76b39480fe7c",
+      "contentSize": "2591b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "sha256": "7cb1d1f7726daa3e8d8080829400d6030fb9e053849c675586a000edde9a4b1f",
+      "contentSize": "1431b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_16.D",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "assays/GCqTOF_targets/dataset/150112_16.D",
+      "hasPart": [
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/GC.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/checksum.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/pre_post.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/runstart.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/Atunes2GHz.ei.tune.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/Contents.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/DefaultMassCal.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/Devices.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/MSPeak.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/MSScan.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/MSScan.xsd"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/MSTS.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/TDA.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/TDASpec.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/TOFDataIndex.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/sample_info.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/sequence.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt"
+        }
+      ]
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/GC.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/GC.ini",
+      "sha256": "a8d7b993a63c6aeb348724e2ca830d532f6f675bf27223877ae527c8950639f5",
+      "contentSize": "9993b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/acqmeth.txt",
+      "sha256": "3cad7d2813c22c4aae7db1bd371bbc2051ab9a9442d3f6452e445d01b53b1bea",
+      "contentSize": "21098b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/checksum.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/checksum.xml",
+      "sha256": "11d8f17904b891cc49dd7ddce443a5ef304a34d10d6cadcb8699b72b6751f7bc",
+      "contentSize": "570b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/pre_post.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/pre_post.ini",
+      "sha256": "491710d64b30ba7bd320176a254b323be27949bae7a5c437514d20ea1593cd00",
+      "contentSize": "623b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/runstart.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/runstart.txt",
+      "sha256": "957aa55db2d30b8fc65aaade82d0572be6a28641c05f20f6a7a5e993fd65fd79",
+      "contentSize": "1906b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "sha256": "48f5fd1485f6aab7ef3a555fd5a849ba9cdfe6cd3fbaac8e57db92b9dcbaa5c4",
+      "contentSize": "14204b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/Contents.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/Contents.xml",
+      "sha256": "f85456de20e60b8b14a6daa39217683f9c224de961a9372f90c60d8afbca9c9b",
+      "contentSize": "903b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/DefaultMassCal.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/DefaultMassCal.xml",
+      "sha256": "5749c6f88ef6bf7cce4ece6effb17a45fdb643f9bf9d2c8d71b4909f0cd10370",
+      "contentSize": "1523b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/Devices.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/Devices.xml",
+      "sha256": "e78742a9e0d04cd914ac7317cf32488c431c7a39d22f8030a464a4bace8ba611",
+      "contentSize": "552b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/MSPeak.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/MSPeak.bin",
+      "sha256": "f0034abf5dfddf1fc37e7a4469a10085d4e18d01f6fc1dab0029d5a6653d8634",
+      "contentSize": "302937060b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/MSScan.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/MSScan.bin",
+      "sha256": "9272b66f8aa6b0f6eca32e756c593943238fe3676c09db907663296a35f8f6c5",
+      "contentSize": "1286916b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/MSScan.xsd",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/MSScan.xsd",
+      "sha256": "8355e33676837225403a942df0e8af8fbf21463b8bc579aca7701e3cdff5e7c8",
+      "contentSize": "4234b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/MSTS.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/MSTS.xml",
+      "sha256": "3e76b01121788ccbe8245ace0e6eb14b85df451f9fbad5c8a6ccce3935929cdf",
+      "contentSize": "470b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/TDA.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/TDA.bin",
+      "sha256": "494b0b556eabfe4217caf899b79cc7dabdee231d40cf86576aeef038fb54c961",
+      "contentSize": "336541096b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/TDASpec.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/TDASpec.bin",
+      "sha256": "f3971eb33bae3ab91e17991d3b89b0cf62ff4d6e5d08af0016b87ea639936997",
+      "contentSize": "303158252b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/TOFDataIndex.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/TOFDataIndex.bin",
+      "sha256": "c89e2daaf518b177361a8ee6db6de847e8f84f406b0276ea602ea0784aa9c975",
+      "contentSize": "163111b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/sample_info.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/sample_info.xml",
+      "sha256": "6904012d56dcc161bcdcc17094492ad3c467772c6c44110439cacd195e184504",
+      "contentSize": "5821b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/sequence.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/sequence.xml",
+      "sha256": "733117dfd62cff3ee270e26f10111de88a030218136edf7bc155d5e5c3b5e007",
+      "contentSize": "2382b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin",
+      "sha256": "2cf37230ab009bb3c82e35052c3542ccfd5a5cb982afa712c97d4a14dcbe8905",
+      "contentSize": "75688b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml",
+      "sha256": "cc166cbcdc99fd1fecc47098f774928f1e92a387f930467edc64bb5cbd910aec",
+      "contentSize": "6714b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml",
+      "sha256": "0c09806308067de40a791dffe75e85031b8ddf280ca2444f49cd81132db83db2",
+      "contentSize": "1529b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml",
+      "sha256": "048d1a78faa50cdb9ed687b881a4006777d4956838339f3c6cba8bb5e44994f5",
+      "contentSize": "1010b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt",
+      "sha256": "ccce389cf85a41c9166d3a1ca83430cd96bf46624df8952a219bb1e70ccb666d",
+      "contentSize": "13528b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac",
+      "sha256": "fdbdf854f6011bffed6c725eca10f2d82e7743a58b5f1a29b822b93c493ec0cb",
+      "contentSize": "174b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl",
+      "sha256": "75f8f3208cc6ba48c0d641c4858b85a6884d6fe92867c4489b67fb035af4c630",
+      "contentSize": "100b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt",
+      "sha256": "1bc6ade2f8813d4e744930db055ea4fe77c56dc8b8c381c5033c5adb94fff152",
+      "contentSize": "21098b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth",
+      "sha256": "2dd1c43216a4f6c7060708d653987f5bf6eedea9a1aad7846a995b2341d85376",
+      "contentSize": "20053b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini",
+      "sha256": "de1cad3aa67f77e3fd9991d51e096b4ed74de422c2a7647c021894fe578865d0",
+      "contentSize": "96b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac",
+      "sha256": "60cde12a299eb1e726c631f2d90aa23ac70bf0ace9898491f76a2e3715cdcc5b",
+      "contentSize": "244b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt",
+      "sha256": "a59883618631e7bd33a463924961f3efa3c97f5ba9106f748789fe01377d6e00",
+      "contentSize": "1757b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml",
+      "sha256": "b705438ea9b0461b0a47499a04560a55a75ad479485009d1fc5e9b20fa960b83",
+      "contentSize": "138b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac",
+      "sha256": "03da4bfab37dfbc2026e29ab18f179f09cad6ced01050a68438240b779341567",
+      "contentSize": "79b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml",
+      "sha256": "34ba5ea1c379051ad092673205624db1cb00edcdf16656a718433228bbf4a38d",
+      "contentSize": "3281b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "sha256": "7cb1d1f7726daa3e8d8080829400d6030fb9e053849c675586a000edde9a4b1f",
+      "contentSize": "1431b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_55.D",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "assays/GCqTOF_targets/dataset/150112_55.D",
+      "hasPart": [
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/GC.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/checksum.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/pre_post.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/runstart.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/Atunes2GHz.ei.tune.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/Contents.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/DefaultMassCal.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/Devices.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/MSPeak.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/MSScan.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/MSScan.xsd"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/MSTS.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/TDA.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/TDASpec.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/TOFDataIndex.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/sample_info.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/sequence.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt"
+        }
+      ]
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/GC.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/GC.ini",
+      "sha256": "26ce45bf8d5d1cc9ce3945477a48491e3da1d4060ab7ce8e57e748e2971b1d7d",
+      "contentSize": "9990b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/acqmeth.txt",
+      "sha256": "fa2f132c051915eaee03f65199964264f6c12280a0fb29f9fdd2a36bd0ed5180",
+      "contentSize": "13130b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/checksum.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/checksum.xml",
+      "sha256": "ff63c5a0daf9e99eaf1418b9606e470a421ae663e6620488be9a197b64f4d1b7",
+      "contentSize": "570b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/pre_post.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/pre_post.ini",
+      "sha256": "75600fca3964e46e04fcfa4aab4449118babe85ae670b740026d3efd36e11444",
+      "contentSize": "612b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/runstart.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/runstart.txt",
+      "sha256": "56085990cd1b05dd79091c3e542a8ae2b750132f148a1ba4e2f0be73e8a5dd27",
+      "contentSize": "1895b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "sha256": "48f5fd1485f6aab7ef3a555fd5a849ba9cdfe6cd3fbaac8e57db92b9dcbaa5c4",
+      "contentSize": "14204b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/Contents.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/Contents.xml",
+      "sha256": "9f8d2b8b38fe5040c8dc7e8c8c995e9ee8cf80d13a8475a772e9da603cfa238d",
+      "contentSize": "903b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/DefaultMassCal.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/DefaultMassCal.xml",
+      "sha256": "5749c6f88ef6bf7cce4ece6effb17a45fdb643f9bf9d2c8d71b4909f0cd10370",
+      "contentSize": "1523b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/Devices.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/Devices.xml",
+      "sha256": "e78742a9e0d04cd914ac7317cf32488c431c7a39d22f8030a464a4bace8ba611",
+      "contentSize": "552b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/MSPeak.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/MSPeak.bin",
+      "sha256": "0de59e52a8651fc3e50663ad50c183819abaa4e65c087250ac1bd186d2fd2d3d",
+      "contentSize": "216067940b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/MSScan.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/MSScan.bin",
+      "sha256": "869ffbe31621ee7771a92e6f0bcfa727b0f1ae28381e5a4b27bb993cfd9d9e69",
+      "contentSize": "1294820b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/MSScan.xsd",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/MSScan.xsd",
+      "sha256": "8355e33676837225403a942df0e8af8fbf21463b8bc579aca7701e3cdff5e7c8",
+      "contentSize": "4234b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/MSTS.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/MSTS.xml",
+      "sha256": "e3f20bccec5410c327457c979240a5b727443de4768e70945b12e2f54fcae093",
+      "contentSize": "464b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/TDA.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/TDA.bin",
+      "sha256": "864ca2d48f154ee0ecc323edf3e01d9b701d2dc85d72d0d75c528b8bb2048500",
+      "contentSize": "246474972b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/TDASpec.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/TDASpec.bin",
+      "sha256": "7094c32717d6817503060326906c66ba6321eaf72565c40372e41898d0d33bf0",
+      "contentSize": "216291760b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/TOFDataIndex.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/TOFDataIndex.bin",
+      "sha256": "3758fa1cef6c486a4b76a64717c911424a2bc417310ce8735aed6aa8a7bddc0e",
+      "contentSize": "164023b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/sample_info.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/sample_info.xml",
+      "sha256": "de6b0f4b8133004cf2024486676054356657be72ef430e9a744b90c06f3b37d8",
+      "contentSize": "5807b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/sequence.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/sequence.xml",
+      "sha256": "56d7dfaee51a30b022baf9a21dfc2cc6bf3fff0b3cf331e6fe26953a73ee9c20",
+      "contentSize": "2365b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin",
+      "sha256": "7bdc10a9437bda57ef8112c24c65508e49613705911f1c7ed82a0bc3b53ee212",
+      "contentSize": "75676b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml",
+      "sha256": "cc166cbcdc99fd1fecc47098f774928f1e92a387f930467edc64bb5cbd910aec",
+      "contentSize": "6714b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml",
+      "sha256": "0c09806308067de40a791dffe75e85031b8ddf280ca2444f49cd81132db83db2",
+      "contentSize": "1529b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml",
+      "sha256": "048d1a78faa50cdb9ed687b881a4006777d4956838339f3c6cba8bb5e44994f5",
+      "contentSize": "1010b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt",
+      "sha256": "258f4c395fa4d4300a5b86e720f5a410b09dcae391cfe11213368b3866195d73",
+      "contentSize": "11933b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac",
+      "sha256": "b60bcdb64d03b0cd14df338198d0669934f4fc2bbe040620f2685274d0810873",
+      "contentSize": "174b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl",
+      "sha256": "75f8f3208cc6ba48c0d641c4858b85a6884d6fe92867c4489b67fb035af4c630",
+      "contentSize": "100b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt",
+      "sha256": "a584931166cd82bf8a2a855cb550b8fab8e5e336524d4b09f3083541ce2393fc",
+      "contentSize": "13130b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth",
+      "sha256": "2f2fea0c502273266f26c60402133204a9582b9306d767be7970e04d6179b4e0",
+      "contentSize": "17589b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$",
+      "sha256": "fcd50360a864f234224a2f326a484ede97c1b9165a8d69446e5d05d3df662661",
+      "contentSize": "232b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini",
+      "sha256": "4bbee3ead43b538817457b5f5ebfcd8a6887866240a32734c9ca32211e174388",
+      "contentSize": "96b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac",
+      "sha256": "fcd50360a864f234224a2f326a484ede97c1b9165a8d69446e5d05d3df662661",
+      "contentSize": "232b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt",
+      "sha256": "75a6289ca65f7ea0d11596c2146a69f9db81b04ffab2387739f97fc18f7fa56c",
+      "contentSize": "2315b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml",
+      "sha256": "dd3e025b8cc61d7bf9cf76af79fa9f3e3972867627841b64429f8bc7c0338a66",
+      "contentSize": "125b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac",
+      "sha256": "03da4bfab37dfbc2026e29ab18f179f09cad6ced01050a68438240b779341567",
+      "contentSize": "79b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml",
+      "sha256": "a578c4aed064603a7679569e831fafa402093b9ba8796f51152a76b39480fe7c",
+      "contentSize": "2591b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "sha256": "7cb1d1f7726daa3e8d8080829400d6030fb9e053849c675586a000edde9a4b1f",
+      "contentSize": "1431b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_56.D",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "assays/GCqTOF_targets/dataset/150112_56.D",
+      "hasPart": [
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/GC.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/checksum.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/pre_post.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/runstart.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/Atunes2GHz.ei.tune.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/Contents.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/DefaultMassCal.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/Devices.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/MSPeak.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/MSScan.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/MSScan.xsd"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/MSTS.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/TDA.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/TDASpec.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/TOFDataIndex.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/sample_info.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/sequence.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt"
+        }
+      ]
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/GC.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/GC.ini",
+      "sha256": "85ef3285feb3e0483eeace1f171e9b8a6ed05d3b8ce93e0f26d5ea3996742e9d",
+      "contentSize": "9995b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/acqmeth.txt",
+      "sha256": "20b145fc323d3678a4069692ab579f6690cf948f6ff6d7241c0eb17d34fecf4d",
+      "contentSize": "21098b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/checksum.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/checksum.xml",
+      "sha256": "6f81b945f065a3cd9cc6ae81386d90e0146c1e26fdd91326ae71ddcbee4eda45",
+      "contentSize": "570b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/pre_post.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/pre_post.ini",
+      "sha256": "9d8dc8df75fb532e6be2e88eed8e360c902920f46cf4c3455f73956c47796365",
+      "contentSize": "623b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/runstart.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/runstart.txt",
+      "sha256": "d378cb3442a84b595a0bc26e727ac5b7bc152d407f0db14e19c972c6a660537c",
+      "contentSize": "1906b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "sha256": "48f5fd1485f6aab7ef3a555fd5a849ba9cdfe6cd3fbaac8e57db92b9dcbaa5c4",
+      "contentSize": "14204b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/Contents.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/Contents.xml",
+      "sha256": "861ec313c02c71469d7833e5991dd7007213f73bff2db29976c53d656dbc6c1e",
+      "contentSize": "903b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/DefaultMassCal.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/DefaultMassCal.xml",
+      "sha256": "fd006f51dad21b6c98e93a274f583b4334da8d911ca3f131db5562f904bef6d0",
+      "contentSize": "1524b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/Devices.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/Devices.xml",
+      "sha256": "e78742a9e0d04cd914ac7317cf32488c431c7a39d22f8030a464a4bace8ba611",
+      "contentSize": "552b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/MSPeak.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/MSPeak.bin",
+      "sha256": "2efdccf4822750fcf1f05a96ca38c62b47f53cffed9a52a0e93fb8fb42f52564",
+      "contentSize": "242346724b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/MSScan.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/MSScan.bin",
+      "sha256": "136fb22402b97a6546cd5d791c45f1fcfea75d04de3c002d68b4ac8511787c1d",
+      "contentSize": "1286916b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/MSScan.xsd",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/MSScan.xsd",
+      "sha256": "8355e33676837225403a942df0e8af8fbf21463b8bc579aca7701e3cdff5e7c8",
+      "contentSize": "4234b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/MSTS.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/MSTS.xml",
+      "sha256": "88beb8e0b16598f71be277d101cff57d2cb162ef1a95773099932f98cd08e0b0",
+      "contentSize": "464b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/TDA.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/TDA.bin",
+      "sha256": "d97b00134285c7b260584a8d8076512a7cd8b56df9e21f9b7c196981db6d45d7",
+      "contentSize": "274588988b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/TDASpec.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/TDASpec.bin",
+      "sha256": "e94800b2b7f7a155169719edadb87f0e791e53540d4aee8f7776691e3206fbf6",
+      "contentSize": "242567268b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/TOFDataIndex.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/TOFDataIndex.bin",
+      "sha256": "3cbcb17e97b12d46791d69ad750062a759bf6cd8606254e67a84142688d470e9",
+      "contentSize": "163111b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/sample_info.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/sample_info.xml",
+      "sha256": "dc108ef81190cc8acca4321d5b90fefa3a13c2f68fe834787effd096b132399f",
+      "contentSize": "5819b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/sequence.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/sequence.xml",
+      "sha256": "8638e23c91b90948d74e5e5225ab1e647cf7d3679e6c15f4fd9d6d9145f1140b",
+      "contentSize": "2382b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin",
+      "sha256": "2cf37230ab009bb3c82e35052c3542ccfd5a5cb982afa712c97d4a14dcbe8905",
+      "contentSize": "75688b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml",
+      "sha256": "cc166cbcdc99fd1fecc47098f774928f1e92a387f930467edc64bb5cbd910aec",
+      "contentSize": "6714b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml",
+      "sha256": "0c09806308067de40a791dffe75e85031b8ddf280ca2444f49cd81132db83db2",
+      "contentSize": "1529b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml",
+      "sha256": "048d1a78faa50cdb9ed687b881a4006777d4956838339f3c6cba8bb5e44994f5",
+      "contentSize": "1010b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt",
+      "sha256": "5cf9b208a061f165513c5aac58e5f632e5259ffc5e188d46fbbb6bac3c13bf21",
+      "contentSize": "13522b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac",
+      "sha256": "f9e46249ff9010893cacb684da24b927fe0973497dfefaf341559b13ae9c5b59",
+      "contentSize": "174b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl",
+      "sha256": "75f8f3208cc6ba48c0d641c4858b85a6884d6fe92867c4489b67fb035af4c630",
+      "contentSize": "100b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt",
+      "sha256": "721a64818002c3c2109d530ed908868f937383ac9295c22a32134033d737f2bf",
+      "contentSize": "21098b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth",
+      "sha256": "6df6bc132f03d40813bcc05dd5685900c46155e8b452c17ba2f4c2bd4caea4a5",
+      "contentSize": "20053b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini",
+      "sha256": "d15d9e17d2bc2f1f4cd74156d1a255df40ab5343acaf7e58bb3ded7f3540a5cf",
+      "contentSize": "96b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac",
+      "sha256": "60cde12a299eb1e726c631f2d90aa23ac70bf0ace9898491f76a2e3715cdcc5b",
+      "contentSize": "244b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt",
+      "sha256": "dfaaab9269987be4bcffb327afac5a01d4ac42f8fe0a307d39e6a7494ff3b9ab",
+      "contentSize": "2068b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml",
+      "sha256": "b705438ea9b0461b0a47499a04560a55a75ad479485009d1fc5e9b20fa960b83",
+      "contentSize": "138b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac",
+      "sha256": "03da4bfab37dfbc2026e29ab18f179f09cad6ced01050a68438240b779341567",
+      "contentSize": "79b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml",
+      "sha256": "34ba5ea1c379051ad092673205624db1cb00edcdf16656a718433228bbf4a38d",
+      "contentSize": "3281b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "sha256": "7cb1d1f7726daa3e8d8080829400d6030fb9e053849c675586a000edde9a4b1f",
+      "contentSize": "1431b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_61.D",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "assays/GCqTOF_targets/dataset/150112_61.D",
+      "hasPart": [
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/GC.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/checksum.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/pre_post.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/runstart.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/Atunes2GHz.ei.tune.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/Contents.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/DefaultMassCal.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/Devices.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/MSPeak.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/MSScan.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/MSScan.xsd"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/MSTS.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/TDA.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/TDASpec.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/TOFDataIndex.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/sample_info.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/sequence.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt"
+        }
+      ]
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/GC.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/GC.ini",
+      "sha256": "6fc5975fcc7890c964ebfa3b57dfa042a736a6ea3c86f316a475ed070b5769be",
+      "contentSize": "9989b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/acqmeth.txt",
+      "sha256": "6340a27f78dd05ab33f6202da13b0fae3a4231a7835290bcc71045baf25e5332",
+      "contentSize": "13130b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/checksum.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/checksum.xml",
+      "sha256": "b2315b3f363aa74058735885cd79e7db17e7e461f593df1566224f43a25235c5",
+      "contentSize": "570b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/pre_post.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/pre_post.ini",
+      "sha256": "ad1db1fc30022991322575636e73d5822d9c15b8222db576de1528b1f7ab25d3",
+      "contentSize": "612b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/runstart.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/runstart.txt",
+      "sha256": "3a2471cd0e8e351c7166ae4ca9b6e0de850d4c13d686df5fdf8a46417bb09aa6",
+      "contentSize": "1895b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "sha256": "48f5fd1485f6aab7ef3a555fd5a849ba9cdfe6cd3fbaac8e57db92b9dcbaa5c4",
+      "contentSize": "14204b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/Contents.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/Contents.xml",
+      "sha256": "44507a59eea544d8e5acbec9aaf3f83984b65b9b5002992a58def26989fbd6f4",
+      "contentSize": "903b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/DefaultMassCal.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/DefaultMassCal.xml",
+      "sha256": "fd006f51dad21b6c98e93a274f583b4334da8d911ca3f131db5562f904bef6d0",
+      "contentSize": "1524b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/Devices.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/Devices.xml",
+      "sha256": "e78742a9e0d04cd914ac7317cf32488c431c7a39d22f8030a464a4bace8ba611",
+      "contentSize": "552b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/MSPeak.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/MSPeak.bin",
+      "sha256": "526823287e2a297a351c0dc5c81940d8f94679b1ca5b21f7d0a3aa3b19249638",
+      "contentSize": "209303956b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/MSScan.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/MSScan.bin",
+      "sha256": "8a7552035add0fd71895bd0cdcb01ea34c5cb80a66ec32b2d2d415d04ef4e32d",
+      "contentSize": "1294820b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/MSScan.xsd",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/MSScan.xsd",
+      "sha256": "8355e33676837225403a942df0e8af8fbf21463b8bc579aca7701e3cdff5e7c8",
+      "contentSize": "4234b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/MSTS.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/MSTS.xml",
+      "sha256": "bad2fc455e31ce186d8008ec74d93ecfb7d235e8a398aac534389ea3c24b0490",
+      "contentSize": "459b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/TDA.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/TDA.bin",
+      "sha256": "80216ca3ddb7945135aa1d2f12314fe328aa6c86e5d13233b5fc68440fc34afa",
+      "contentSize": "239441156b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/TDASpec.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/TDASpec.bin",
+      "sha256": "f9a92b6f576cc423a8b986cfba087d1f119f97f54c465d8d4e32fd95d8149ca9",
+      "contentSize": "209527740b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/TOFDataIndex.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/TOFDataIndex.bin",
+      "sha256": "b86ac15af27bfa3e0f192b04dcc1f5221fc29b1fbc4a76a2892562b85287f660",
+      "contentSize": "164023b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/sample_info.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/sample_info.xml",
+      "sha256": "7c86e54d8b84fbde5b7f0a763ce735755148327711adcbbbc48a00978e9080e4",
+      "contentSize": "5811b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/sequence.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/sequence.xml",
+      "sha256": "bf8258e38d149494d5f1e7d5870d56d5478689bcddfab6c3170dd26d9451d836",
+      "contentSize": "2365b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin",
+      "sha256": "7bdc10a9437bda57ef8112c24c65508e49613705911f1c7ed82a0bc3b53ee212",
+      "contentSize": "75676b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml",
+      "sha256": "cc166cbcdc99fd1fecc47098f774928f1e92a387f930467edc64bb5cbd910aec",
+      "contentSize": "6714b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml",
+      "sha256": "0c09806308067de40a791dffe75e85031b8ddf280ca2444f49cd81132db83db2",
+      "contentSize": "1529b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml",
+      "sha256": "048d1a78faa50cdb9ed687b881a4006777d4956838339f3c6cba8bb5e44994f5",
+      "contentSize": "1010b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt",
+      "sha256": "258f4c395fa4d4300a5b86e720f5a410b09dcae391cfe11213368b3866195d73",
+      "contentSize": "11933b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac",
+      "sha256": "9863eb278762349d69d0598fbd80d39dcc3cd78164933aeb091368b5e6377655",
+      "contentSize": "174b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl",
+      "sha256": "75f8f3208cc6ba48c0d641c4858b85a6884d6fe92867c4489b67fb035af4c630",
+      "contentSize": "100b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt",
+      "sha256": "a584931166cd82bf8a2a855cb550b8fab8e5e336524d4b09f3083541ce2393fc",
+      "contentSize": "13130b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth",
+      "sha256": "2f2fea0c502273266f26c60402133204a9582b9306d767be7970e04d6179b4e0",
+      "contentSize": "17589b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$",
+      "sha256": "fcd50360a864f234224a2f326a484ede97c1b9165a8d69446e5d05d3df662661",
+      "contentSize": "232b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini",
+      "sha256": "4bbee3ead43b538817457b5f5ebfcd8a6887866240a32734c9ca32211e174388",
+      "contentSize": "96b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac",
+      "sha256": "fcd50360a864f234224a2f326a484ede97c1b9165a8d69446e5d05d3df662661",
+      "contentSize": "232b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt",
+      "sha256": "75a6289ca65f7ea0d11596c2146a69f9db81b04ffab2387739f97fc18f7fa56c",
+      "contentSize": "2315b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml",
+      "sha256": "dd3e025b8cc61d7bf9cf76af79fa9f3e3972867627841b64429f8bc7c0338a66",
+      "contentSize": "125b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac",
+      "sha256": "03da4bfab37dfbc2026e29ab18f179f09cad6ced01050a68438240b779341567",
+      "contentSize": "79b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml",
+      "sha256": "a578c4aed064603a7679569e831fafa402093b9ba8796f51152a76b39480fe7c",
+      "contentSize": "2591b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "sha256": "7cb1d1f7726daa3e8d8080829400d6030fb9e053849c675586a000edde9a4b1f",
+      "contentSize": "1431b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_62.D",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "assays/GCqTOF_targets/dataset/150112_62.D",
+      "hasPart": [
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/GC.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/checksum.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/pre_post.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/runstart.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/Atunes2GHz.ei.tune.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/Contents.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/DefaultMassCal.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/Devices.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/MSPeak.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/MSScan.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/MSScan.xsd"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/MSTS.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/TDA.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/TDASpec.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/TOFDataIndex.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/sample_info.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/sequence.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt"
+        }
+      ]
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/GC.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/GC.ini",
+      "sha256": "b7ee0070bb82b27aa630ff4a7094251d51df821027be38958077649cff9bb30b",
+      "contentSize": "9993b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/acqmeth.txt",
+      "sha256": "7ee81ce90b99e210fd51c9528cb338c60bae2708144dcc5baaf220244ecafc5a",
+      "contentSize": "21098b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/checksum.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/checksum.xml",
+      "sha256": "57ef80aba640e607edbaf89a620855a3a59e917a5ffffe1aaa236db974c34965",
+      "contentSize": "570b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/pre_post.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/pre_post.ini",
+      "sha256": "d9e55a8d0b299417f4e39c3eb12dd94fad0d54eb52ca0d91ae2cb444bbdcb0ad",
+      "contentSize": "623b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/runstart.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/runstart.txt",
+      "sha256": "3e8f7f6f740091c1f01f3eb87cada4b19d04f4ac36b3b3e26e76b9a85dc65144",
+      "contentSize": "1906b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "sha256": "48f5fd1485f6aab7ef3a555fd5a849ba9cdfe6cd3fbaac8e57db92b9dcbaa5c4",
+      "contentSize": "14204b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/Contents.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/Contents.xml",
+      "sha256": "71ade38de3001bd644c2a8373ddc119a19fc848f463930414001eb629dc29260",
+      "contentSize": "903b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/DefaultMassCal.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/DefaultMassCal.xml",
+      "sha256": "fd006f51dad21b6c98e93a274f583b4334da8d911ca3f131db5562f904bef6d0",
+      "contentSize": "1524b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/Devices.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/Devices.xml",
+      "sha256": "e78742a9e0d04cd914ac7317cf32488c431c7a39d22f8030a464a4bace8ba611",
+      "contentSize": "552b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/MSPeak.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/MSPeak.bin",
+      "sha256": "e90fad75f2a9fbd6e62430012ca95267f77b819dcda880695566a8fdb616a262",
+      "contentSize": "263327156b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/MSScan.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/MSScan.bin",
+      "sha256": "02f993cd0a5c006bda35627707b2d7ff37661970216384e69ea88147a1a90388",
+      "contentSize": "1286916b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/MSScan.xsd",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/MSScan.xsd",
+      "sha256": "8355e33676837225403a942df0e8af8fbf21463b8bc579aca7701e3cdff5e7c8",
+      "contentSize": "4234b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/MSTS.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/MSTS.xml",
+      "sha256": "846edb5506abcb30f8a0e4509a0574843ed5b6a94c9a48814db963f99f894012",
+      "contentSize": "470b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/TDA.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/TDA.bin",
+      "sha256": "7c29dbae6d77753fb65189ecac670a17fcf08d0b61ff044eb0fc52a68814b29d",
+      "contentSize": "296154944b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/TDASpec.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/TDASpec.bin",
+      "sha256": "203e31e245b9fef6df89a398398b693e27639d552b457e9a0713f22c8b4fb450",
+      "contentSize": "263547772b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/TOFDataIndex.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/TOFDataIndex.bin",
+      "sha256": "8d23a6b7a2914ab80d33fc66f869545b62918c163b96c1ca3ed267f8625a3b6c",
+      "contentSize": "163111b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/sample_info.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/sample_info.xml",
+      "sha256": "898af1a39782b79ec077d9d882136db55be5dbf40b5c824fef94fc11daac3160",
+      "contentSize": "5820b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/sequence.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/sequence.xml",
+      "sha256": "ee8d27137c489fd01586042a944e068ef27ed5287a842fa1b4364796999284c6",
+      "contentSize": "2382b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin",
+      "sha256": "2cf37230ab009bb3c82e35052c3542ccfd5a5cb982afa712c97d4a14dcbe8905",
+      "contentSize": "75688b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml",
+      "sha256": "cc166cbcdc99fd1fecc47098f774928f1e92a387f930467edc64bb5cbd910aec",
+      "contentSize": "6714b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml",
+      "sha256": "0c09806308067de40a791dffe75e85031b8ddf280ca2444f49cd81132db83db2",
+      "contentSize": "1529b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml",
+      "sha256": "048d1a78faa50cdb9ed687b881a4006777d4956838339f3c6cba8bb5e44994f5",
+      "contentSize": "1010b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt",
+      "sha256": "5cf9b208a061f165513c5aac58e5f632e5259ffc5e188d46fbbb6bac3c13bf21",
+      "contentSize": "13522b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac",
+      "sha256": "493d5586c71388f291f9b13a3d979ff2025286c4b743b2394df21a4475fb6aec",
+      "contentSize": "174b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl",
+      "sha256": "75f8f3208cc6ba48c0d641c4858b85a6884d6fe92867c4489b67fb035af4c630",
+      "contentSize": "100b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt",
+      "sha256": "721a64818002c3c2109d530ed908868f937383ac9295c22a32134033d737f2bf",
+      "contentSize": "21098b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth",
+      "sha256": "6df6bc132f03d40813bcc05dd5685900c46155e8b452c17ba2f4c2bd4caea4a5",
+      "contentSize": "20053b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini",
+      "sha256": "d15d9e17d2bc2f1f4cd74156d1a255df40ab5343acaf7e58bb3ded7f3540a5cf",
+      "contentSize": "96b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac",
+      "sha256": "60cde12a299eb1e726c631f2d90aa23ac70bf0ace9898491f76a2e3715cdcc5b",
+      "contentSize": "244b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt",
+      "sha256": "dfaaab9269987be4bcffb327afac5a01d4ac42f8fe0a307d39e6a7494ff3b9ab",
+      "contentSize": "2068b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml",
+      "sha256": "b705438ea9b0461b0a47499a04560a55a75ad479485009d1fc5e9b20fa960b83",
+      "contentSize": "138b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac",
+      "sha256": "03da4bfab37dfbc2026e29ab18f179f09cad6ced01050a68438240b779341567",
+      "contentSize": "79b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml",
+      "sha256": "34ba5ea1c379051ad092673205624db1cb00edcdf16656a718433228bbf4a38d",
+      "contentSize": "3281b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "sha256": "7cb1d1f7726daa3e8d8080829400d6030fb9e053849c675586a000edde9a4b1f",
+      "contentSize": "1431b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_65.D",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "assays/GCqTOF_targets/dataset/150112_65.D",
+      "hasPart": [
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/GC.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/checksum.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/pre_post.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/runstart.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/Atunes2GHz.ei.tune.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/Contents.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/DefaultMassCal.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/Devices.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/MSPeak.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/MSScan.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/MSScan.xsd"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/MSTS.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/TDA.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/TDASpec.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/TOFDataIndex.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/sample_info.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/sequence.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D/AcqData/73_84_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt"
+        }
+      ]
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/GC.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/GC.ini",
+      "sha256": "27624fe8efbdf42766e4ee03d5eff14155ae986527c398ce61c1239fe3265830",
+      "contentSize": "9990b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/acqmeth.txt",
+      "sha256": "b044f43921c482cbc0d8ff2ca912e1ab0b143b960647cc844688169e2edcd7f1",
+      "contentSize": "13130b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/checksum.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/checksum.xml",
+      "sha256": "e0870618203d087a108c08b32de2dd88e931b9ea5dce778a835f5f3f082164b8",
+      "contentSize": "570b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/pre_post.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/pre_post.ini",
+      "sha256": "aa8bdc18a81798f4746e7d36b4c3db4f7b65c8794b03a20f93805030bb6e0db9",
+      "contentSize": "612b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/runstart.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/runstart.txt",
+      "sha256": "1028615d4cecd5f06a4536c1db2a04f8cdcf76efc9f85f71a0ab7f12f9d56de6",
+      "contentSize": "1895b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "sha256": "48f5fd1485f6aab7ef3a555fd5a849ba9cdfe6cd3fbaac8e57db92b9dcbaa5c4",
+      "contentSize": "14204b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/Contents.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/Contents.xml",
+      "sha256": "332d494e0ccbe4f670da17875c8aa75d49c1b00af0416041b71511f53549bdff",
+      "contentSize": "903b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/DefaultMassCal.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/DefaultMassCal.xml",
+      "sha256": "fd006f51dad21b6c98e93a274f583b4334da8d911ca3f131db5562f904bef6d0",
+      "contentSize": "1524b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/Devices.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/Devices.xml",
+      "sha256": "e78742a9e0d04cd914ac7317cf32488c431c7a39d22f8030a464a4bace8ba611",
+      "contentSize": "552b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/MSPeak.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/MSPeak.bin",
+      "sha256": "6fcb74d101eee751e1e20c4afdc97b43a2d5abd81303e538b75a146c7d61c822",
+      "contentSize": "210922132b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/MSScan.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/MSScan.bin",
+      "sha256": "0e853f69ebe28b8c5fba4b26d261f9418535d1ebf535c0f3c715ca6b7fb225e6",
+      "contentSize": "1295028b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/MSScan.xsd",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/MSScan.xsd",
+      "sha256": "8355e33676837225403a942df0e8af8fbf21463b8bc579aca7701e3cdff5e7c8",
+      "contentSize": "4234b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/MSTS.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/MSTS.xml",
+      "sha256": "3587b1aa9ba076ae07c89564f234301e5a21ecd5b161f2208920850e3b563634",
+      "contentSize": "470b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/TDA.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/TDA.bin",
+      "sha256": "66ec1b7f9326011101c54779b19d76653452c573e2f24d6dbeb15d82c701328e",
+      "contentSize": "241046656b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/TDASpec.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/TDASpec.bin",
+      "sha256": "6a365d4b09905048c46e2ac27183a9bcacd92c8133ee08d5afe4bc7729af5179",
+      "contentSize": "211146060b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/TOFDataIndex.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/TOFDataIndex.bin",
+      "sha256": "bd3f6cedc21ae490f03ede528a7da39bae595880c0f0800433e62dc4135f2e42",
+      "contentSize": "164047b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/sample_info.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/sample_info.xml",
+      "sha256": "8310bc8b9a7687aa15cfaed753d1954e57aa61fb2f149e0e4beb94ff66fd5d84",
+      "contentSize": "5807b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/sequence.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/sequence.xml",
+      "sha256": "9ddd2ce0438d736759a2ebca62371d0c8ebb46457e8a0eb67aaffb21f85ce8d4",
+      "contentSize": "2365b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin",
+      "sha256": "7bdc10a9437bda57ef8112c24c65508e49613705911f1c7ed82a0bc3b53ee212",
+      "contentSize": "75676b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml",
+      "sha256": "cc166cbcdc99fd1fecc47098f774928f1e92a387f930467edc64bb5cbd910aec",
+      "contentSize": "6714b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml",
+      "sha256": "0c09806308067de40a791dffe75e85031b8ddf280ca2444f49cd81132db83db2",
+      "contentSize": "1529b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml",
+      "sha256": "048d1a78faa50cdb9ed687b881a4006777d4956838339f3c6cba8bb5e44994f5",
+      "contentSize": "1010b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt",
+      "sha256": "258f4c395fa4d4300a5b86e720f5a410b09dcae391cfe11213368b3866195d73",
+      "contentSize": "11933b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac",
+      "sha256": "71fae576613dc389c531bd7fe3f9b799b6953270cdfafd9f8d94a37e49dbca13",
+      "contentSize": "174b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl",
+      "sha256": "75f8f3208cc6ba48c0d641c4858b85a6884d6fe92867c4489b67fb035af4c630",
+      "contentSize": "100b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt",
+      "sha256": "a584931166cd82bf8a2a855cb550b8fab8e5e336524d4b09f3083541ce2393fc",
+      "contentSize": "13130b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth",
+      "sha256": "2f2fea0c502273266f26c60402133204a9582b9306d767be7970e04d6179b4e0",
+      "contentSize": "17589b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$",
+      "sha256": "fcd50360a864f234224a2f326a484ede97c1b9165a8d69446e5d05d3df662661",
+      "contentSize": "232b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini",
+      "sha256": "4bbee3ead43b538817457b5f5ebfcd8a6887866240a32734c9ca32211e174388",
+      "contentSize": "96b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac",
+      "sha256": "fcd50360a864f234224a2f326a484ede97c1b9165a8d69446e5d05d3df662661",
+      "contentSize": "232b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt",
+      "sha256": "75a6289ca65f7ea0d11596c2146a69f9db81b04ffab2387739f97fc18f7fa56c",
+      "contentSize": "2315b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml",
+      "sha256": "dd3e025b8cc61d7bf9cf76af79fa9f3e3972867627841b64429f8bc7c0338a66",
+      "contentSize": "125b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac",
+      "sha256": "03da4bfab37dfbc2026e29ab18f179f09cad6ced01050a68438240b779341567",
+      "contentSize": "79b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml",
+      "sha256": "a578c4aed064603a7679569e831fafa402093b9ba8796f51152a76b39480fe7c",
+      "contentSize": "2591b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "sha256": "7cb1d1f7726daa3e8d8080829400d6030fb9e053849c675586a000edde9a4b1f",
+      "contentSize": "1431b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150112_66.D",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "assays/GCqTOF_targets/dataset/150112_66.D",
+      "hasPart": [
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/GC.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/checksum.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/pre_post.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/runstart.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/Atunes2GHz.ei.tune.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/Contents.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/DefaultMassCal.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/Devices.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/MSPeak.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/MSScan.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/MSScan.xsd"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/MSTS.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/TDA.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/TDASpec.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/TOFDataIndex.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/sample_info.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/sequence.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt"
+        }
+      ]
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/GC.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/GC.ini",
+      "sha256": "4b8a7b79912f1f8619649a9b5ab5f7685127fab11b1d610de6787df960f29182",
+      "contentSize": "9994b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/acqmeth.txt",
+      "sha256": "94411fff81d1ac30ac34c922434e0ee4c86d982fb4e11d7f3aec7402832026bc",
+      "contentSize": "21098b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/checksum.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/checksum.xml",
+      "sha256": "d477143105047a47b929f8a83d5a40880428567107707db9372daefeba796145",
+      "contentSize": "570b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/pre_post.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/pre_post.ini",
+      "sha256": "5f12afd236fb41ff7632d0a6cfb88af577deb7222314cde7610d7b9987cf20bd",
+      "contentSize": "624b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/runstart.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/runstart.txt",
+      "sha256": "579b59b5701a76f838c0c2c28d1f6641661a560be0746a7897882c3f3557f140",
+      "contentSize": "1923b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "sha256": "48f5fd1485f6aab7ef3a555fd5a849ba9cdfe6cd3fbaac8e57db92b9dcbaa5c4",
+      "contentSize": "14204b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/Contents.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/Contents.xml",
+      "sha256": "894cafb3e288674f7bdfdc7fcc3f25957d3e74ba87da2f0aeba397a409b4507b",
+      "contentSize": "903b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/DefaultMassCal.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/DefaultMassCal.xml",
+      "sha256": "458495eb08c7e41a145f0d50738c122cc2db80aafbb1ed427aff553231f3fa6d",
+      "contentSize": "1524b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/Devices.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/Devices.xml",
+      "sha256": "e78742a9e0d04cd914ac7317cf32488c431c7a39d22f8030a464a4bace8ba611",
+      "contentSize": "552b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/MSPeak.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/MSPeak.bin",
+      "sha256": "e1de33a5938813e1de9e54b8cd5666b140a9671d3549da52ba4b64cd5ba9c154",
+      "contentSize": "203506100b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/MSScan.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/MSScan.bin",
+      "sha256": "23dc1f15433f706c48f172165a172f8af2a02b65feff0469f6aa0c5976d4fa49",
+      "contentSize": "1286708b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/MSScan.xsd",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/MSScan.xsd",
+      "sha256": "8355e33676837225403a942df0e8af8fbf21463b8bc579aca7701e3cdff5e7c8",
+      "contentSize": "4234b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/MSTS.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/MSTS.xml",
+      "sha256": "a31604136e59cc41c8efafdfcf603e8c707665dbc910fb12d95970e18255bf33",
+      "contentSize": "470b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/TDA.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/TDA.bin",
+      "sha256": "7e9afeacb028b63f1e06d320c46e823710edac7642c7eb6df9c85d64bb36f13e",
+      "contentSize": "234965876b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/TDASpec.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/TDASpec.bin",
+      "sha256": "b7d077e68428e7c16b9b72926da679d5361ccab6ef632a871b4b98c7f951833f",
+      "contentSize": "203726068b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/TOFDataIndex.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/TOFDataIndex.bin",
+      "sha256": "8c6c727f7ded6f16406957ab1ade49af28269c342a234407363946ffdf3fec0b",
+      "contentSize": "163087b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/sample_info.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/sample_info.xml",
+      "sha256": "f32bceadb8e80cc7d007c880d598f4fac60459649da1dff12f033c574d92f6fd",
+      "contentSize": "5829b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/sequence.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/sequence.xml",
+      "sha256": "b8ca48c766f81ce8e9a957922a5c25839466752feb61d0e53df0922686cdb39b",
+      "contentSize": "2384b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin",
+      "sha256": "2cf37230ab009bb3c82e35052c3542ccfd5a5cb982afa712c97d4a14dcbe8905",
+      "contentSize": "75688b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml",
+      "sha256": "cc166cbcdc99fd1fecc47098f774928f1e92a387f930467edc64bb5cbd910aec",
+      "contentSize": "6714b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml",
+      "sha256": "0c09806308067de40a791dffe75e85031b8ddf280ca2444f49cd81132db83db2",
+      "contentSize": "1529b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml",
+      "sha256": "048d1a78faa50cdb9ed687b881a4006777d4956838339f3c6cba8bb5e44994f5",
+      "contentSize": "1010b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt",
+      "sha256": "17e9ab0a7f587b30c72dbe0189fc759d85018953edb86fd0144a6bc5458f508e",
+      "contentSize": "14021b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac",
+      "sha256": "46d90acdc69d7d1c66dc79a2bd0cee1a762249696a297fdc524d8ddb21aac292",
+      "contentSize": "174b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl",
+      "sha256": "75f8f3208cc6ba48c0d641c4858b85a6884d6fe92867c4489b67fb035af4c630",
+      "contentSize": "100b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt",
+      "sha256": "32ddba81b4e7e70206911da9d941b2bf4c50e99244d029c705d20b1f4355cd40",
+      "contentSize": "21098b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth",
+      "sha256": "9c17c7a8e204e888f6525cd54e99740b75500a740c2663103191bab2aec8dc64",
+      "contentSize": "20053b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini",
+      "sha256": "f464524d2457550545b3eab2df4f9989da0166b29b37d37777c545f6f4cf25d3",
+      "contentSize": "96b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac",
+      "sha256": "571efe62cf19c1429bd57febecf31859f48f5f830f25ca6e0edb0bca35a07575",
+      "contentSize": "244b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt",
+      "sha256": "7113f9b53c854d439d468139d0b26be06047decdd6252fa4f4cd468a86f0bfe3",
+      "contentSize": "1446b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml",
+      "sha256": "17cb95bd03006f5baa59b3a16f79bc6dd0ec506dffda967a629eaab92d2e163f",
+      "contentSize": "138b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac",
+      "sha256": "03da4bfab37dfbc2026e29ab18f179f09cad6ced01050a68438240b779341567",
+      "contentSize": "79b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml",
+      "sha256": "34ba5ea1c379051ad092673205624db1cb00edcdf16656a718433228bbf4a38d",
+      "contentSize": "3281b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "sha256": "7cb1d1f7726daa3e8d8080829400d6030fb9e053849c675586a000edde9a4b1f",
+      "contentSize": "1431b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_03.D",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "assays/GCqTOF_targets/dataset/150115_03.D",
+      "hasPart": [
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/GC.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/checksum.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/pre_post.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/runstart.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/Atunes2GHz.ei.tune.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/Contents.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/DefaultMassCal.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/Devices.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/MSPeak.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/MSScan.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/MSScan.xsd"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/MSTS.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/TDA.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/TDASpec.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/TOFDataIndex.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/sample_info.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/sequence.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt"
+        }
+      ]
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/GC.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/GC.ini",
+      "sha256": "15d767f7a782a03b0e261c77ea6a50bc2f9e418e7628c7364dc9538e7e30a6de",
+      "contentSize": "9991b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/acqmeth.txt",
+      "sha256": "84bde2f528fcc82777f51edbc1b7e00f077febb4862bf992e87e5861dbfaba9d",
+      "contentSize": "13130b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/checksum.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/checksum.xml",
+      "sha256": "dbef379841e1a8736985fa2f48c5791004c4283e4e6209d2b65f72ae30a90c34",
+      "contentSize": "570b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/pre_post.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/pre_post.ini",
+      "sha256": "dc875d315fa1ba26afc8edb0c3119ad73dffd05ada373b3a86316db6c94b38b5",
+      "contentSize": "613b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/runstart.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/runstart.txt",
+      "sha256": "9036f9bd1e974630ed4f3be3664b1f6840206aebd11d245e7536f4ad905ad616",
+      "contentSize": "1912b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "sha256": "48f5fd1485f6aab7ef3a555fd5a849ba9cdfe6cd3fbaac8e57db92b9dcbaa5c4",
+      "contentSize": "14204b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/Contents.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/Contents.xml",
+      "sha256": "5eba8955e9b8ea1ebcfb412bc20258bc5f2648651b3b4743e5d744bdc1be61fb",
+      "contentSize": "903b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/DefaultMassCal.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/DefaultMassCal.xml",
+      "sha256": "458495eb08c7e41a145f0d50738c122cc2db80aafbb1ed427aff553231f3fa6d",
+      "contentSize": "1524b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/Devices.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/Devices.xml",
+      "sha256": "e78742a9e0d04cd914ac7317cf32488c431c7a39d22f8030a464a4bace8ba611",
+      "contentSize": "552b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/MSPeak.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/MSPeak.bin",
+      "sha256": "59d498e33b3bc530c9ee82fcc399fa66d436ab5cae52e93d4794991a42f144c2",
+      "contentSize": "171512132b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/MSScan.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/MSScan.bin",
+      "sha256": "9e34b207cd0acea0bdbc28d1049c12da5dcbe2b6cc7729df0a1b43aaf8dd914f",
+      "contentSize": "1295236b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/MSScan.xsd",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/MSScan.xsd",
+      "sha256": "8355e33676837225403a942df0e8af8fbf21463b8bc579aca7701e3cdff5e7c8",
+      "contentSize": "4234b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/MSTS.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/MSTS.xml",
+      "sha256": "486e8d482d3130a8f202068c10df2728081d0e45c9c611360d0beaa623a47649",
+      "contentSize": "470b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/TDA.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/TDA.bin",
+      "sha256": "6ceb84fb91cf7bfe0cdd4601a7f94e5865014626897f772f051a3bb1fc5bf10a",
+      "contentSize": "199365812b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/TDASpec.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/TDASpec.bin",
+      "sha256": "223e96ccdf7a778c28a0d0135548665f21e74ca58e4890df854added9a16dc63",
+      "contentSize": "171735916b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/TOFDataIndex.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/TOFDataIndex.bin",
+      "sha256": "fcc7fd00980cc5b0f889f87c4930a23353f60c37d4a5b441b97133c9723ccf8d",
+      "contentSize": "164071b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/sample_info.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/sample_info.xml",
+      "sha256": "7dbfe5495837448e0e94193ca58efb76224bf2509d2c768987ea4c1911ab6a10",
+      "contentSize": "5817b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/sequence.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/sequence.xml",
+      "sha256": "cc546a4b2ae9a38aec518e72bc851dc4d15efcfea53f4f4ba5dbffa89ece0612",
+      "contentSize": "2381b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin",
+      "sha256": "7bdc10a9437bda57ef8112c24c65508e49613705911f1c7ed82a0bc3b53ee212",
+      "contentSize": "75676b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml",
+      "sha256": "cc166cbcdc99fd1fecc47098f774928f1e92a387f930467edc64bb5cbd910aec",
+      "contentSize": "6714b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml",
+      "sha256": "0c09806308067de40a791dffe75e85031b8ddf280ca2444f49cd81132db83db2",
+      "contentSize": "1529b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml",
+      "sha256": "048d1a78faa50cdb9ed687b881a4006777d4956838339f3c6cba8bb5e44994f5",
+      "contentSize": "1010b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt",
+      "sha256": "258f4c395fa4d4300a5b86e720f5a410b09dcae391cfe11213368b3866195d73",
+      "contentSize": "11933b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac",
+      "sha256": "c01b7103a7de381407c33d2762f52ce0a686ac7e0d8698b81eb5d7a63be6fd89",
+      "contentSize": "174b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl",
+      "sha256": "75f8f3208cc6ba48c0d641c4858b85a6884d6fe92867c4489b67fb035af4c630",
+      "contentSize": "100b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt",
+      "sha256": "a584931166cd82bf8a2a855cb550b8fab8e5e336524d4b09f3083541ce2393fc",
+      "contentSize": "13130b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth",
+      "sha256": "2f2fea0c502273266f26c60402133204a9582b9306d767be7970e04d6179b4e0",
+      "contentSize": "17589b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$",
+      "sha256": "fcd50360a864f234224a2f326a484ede97c1b9165a8d69446e5d05d3df662661",
+      "contentSize": "232b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini",
+      "sha256": "4bbee3ead43b538817457b5f5ebfcd8a6887866240a32734c9ca32211e174388",
+      "contentSize": "96b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac",
+      "sha256": "fcd50360a864f234224a2f326a484ede97c1b9165a8d69446e5d05d3df662661",
+      "contentSize": "232b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt",
+      "sha256": "75a6289ca65f7ea0d11596c2146a69f9db81b04ffab2387739f97fc18f7fa56c",
+      "contentSize": "2315b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml",
+      "sha256": "dd3e025b8cc61d7bf9cf76af79fa9f3e3972867627841b64429f8bc7c0338a66",
+      "contentSize": "125b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac",
+      "sha256": "03da4bfab37dfbc2026e29ab18f179f09cad6ced01050a68438240b779341567",
+      "contentSize": "79b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml",
+      "sha256": "a578c4aed064603a7679569e831fafa402093b9ba8796f51152a76b39480fe7c",
+      "contentSize": "2591b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "sha256": "7cb1d1f7726daa3e8d8080829400d6030fb9e053849c675586a000edde9a4b1f",
+      "contentSize": "1431b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_04.D",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "assays/GCqTOF_targets/dataset/150115_04.D",
+      "hasPart": [
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/GC.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/checksum.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/pre_post.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/runstart.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/Atunes2GHz.ei.tune.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/Contents.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/DefaultMassCal.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/Devices.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/MSPeak.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/MSScan.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/MSScan.xsd"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/MSTS.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/TDA.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/TDASpec.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/TOFDataIndex.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/sample_info.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/sequence.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt"
+        }
+      ]
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/GC.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/GC.ini",
+      "sha256": "d9584297e401ea91a1ffef72aa969628c2084be8ab605cf27ed445394fd39a4f",
+      "contentSize": "9995b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/acqmeth.txt",
+      "sha256": "cdcf0be261aefa9c6865bf6415daa6f29b68d142c82e8381a1c4704ec22a5d20",
+      "contentSize": "21098b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/checksum.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/checksum.xml",
+      "sha256": "8d823f5d4792498a566263faa19f5890d55140a0c27350501ae2c98f3e5a658a",
+      "contentSize": "570b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/pre_post.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/pre_post.ini",
+      "sha256": "f1fa74402e7db69a31d94e3b34eb0f60219fca8baccd13a7e8c5a964fb4b1de3",
+      "contentSize": "624b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/runstart.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/runstart.txt",
+      "sha256": "08ebb2b2bf45c69a4bc70dfb6dea1877cadccbb0a56d8b2b0393dfe7cd098020",
+      "contentSize": "1905b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "sha256": "48f5fd1485f6aab7ef3a555fd5a849ba9cdfe6cd3fbaac8e57db92b9dcbaa5c4",
+      "contentSize": "14204b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/Contents.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/Contents.xml",
+      "sha256": "a903739fa51611668a6ae33417228fe0cbd321b0c1eb40035f22426fe4fcd55e",
+      "contentSize": "903b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/DefaultMassCal.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/DefaultMassCal.xml",
+      "sha256": "458495eb08c7e41a145f0d50738c122cc2db80aafbb1ed427aff553231f3fa6d",
+      "contentSize": "1524b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/Devices.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/Devices.xml",
+      "sha256": "e78742a9e0d04cd914ac7317cf32488c431c7a39d22f8030a464a4bace8ba611",
+      "contentSize": "552b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/MSPeak.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/MSPeak.bin",
+      "sha256": "aba19be0947760d3b46106fc2a1dfbf5526a8365a18e2d325bfda74644a9a4ce",
+      "contentSize": "263162484b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/MSScan.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/MSScan.bin",
+      "sha256": "3ee2b848ae62886de709401d370b4f96b96b12e73917dcc16fcf00f9f7be1153",
+      "contentSize": "1286916b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/MSScan.xsd",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/MSScan.xsd",
+      "sha256": "8355e33676837225403a942df0e8af8fbf21463b8bc579aca7701e3cdff5e7c8",
+      "contentSize": "4234b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/MSTS.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/MSTS.xml",
+      "sha256": "717e71369490ce9536f50479bc3962cc40e4ed5c8bdff1b4dfc731e1438a1f22",
+      "contentSize": "470b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/TDA.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/TDA.bin",
+      "sha256": "d4edf39872df748ed059cdaf66e019e17edb741c93be26be0febeeda9242e6e2",
+      "contentSize": "296212128b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/TDASpec.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/TDASpec.bin",
+      "sha256": "735a9705907de7cf6ca1b2ef9f5140b4954d8e6cb5598715f91d504e2aec1fd7",
+      "contentSize": "263383064b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/TOFDataIndex.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/TOFDataIndex.bin",
+      "sha256": "000265a1daa9fc25f643aa1cc5245a5ffc6dac83ad162dc0a779cb65f41a8719",
+      "contentSize": "163111b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/sample_info.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/sample_info.xml",
+      "sha256": "79491bfa9f50dbefb9c133b1fbcd79ea16b21da66b24522e6b77aa18fee349ec",
+      "contentSize": "5819b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/sequence.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/sequence.xml",
+      "sha256": "4f28305fe71cc72b433ef9e6ec3a88287cc5c8a06d4bb0988820f644d2bc5c35",
+      "contentSize": "2381b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin",
+      "sha256": "2cf37230ab009bb3c82e35052c3542ccfd5a5cb982afa712c97d4a14dcbe8905",
+      "contentSize": "75688b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml",
+      "sha256": "cc166cbcdc99fd1fecc47098f774928f1e92a387f930467edc64bb5cbd910aec",
+      "contentSize": "6714b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml",
+      "sha256": "0c09806308067de40a791dffe75e85031b8ddf280ca2444f49cd81132db83db2",
+      "contentSize": "1529b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml",
+      "sha256": "048d1a78faa50cdb9ed687b881a4006777d4956838339f3c6cba8bb5e44994f5",
+      "contentSize": "1010b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt",
+      "sha256": "17e9ab0a7f587b30c72dbe0189fc759d85018953edb86fd0144a6bc5458f508e",
+      "contentSize": "14021b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac",
+      "sha256": "a49238e93f64fcbf3cb67751ac25b7b97a1ce44809e5ef9781ca60761fdf8d04",
+      "contentSize": "174b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl",
+      "sha256": "75f8f3208cc6ba48c0d641c4858b85a6884d6fe92867c4489b67fb035af4c630",
+      "contentSize": "100b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt",
+      "sha256": "32ddba81b4e7e70206911da9d941b2bf4c50e99244d029c705d20b1f4355cd40",
+      "contentSize": "21098b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth",
+      "sha256": "9c17c7a8e204e888f6525cd54e99740b75500a740c2663103191bab2aec8dc64",
+      "contentSize": "20053b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini",
+      "sha256": "f464524d2457550545b3eab2df4f9989da0166b29b37d37777c545f6f4cf25d3",
+      "contentSize": "96b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac",
+      "sha256": "571efe62cf19c1429bd57febecf31859f48f5f830f25ca6e0edb0bca35a07575",
+      "contentSize": "244b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt",
+      "sha256": "7113f9b53c854d439d468139d0b26be06047decdd6252fa4f4cd468a86f0bfe3",
+      "contentSize": "1446b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml",
+      "sha256": "17cb95bd03006f5baa59b3a16f79bc6dd0ec506dffda967a629eaab92d2e163f",
+      "contentSize": "138b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac",
+      "sha256": "03da4bfab37dfbc2026e29ab18f179f09cad6ced01050a68438240b779341567",
+      "contentSize": "79b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml",
+      "sha256": "34ba5ea1c379051ad092673205624db1cb00edcdf16656a718433228bbf4a38d",
+      "contentSize": "3281b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "sha256": "7cb1d1f7726daa3e8d8080829400d6030fb9e053849c675586a000edde9a4b1f",
+      "contentSize": "1431b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_11.D",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "assays/GCqTOF_targets/dataset/150115_11.D",
+      "hasPart": [
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/GC.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/checksum.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/pre_post.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/runstart.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/Atunes2GHz.ei.tune.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/Contents.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/DefaultMassCal.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/Devices.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/MSPeak.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/MSScan.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/MSScan.xsd"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/MSTS.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/TDA.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/TDASpec.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/TOFDataIndex.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/sample_info.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/sequence.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt"
+        }
+      ]
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/GC.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/GC.ini",
+      "sha256": "f80d510cd13c325dcb036ccde1f303e30ca837ba380ba605e2359c62022b3afd",
+      "contentSize": "9989b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/acqmeth.txt",
+      "sha256": "f060148c6c8149e966a2adfbd1e3d3cebfaadccede258e359d84ec8a77cdc2ac",
+      "contentSize": "13130b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/checksum.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/checksum.xml",
+      "sha256": "9ae0d5e782cd11b626dd3be4143eb71473d77558517d201ebe135a6dcde4ec0f",
+      "contentSize": "570b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/pre_post.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/pre_post.ini",
+      "sha256": "679b11cea0e88439577cce506f4299b704b2e22a9d1220726263446a637d9336",
+      "contentSize": "613b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/runstart.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/runstart.txt",
+      "sha256": "5c655a1c6e32843ae0c0c6e5ef43cbb0ceb3664aadd103ec473e1e3ad27afe60",
+      "contentSize": "1894b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "sha256": "48f5fd1485f6aab7ef3a555fd5a849ba9cdfe6cd3fbaac8e57db92b9dcbaa5c4",
+      "contentSize": "14204b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/Contents.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/Contents.xml",
+      "sha256": "1adae0702e6c0de4c2e8a678b08ebd9fd340af6ad0d4740128b6e532cfb2ed83",
+      "contentSize": "903b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/DefaultMassCal.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/DefaultMassCal.xml",
+      "sha256": "458495eb08c7e41a145f0d50738c122cc2db80aafbb1ed427aff553231f3fa6d",
+      "contentSize": "1524b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/Devices.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/Devices.xml",
+      "sha256": "e78742a9e0d04cd914ac7317cf32488c431c7a39d22f8030a464a4bace8ba611",
+      "contentSize": "552b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/MSPeak.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/MSPeak.bin",
+      "sha256": "e9f8d4b8c6dbd9f878b8406442992a637be23e1122579094f0e75b1d498bb7a3",
+      "contentSize": "221329220b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/MSScan.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/MSScan.bin",
+      "sha256": "c3a4094ce3664bebbe3a8312c83fa6dc8e09dc75d60661f0dabe89f8c2480194",
+      "contentSize": "1295028b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/MSScan.xsd",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/MSScan.xsd",
+      "sha256": "8355e33676837225403a942df0e8af8fbf21463b8bc579aca7701e3cdff5e7c8",
+      "contentSize": "4234b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/MSTS.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/MSTS.xml",
+      "sha256": "594a9b9f07cd15fad6bad28bfa0c5779166f62beaffad00ee12ba7285a29a07d",
+      "contentSize": "455b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/TDA.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/TDA.bin",
+      "sha256": "59f7e558b78cd236cfa4ae64ea40236ba27d1f2d4c61bc889e2afd006dd542b1",
+      "contentSize": "252009488b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/TDASpec.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/TDASpec.bin",
+      "sha256": "d71bb45483d95f19fe43ec1a00e87828dd396fdb495665acd9fd7118b171d0ec",
+      "contentSize": "221553004b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/TOFDataIndex.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/TOFDataIndex.bin",
+      "sha256": "e121e15bfa165c80c155403c1c9b87d8098628d841d54dc3e59323c3c167398a",
+      "contentSize": "164047b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/sample_info.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/sample_info.xml",
+      "sha256": "c81147045375aabe86f319295322a019d1c0efc020f9601598f667400da04260",
+      "contentSize": "5810b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/sequence.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/sequence.xml",
+      "sha256": "3edecb3d22bcf9bf989b666b03ecd8ae4111797d80fbda338386269bd29ba333",
+      "contentSize": "2364b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin",
+      "sha256": "7bdc10a9437bda57ef8112c24c65508e49613705911f1c7ed82a0bc3b53ee212",
+      "contentSize": "75676b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml",
+      "sha256": "cc166cbcdc99fd1fecc47098f774928f1e92a387f930467edc64bb5cbd910aec",
+      "contentSize": "6714b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml",
+      "sha256": "0c09806308067de40a791dffe75e85031b8ddf280ca2444f49cd81132db83db2",
+      "contentSize": "1529b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml",
+      "sha256": "048d1a78faa50cdb9ed687b881a4006777d4956838339f3c6cba8bb5e44994f5",
+      "contentSize": "1010b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt",
+      "sha256": "258f4c395fa4d4300a5b86e720f5a410b09dcae391cfe11213368b3866195d73",
+      "contentSize": "11933b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac",
+      "sha256": "98bcc39deb9da1da9cd082ab2c667aec09e6dcf31468eebd9b6deef946b5a6eb",
+      "contentSize": "174b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl",
+      "sha256": "75f8f3208cc6ba48c0d641c4858b85a6884d6fe92867c4489b67fb035af4c630",
+      "contentSize": "100b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt",
+      "sha256": "a584931166cd82bf8a2a855cb550b8fab8e5e336524d4b09f3083541ce2393fc",
+      "contentSize": "13130b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth",
+      "sha256": "2f2fea0c502273266f26c60402133204a9582b9306d767be7970e04d6179b4e0",
+      "contentSize": "17589b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$",
+      "sha256": "fcd50360a864f234224a2f326a484ede97c1b9165a8d69446e5d05d3df662661",
+      "contentSize": "232b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini",
+      "sha256": "4bbee3ead43b538817457b5f5ebfcd8a6887866240a32734c9ca32211e174388",
+      "contentSize": "96b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac",
+      "sha256": "fcd50360a864f234224a2f326a484ede97c1b9165a8d69446e5d05d3df662661",
+      "contentSize": "232b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt",
+      "sha256": "75a6289ca65f7ea0d11596c2146a69f9db81b04ffab2387739f97fc18f7fa56c",
+      "contentSize": "2315b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml",
+      "sha256": "dd3e025b8cc61d7bf9cf76af79fa9f3e3972867627841b64429f8bc7c0338a66",
+      "contentSize": "125b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac",
+      "sha256": "03da4bfab37dfbc2026e29ab18f179f09cad6ced01050a68438240b779341567",
+      "contentSize": "79b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml",
+      "sha256": "a578c4aed064603a7679569e831fafa402093b9ba8796f51152a76b39480fe7c",
+      "contentSize": "2591b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "sha256": "7cb1d1f7726daa3e8d8080829400d6030fb9e053849c675586a000edde9a4b1f",
+      "contentSize": "1431b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_12.D",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "assays/GCqTOF_targets/dataset/150115_12.D",
+      "hasPart": [
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/GC.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/checksum.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/pre_post.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/runstart.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/Atunes2GHz.ei.tune.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/Contents.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/DefaultMassCal.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/Devices.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/MSPeak.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/MSScan.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/MSScan.xsd"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/MSTS.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/TDA.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/TDASpec.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/TOFDataIndex.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/sample_info.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/sequence.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt"
+        }
+      ]
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/GC.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/GC.ini",
+      "sha256": "0359abfd0caae1f05189c94a38679c360cd94d8538b03d5cfad1e8e26f27e250",
+      "contentSize": "9993b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/acqmeth.txt",
+      "sha256": "11f81bf1c1706e301413ddc03802d2c999d14728a60211942b1856ccd8666a70",
+      "contentSize": "21098b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/checksum.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/checksum.xml",
+      "sha256": "e791355e44c180c22e7265dacb442f9672c216f380d4ebe37f0b171cc315f8d0",
+      "contentSize": "570b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/pre_post.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/pre_post.ini",
+      "sha256": "97cd018ac6d568c261988ecab6833478f66cbbf2ffa81c98b1bd3b393ff89793",
+      "contentSize": "624b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/runstart.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/runstart.txt",
+      "sha256": "c89725ba4ccbd529b04b5648d6613ca64bcd36b0d92dbc5661f1a115d9a2a56e",
+      "contentSize": "1905b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "sha256": "48f5fd1485f6aab7ef3a555fd5a849ba9cdfe6cd3fbaac8e57db92b9dcbaa5c4",
+      "contentSize": "14204b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/Contents.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/Contents.xml",
+      "sha256": "d16a9f9cde274740bd6b9ec2c9a754075a5aab286f57577ef850a25cf5d28af7",
+      "contentSize": "903b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/DefaultMassCal.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/DefaultMassCal.xml",
+      "sha256": "458495eb08c7e41a145f0d50738c122cc2db80aafbb1ed427aff553231f3fa6d",
+      "contentSize": "1524b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/Devices.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/Devices.xml",
+      "sha256": "e78742a9e0d04cd914ac7317cf32488c431c7a39d22f8030a464a4bace8ba611",
+      "contentSize": "552b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/MSPeak.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/MSPeak.bin",
+      "sha256": "6fe6201f6024de2c95dd2c6aed6d770624645f32b684e798d3ea1fe3e09439c0",
+      "contentSize": "279402964b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/MSScan.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/MSScan.bin",
+      "sha256": "03f566d53dbb60a1f6e6ea078fc40dcfdc4748f7fac8a1146221c3bd0af088de",
+      "contentSize": "1286916b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/MSScan.xsd",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/MSScan.xsd",
+      "sha256": "8355e33676837225403a942df0e8af8fbf21463b8bc579aca7701e3cdff5e7c8",
+      "contentSize": "4234b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/MSTS.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/MSTS.xml",
+      "sha256": "21a8319e1413017dfb0cc3277f5351a4acd820cc5d2ed3894580b274e7109473",
+      "contentSize": "453b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/TDA.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/TDA.bin",
+      "sha256": "708cb62f7bf03f01a210dfb5979ba3349a1d142182c22730960d77e59e215845",
+      "contentSize": "312656476b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/TDASpec.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/TDASpec.bin",
+      "sha256": "dc854e7b38700aec61215f66255c1e4d079dad5a3ef2f3dcefcda7641b7b7882",
+      "contentSize": "279623724b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/TOFDataIndex.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/TOFDataIndex.bin",
+      "sha256": "28b8ee2d940a4d2cd3fc1b146ff33eaf878550fd908e77d4b6161fd782fa1e5d",
+      "contentSize": "163111b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/sample_info.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/sample_info.xml",
+      "sha256": "e8a186b40090218fa5739cc48f128ae4bf6a706959f7138279633e0ebd77da94",
+      "contentSize": "5817b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/sequence.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/sequence.xml",
+      "sha256": "3f512f47b2a8843c3b00be51ef6bfc7b7a726a80e32a054a32fec38a75db671b",
+      "contentSize": "2381b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin",
+      "sha256": "2cf37230ab009bb3c82e35052c3542ccfd5a5cb982afa712c97d4a14dcbe8905",
+      "contentSize": "75688b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml",
+      "sha256": "cc166cbcdc99fd1fecc47098f774928f1e92a387f930467edc64bb5cbd910aec",
+      "contentSize": "6714b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml",
+      "sha256": "0c09806308067de40a791dffe75e85031b8ddf280ca2444f49cd81132db83db2",
+      "contentSize": "1529b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml",
+      "sha256": "048d1a78faa50cdb9ed687b881a4006777d4956838339f3c6cba8bb5e44994f5",
+      "contentSize": "1010b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt",
+      "sha256": "17e9ab0a7f587b30c72dbe0189fc759d85018953edb86fd0144a6bc5458f508e",
+      "contentSize": "14021b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac",
+      "sha256": "f26db7c65aac7d2d9e648c6a7b28b1313cd2de1306c05a8697ce843be6a5cd96",
+      "contentSize": "174b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl",
+      "sha256": "75f8f3208cc6ba48c0d641c4858b85a6884d6fe92867c4489b67fb035af4c630",
+      "contentSize": "100b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt",
+      "sha256": "32ddba81b4e7e70206911da9d941b2bf4c50e99244d029c705d20b1f4355cd40",
+      "contentSize": "21098b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth",
+      "sha256": "9c17c7a8e204e888f6525cd54e99740b75500a740c2663103191bab2aec8dc64",
+      "contentSize": "20053b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini",
+      "sha256": "f464524d2457550545b3eab2df4f9989da0166b29b37d37777c545f6f4cf25d3",
+      "contentSize": "96b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac",
+      "sha256": "571efe62cf19c1429bd57febecf31859f48f5f830f25ca6e0edb0bca35a07575",
+      "contentSize": "244b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt",
+      "sha256": "7113f9b53c854d439d468139d0b26be06047decdd6252fa4f4cd468a86f0bfe3",
+      "contentSize": "1446b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml",
+      "sha256": "17cb95bd03006f5baa59b3a16f79bc6dd0ec506dffda967a629eaab92d2e163f",
+      "contentSize": "138b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac",
+      "sha256": "03da4bfab37dfbc2026e29ab18f179f09cad6ced01050a68438240b779341567",
+      "contentSize": "79b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml",
+      "sha256": "34ba5ea1c379051ad092673205624db1cb00edcdf16656a718433228bbf4a38d",
+      "contentSize": "3281b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "sha256": "7cb1d1f7726daa3e8d8080829400d6030fb9e053849c675586a000edde9a4b1f",
+      "contentSize": "1431b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_13.D",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "assays/GCqTOF_targets/dataset/150115_13.D",
+      "hasPart": [
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/GC.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/checksum.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/pre_post.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/runstart.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/Atunes2GHz.ei.tune.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/Contents.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/DefaultMassCal.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/Devices.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/MSPeak.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/MSScan.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/MSScan.xsd"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/MSTS.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/TDA.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/TDASpec.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/TOFDataIndex.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/sample_info.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/sequence.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt"
+        }
+      ]
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/GC.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/GC.ini",
+      "sha256": "d0b6954378902d8243559f61e7ac6944dadab817bce96e0f1bcd8672cc733313",
+      "contentSize": "9990b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/acqmeth.txt",
+      "sha256": "16ebbc90dba8df449ef6ae453fd6a7921022994ac30e7f76a5e2fbc9115dc7ba",
+      "contentSize": "13130b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/checksum.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/checksum.xml",
+      "sha256": "fb2e6ada8da6c1a0e8bf0684dffd8ae02e596cdc2b4aebe782b31e7ec1d6e3e0",
+      "contentSize": "570b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/pre_post.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/pre_post.ini",
+      "sha256": "71c543ddf9ea81c008a9ec60c855f257e20eebd7c01ec9099d946982f05381d5",
+      "contentSize": "613b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/runstart.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/runstart.txt",
+      "sha256": "8cb24e077a2c6c3ef4586e41288fe68f7687f1c21dd507ecc1e2b68679a55b47",
+      "contentSize": "1894b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "sha256": "48f5fd1485f6aab7ef3a555fd5a849ba9cdfe6cd3fbaac8e57db92b9dcbaa5c4",
+      "contentSize": "14204b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/Contents.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/Contents.xml",
+      "sha256": "0e96ba37472e64407653ec1906521fff5c9b32a7f653c816420aa9b6926f634d",
+      "contentSize": "903b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/DefaultMassCal.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/DefaultMassCal.xml",
+      "sha256": "458495eb08c7e41a145f0d50738c122cc2db80aafbb1ed427aff553231f3fa6d",
+      "contentSize": "1524b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/Devices.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/Devices.xml",
+      "sha256": "e78742a9e0d04cd914ac7317cf32488c431c7a39d22f8030a464a4bace8ba611",
+      "contentSize": "552b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/MSPeak.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/MSPeak.bin",
+      "sha256": "035c490df90c919f3f68086f2570342c5297f65c1746ee0a3bc9b0eb7a80c37e",
+      "contentSize": "239991076b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/MSScan.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/MSScan.bin",
+      "sha256": "acac3f1cf6828df4f38dcdd6e2dbd99c80b7a405f51707c7ff7c09c3e1bf17bf",
+      "contentSize": "1295028b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/MSScan.xsd",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/MSScan.xsd",
+      "sha256": "8355e33676837225403a942df0e8af8fbf21463b8bc579aca7701e3cdff5e7c8",
+      "contentSize": "4234b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/MSTS.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/MSTS.xml",
+      "sha256": "8af1c00861705b97e8a8d94913e70ef7a874be93d1b85289c849c5050cb5dd04",
+      "contentSize": "464b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/TDA.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/TDA.bin",
+      "sha256": "b656b7df3ed6bfc568b2e05276ffbf6fc2d98fc13f99cbcabdfb41ea2049866c",
+      "contentSize": "271507888b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/TDASpec.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/TDASpec.bin",
+      "sha256": "b55101d8cbc9655e01e84fa119f930a1bce91fd1ac7526dbd82e2d3671689376",
+      "contentSize": "240214968b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/TOFDataIndex.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/TOFDataIndex.bin",
+      "sha256": "c7eedf74d232ae5c255472b463151fc40aeb50a0b5687c76250abaa87421625c",
+      "contentSize": "164047b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/sample_info.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/sample_info.xml",
+      "sha256": "4e0da7f6764b0d30a363782fb667a0d7654627cf337c3b063c248e9de6436c87",
+      "contentSize": "5806b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/sequence.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/sequence.xml",
+      "sha256": "cb929b9cfe3489392faa6fd2fcb2238975be1cc594217d6cc84b0e3c9c233a3f",
+      "contentSize": "2364b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin",
+      "sha256": "7bdc10a9437bda57ef8112c24c65508e49613705911f1c7ed82a0bc3b53ee212",
+      "contentSize": "75676b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml",
+      "sha256": "cc166cbcdc99fd1fecc47098f774928f1e92a387f930467edc64bb5cbd910aec",
+      "contentSize": "6714b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml",
+      "sha256": "0c09806308067de40a791dffe75e85031b8ddf280ca2444f49cd81132db83db2",
+      "contentSize": "1529b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml",
+      "sha256": "048d1a78faa50cdb9ed687b881a4006777d4956838339f3c6cba8bb5e44994f5",
+      "contentSize": "1010b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt",
+      "sha256": "258f4c395fa4d4300a5b86e720f5a410b09dcae391cfe11213368b3866195d73",
+      "contentSize": "11933b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac",
+      "sha256": "535b79f3f909ab759904a4f66bfde64d6e40f843166a6be25896c9860d81eef1",
+      "contentSize": "174b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl",
+      "sha256": "75f8f3208cc6ba48c0d641c4858b85a6884d6fe92867c4489b67fb035af4c630",
+      "contentSize": "100b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt",
+      "sha256": "a584931166cd82bf8a2a855cb550b8fab8e5e336524d4b09f3083541ce2393fc",
+      "contentSize": "13130b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth",
+      "sha256": "2f2fea0c502273266f26c60402133204a9582b9306d767be7970e04d6179b4e0",
+      "contentSize": "17589b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$",
+      "sha256": "fcd50360a864f234224a2f326a484ede97c1b9165a8d69446e5d05d3df662661",
+      "contentSize": "232b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini",
+      "sha256": "4bbee3ead43b538817457b5f5ebfcd8a6887866240a32734c9ca32211e174388",
+      "contentSize": "96b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac",
+      "sha256": "fcd50360a864f234224a2f326a484ede97c1b9165a8d69446e5d05d3df662661",
+      "contentSize": "232b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt",
+      "sha256": "75a6289ca65f7ea0d11596c2146a69f9db81b04ffab2387739f97fc18f7fa56c",
+      "contentSize": "2315b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml",
+      "sha256": "dd3e025b8cc61d7bf9cf76af79fa9f3e3972867627841b64429f8bc7c0338a66",
+      "contentSize": "125b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac",
+      "sha256": "03da4bfab37dfbc2026e29ab18f179f09cad6ced01050a68438240b779341567",
+      "contentSize": "79b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml",
+      "sha256": "a578c4aed064603a7679569e831fafa402093b9ba8796f51152a76b39480fe7c",
+      "contentSize": "2591b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "sha256": "7cb1d1f7726daa3e8d8080829400d6030fb9e053849c675586a000edde9a4b1f",
+      "contentSize": "1431b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_14.D",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "assays/GCqTOF_targets/dataset/150115_14.D",
+      "hasPart": [
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/GC.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/checksum.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/pre_post.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/runstart.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/Atunes2GHz.ei.tune.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/Contents.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/DefaultMassCal.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/Devices.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/MSPeak.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/MSScan.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/MSScan.xsd"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/MSTS.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/TDA.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/TDASpec.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/TOFDataIndex.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/sample_info.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/sequence.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt"
+        }
+      ]
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/GC.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/GC.ini",
+      "sha256": "11810b7161fb820355d61d005e14884a1c6bee799e5199ca1be893761168adbf",
+      "contentSize": "9993b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/acqmeth.txt",
+      "sha256": "43bce15fe72b0da20809aacafc8984a84f1663cb875958a66e4d7eee00078e40",
+      "contentSize": "21098b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/checksum.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/checksum.xml",
+      "sha256": "e19b86c5e4fb26391965843ab543199bf75554f702fb38e67df4f8148b5913ce",
+      "contentSize": "570b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/pre_post.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/pre_post.ini",
+      "sha256": "72d22407b1e0a0287599f239d5c0ec876f6a05cc157be4ecc977ba4c0a82ba99",
+      "contentSize": "624b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/runstart.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/runstart.txt",
+      "sha256": "08f17f0aa7f0498d82cc5d07d97bebbe7c206a5a47445865f29cb3e4fbc73454",
+      "contentSize": "1905b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "sha256": "48f5fd1485f6aab7ef3a555fd5a849ba9cdfe6cd3fbaac8e57db92b9dcbaa5c4",
+      "contentSize": "14204b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/Contents.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/Contents.xml",
+      "sha256": "29b5d1a32d62946d318f216541da6c38f6fcd4d15f1fbf3c8a34289d5f81dbfb",
+      "contentSize": "903b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/DefaultMassCal.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/DefaultMassCal.xml",
+      "sha256": "458495eb08c7e41a145f0d50738c122cc2db80aafbb1ed427aff553231f3fa6d",
+      "contentSize": "1524b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/Devices.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/Devices.xml",
+      "sha256": "e78742a9e0d04cd914ac7317cf32488c431c7a39d22f8030a464a4bace8ba611",
+      "contentSize": "552b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/MSPeak.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/MSPeak.bin",
+      "sha256": "e60f721400e955c47e09815b0e854a41584f922410c7ebecca4dfb103f628269",
+      "contentSize": "282124804b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/MSScan.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/MSScan.bin",
+      "sha256": "fc95618accda3fa1173c74da37740498dabd08b3dfb70887a26f7fe064dd0883",
+      "contentSize": "1287124b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/MSScan.xsd",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/MSScan.xsd",
+      "sha256": "8355e33676837225403a942df0e8af8fbf21463b8bc579aca7701e3cdff5e7c8",
+      "contentSize": "4234b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/MSTS.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/MSTS.xml",
+      "sha256": "bbc72daa582d06f878d2e4823a6bee69aebb1cf4a013421b805eb2dcabca1dc3",
+      "contentSize": "464b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/TDA.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/TDA.bin",
+      "sha256": "5f5e31073a344e3eafefec1541f753c6d31ba5c79e0335d6c8ab69ddbc5d00fd",
+      "contentSize": "315262276b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/TDASpec.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/TDASpec.bin",
+      "sha256": "ab33e04b47121c95ef167c0d9b82936127766d00820f241000761743a8e5092e",
+      "contentSize": "282345348b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/TOFDataIndex.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/TOFDataIndex.bin",
+      "sha256": "4801632fcc38b083704fecf7468936e20e22e1458ffae4f91c5e33e237eb1ec2",
+      "contentSize": "163135b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/sample_info.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/sample_info.xml",
+      "sha256": "469b2f2b93baffaecc703eeb9b73a28f56b950a4c5ae16ca75ee0ebb51e89fe8",
+      "contentSize": "5818b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/sequence.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/sequence.xml",
+      "sha256": "807e591c99a04e7af1645541aa91efa18ed708e71737fb82050cd059a99fc30d",
+      "contentSize": "2381b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin",
+      "sha256": "2cf37230ab009bb3c82e35052c3542ccfd5a5cb982afa712c97d4a14dcbe8905",
+      "contentSize": "75688b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml",
+      "sha256": "cc166cbcdc99fd1fecc47098f774928f1e92a387f930467edc64bb5cbd910aec",
+      "contentSize": "6714b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml",
+      "sha256": "0c09806308067de40a791dffe75e85031b8ddf280ca2444f49cd81132db83db2",
+      "contentSize": "1529b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml",
+      "sha256": "048d1a78faa50cdb9ed687b881a4006777d4956838339f3c6cba8bb5e44994f5",
+      "contentSize": "1010b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt",
+      "sha256": "17e9ab0a7f587b30c72dbe0189fc759d85018953edb86fd0144a6bc5458f508e",
+      "contentSize": "14021b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac",
+      "sha256": "d7bf609379723565282e3657b5980475ea39db862d635b660a5f5ae541f4d163",
+      "contentSize": "174b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl",
+      "sha256": "75f8f3208cc6ba48c0d641c4858b85a6884d6fe92867c4489b67fb035af4c630",
+      "contentSize": "100b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt",
+      "sha256": "32ddba81b4e7e70206911da9d941b2bf4c50e99244d029c705d20b1f4355cd40",
+      "contentSize": "21098b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth",
+      "sha256": "9c17c7a8e204e888f6525cd54e99740b75500a740c2663103191bab2aec8dc64",
+      "contentSize": "20053b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini",
+      "sha256": "f464524d2457550545b3eab2df4f9989da0166b29b37d37777c545f6f4cf25d3",
+      "contentSize": "96b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac",
+      "sha256": "571efe62cf19c1429bd57febecf31859f48f5f830f25ca6e0edb0bca35a07575",
+      "contentSize": "244b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt",
+      "sha256": "7113f9b53c854d439d468139d0b26be06047decdd6252fa4f4cd468a86f0bfe3",
+      "contentSize": "1446b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml",
+      "sha256": "17cb95bd03006f5baa59b3a16f79bc6dd0ec506dffda967a629eaab92d2e163f",
+      "contentSize": "138b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac",
+      "sha256": "03da4bfab37dfbc2026e29ab18f179f09cad6ced01050a68438240b779341567",
+      "contentSize": "79b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml",
+      "sha256": "34ba5ea1c379051ad092673205624db1cb00edcdf16656a718433228bbf4a38d",
+      "contentSize": "3281b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "sha256": "7cb1d1f7726daa3e8d8080829400d6030fb9e053849c675586a000edde9a4b1f",
+      "contentSize": "1431b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_15.D",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "assays/GCqTOF_targets/dataset/150115_15.D",
+      "hasPart": [
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/GC.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/checksum.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/pre_post.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/runstart.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/Atunes2GHz.ei.tune.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/Contents.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/DefaultMassCal.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/Devices.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/MSPeak.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/MSScan.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/MSScan.xsd"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/MSTS.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/TDA.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/TDASpec.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/TOFDataIndex.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/sample_info.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/sequence.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D/AcqData/71_82_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt"
+        }
+      ]
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/GC.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/GC.ini",
+      "sha256": "697fb9b246ca2936415cae9ab6d738abfeb35a2fee00d34e88436f07c3c7b21c",
+      "contentSize": "9989b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/acqmeth.txt",
+      "sha256": "e3b0ab84c265661c3534aade78b7f701b54c671cc441cdd66a0e1d5c35e66074",
+      "contentSize": "13130b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/checksum.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/checksum.xml",
+      "sha256": "d9479ca0bbf7ee456068405266a53424bb553de36dd893fab60441b27a9da8a0",
+      "contentSize": "570b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/pre_post.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/pre_post.ini",
+      "sha256": "ca16c2fc1cdbb1fc70841763c048262effc9977eeeacf829cf622f75e48673fd",
+      "contentSize": "613b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/runstart.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/runstart.txt",
+      "sha256": "f7bff4e9d532d43c56073b617db71b617cd3c1306bc5a7b3da50b551b5432b1f",
+      "contentSize": "1894b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "sha256": "48f5fd1485f6aab7ef3a555fd5a849ba9cdfe6cd3fbaac8e57db92b9dcbaa5c4",
+      "contentSize": "14204b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/Contents.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/Contents.xml",
+      "sha256": "f1f67987e40588a4a5db17d9593994cdf536fcd6f448699222c21a6f27b2e4a2",
+      "contentSize": "903b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/DefaultMassCal.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/DefaultMassCal.xml",
+      "sha256": "458495eb08c7e41a145f0d50738c122cc2db80aafbb1ed427aff553231f3fa6d",
+      "contentSize": "1524b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/Devices.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/Devices.xml",
+      "sha256": "e78742a9e0d04cd914ac7317cf32488c431c7a39d22f8030a464a4bace8ba611",
+      "contentSize": "552b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/MSPeak.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/MSPeak.bin",
+      "sha256": "84ea32e59f5c587bc2d3ca8021ce1cf9ce6d10c5f841d8feaf25ce15d78c98b9",
+      "contentSize": "230428916b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/MSScan.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/MSScan.bin",
+      "sha256": "ab1b1c3f7a9e3ab0e2e1566d35f1b64b72227a23ee4239927fa121da9256265d",
+      "contentSize": "1295028b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/MSScan.xsd",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/MSScan.xsd",
+      "sha256": "8355e33676837225403a942df0e8af8fbf21463b8bc579aca7701e3cdff5e7c8",
+      "contentSize": "4234b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/MSTS.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/MSTS.xml",
+      "sha256": "aaef51e33bf80daf2153dd5fbd151aba7f14b802c5696f9b46963cd0d39968d3",
+      "contentSize": "470b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/TDA.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/TDA.bin",
+      "sha256": "9545578f2d71e06243fae4ecd91def65bbb608aacad601c5c96c297bd9a7c082",
+      "contentSize": "261843908b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/TDASpec.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/TDASpec.bin",
+      "sha256": "cc8a8f0d25d919dd6742d1d3e572e59edaa6f11ee77ea2413a37b77633e93997",
+      "contentSize": "230652844b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/TOFDataIndex.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/TOFDataIndex.bin",
+      "sha256": "fd2ad8ad5b3e1cbc14b8e70c1529fbedb3ed3e4f951ddaf5a65f0db27ab4a75f",
+      "contentSize": "164047b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/sample_info.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/sample_info.xml",
+      "sha256": "66828a19e3be2cf869ac2b8ad58f85c5c95c4b34b09eee5813ef93bf59295164",
+      "contentSize": "5806b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/sequence.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/sequence.xml",
+      "sha256": "47c0de8bdfbc1303f6ddd04db5ba8d29948fff5bd9c5e7e381633fb3ddabc55e",
+      "contentSize": "2364b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin",
+      "sha256": "7bdc10a9437bda57ef8112c24c65508e49613705911f1c7ed82a0bc3b53ee212",
+      "contentSize": "75676b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml",
+      "sha256": "cc166cbcdc99fd1fecc47098f774928f1e92a387f930467edc64bb5cbd910aec",
+      "contentSize": "6714b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml",
+      "sha256": "0c09806308067de40a791dffe75e85031b8ddf280ca2444f49cd81132db83db2",
+      "contentSize": "1529b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml",
+      "sha256": "048d1a78faa50cdb9ed687b881a4006777d4956838339f3c6cba8bb5e44994f5",
+      "contentSize": "1010b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt",
+      "sha256": "258f4c395fa4d4300a5b86e720f5a410b09dcae391cfe11213368b3866195d73",
+      "contentSize": "11933b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac",
+      "sha256": "4808f01c0059bc6d496ee896a1912a493ed482491120f5650b9a3ec547c0faf1",
+      "contentSize": "174b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl",
+      "sha256": "75f8f3208cc6ba48c0d641c4858b85a6884d6fe92867c4489b67fb035af4c630",
+      "contentSize": "100b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt",
+      "sha256": "a584931166cd82bf8a2a855cb550b8fab8e5e336524d4b09f3083541ce2393fc",
+      "contentSize": "13130b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth",
+      "sha256": "2f2fea0c502273266f26c60402133204a9582b9306d767be7970e04d6179b4e0",
+      "contentSize": "17589b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$",
+      "sha256": "fcd50360a864f234224a2f326a484ede97c1b9165a8d69446e5d05d3df662661",
+      "contentSize": "232b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini",
+      "sha256": "4bbee3ead43b538817457b5f5ebfcd8a6887866240a32734c9ca32211e174388",
+      "contentSize": "96b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac",
+      "sha256": "fcd50360a864f234224a2f326a484ede97c1b9165a8d69446e5d05d3df662661",
+      "contentSize": "232b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt",
+      "sha256": "75a6289ca65f7ea0d11596c2146a69f9db81b04ffab2387739f97fc18f7fa56c",
+      "contentSize": "2315b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml",
+      "sha256": "dd3e025b8cc61d7bf9cf76af79fa9f3e3972867627841b64429f8bc7c0338a66",
+      "contentSize": "125b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac",
+      "sha256": "03da4bfab37dfbc2026e29ab18f179f09cad6ced01050a68438240b779341567",
+      "contentSize": "79b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml",
+      "sha256": "a578c4aed064603a7679569e831fafa402093b9ba8796f51152a76b39480fe7c",
+      "contentSize": "2591b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "sha256": "7cb1d1f7726daa3e8d8080829400d6030fb9e053849c675586a000edde9a4b1f",
+      "contentSize": "1431b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_16.D",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "assays/GCqTOF_targets/dataset/150115_16.D",
+      "hasPart": [
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/GC.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/checksum.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/pre_post.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/runstart.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/Atunes2GHz.ei.tune.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/Contents.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/DefaultMassCal.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/Devices.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/MSPeak.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/MSScan.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/MSScan.xsd"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/MSTS.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/TDA.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/TDASpec.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/TOFDataIndex.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/sample_info.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/sequence.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt"
+        }
+      ]
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/GC.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/GC.ini",
+      "sha256": "1452e108ac9c510e6f4172f6fdb4933100fe2b6073ca9d23721a1b280f8ab3eb",
+      "contentSize": "9994b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/acqmeth.txt",
+      "sha256": "0015f62fca967ee46c7f36bb4ab495aba170ea35cb634d01cc29d7097badb18e",
+      "contentSize": "21098b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/checksum.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/checksum.xml",
+      "sha256": "05b62c64230d2292454effa8c195d726b6a2b76d0577c4f1d78276048f2e7a70",
+      "contentSize": "570b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/pre_post.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/pre_post.ini",
+      "sha256": "c401ed18a75000429ae6755dc04b1d4909ba982f92d1ac4ca7cf8d731bdae294",
+      "contentSize": "624b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/runstart.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/runstart.txt",
+      "sha256": "91461532d9ad18ae2ce98beff6bf38411c30d68dd676254b31b34068d47ca28e",
+      "contentSize": "1912b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "sha256": "48f5fd1485f6aab7ef3a555fd5a849ba9cdfe6cd3fbaac8e57db92b9dcbaa5c4",
+      "contentSize": "14204b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/Contents.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/Contents.xml",
+      "sha256": "84e0b3f82f5594e45f93ed2f932eae3b09a72222cf2d20b1351e0ae6dc910dbf",
+      "contentSize": "903b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/DefaultMassCal.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/DefaultMassCal.xml",
+      "sha256": "973144034e4573da67ad59c26eea4922870c5a0a9b7e5d7a736f9d44494d1b3e",
+      "contentSize": "1525b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/Devices.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/Devices.xml",
+      "sha256": "e78742a9e0d04cd914ac7317cf32488c431c7a39d22f8030a464a4bace8ba611",
+      "contentSize": "552b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/MSPeak.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/MSPeak.bin",
+      "sha256": "71bc5d590810c6710488fbbc002db666c771e6cbcb623267b8048dbbdc51dee9",
+      "contentSize": "216276020b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/MSScan.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/MSScan.bin",
+      "sha256": "02ae634ee1a10092906cbf839a8e5c9bb48cbcb7d4519b2d6b6cab30e0d0ef99",
+      "contentSize": "1286916b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/MSScan.xsd",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/MSScan.xsd",
+      "sha256": "8355e33676837225403a942df0e8af8fbf21463b8bc579aca7701e3cdff5e7c8",
+      "contentSize": "4234b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/MSTS.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/MSTS.xml",
+      "sha256": "c04cbb7de8b392a76935df7dbf95ad6d366f781ea890db36fd1b561301c91828",
+      "contentSize": "454b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/TDA.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/TDA.bin",
+      "sha256": "969d30c187e228bbc1d13d56d222438f380a6cf83ff2647720ef1f340ed10788",
+      "contentSize": "247579692b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/TDASpec.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/TDASpec.bin",
+      "sha256": "2b68b525e3971accaecc90404c5a2a7551bcd2494f98383396745ed9157b4528",
+      "contentSize": "216496312b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/TOFDataIndex.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/TOFDataIndex.bin",
+      "sha256": "ddc8607c1d9fa96c6ebf739662f373e68a1e13c45a344c3e7514b4ed1cf76155",
+      "contentSize": "163111b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/sample_info.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/sample_info.xml",
+      "sha256": "bde947b07c9fb53ad612ac527035e628ad04230777a501e437915ba0193903e1",
+      "contentSize": "5822b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/sequence.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/sequence.xml",
+      "sha256": "66c7c7bf866c8f3969c8c9448872980d428c34f56c7e7649bffba445ffa0c9c8",
+      "contentSize": "2379b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin",
+      "sha256": "2cf37230ab009bb3c82e35052c3542ccfd5a5cb982afa712c97d4a14dcbe8905",
+      "contentSize": "75688b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml",
+      "sha256": "cc166cbcdc99fd1fecc47098f774928f1e92a387f930467edc64bb5cbd910aec",
+      "contentSize": "6714b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml",
+      "sha256": "0c09806308067de40a791dffe75e85031b8ddf280ca2444f49cd81132db83db2",
+      "contentSize": "1529b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml",
+      "sha256": "048d1a78faa50cdb9ed687b881a4006777d4956838339f3c6cba8bb5e44994f5",
+      "contentSize": "1010b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt",
+      "sha256": "81846eec63e3c10c1aa7538dde47de4774e6c70584efd0a15e83acbc7f090161",
+      "contentSize": "14040b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac",
+      "sha256": "2ff4435ad4771639582f228c7289461b7738ae94d190d8d80e738cd0e2f09bb8",
+      "contentSize": "174b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl",
+      "sha256": "75f8f3208cc6ba48c0d641c4858b85a6884d6fe92867c4489b67fb035af4c630",
+      "contentSize": "100b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt",
+      "sha256": "2246eb74771b10edcb82d5b5315f317271a03457369ea7f921676e272854ab13",
+      "contentSize": "21098b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth",
+      "sha256": "8ac032564531c3324eb903e14496e36b68a339a0d7bd5a6145671a52648848d6",
+      "contentSize": "20053b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini",
+      "sha256": "e35dffda0f349972203d504812756dd6680519d74e78c6c8572c63df861a280f",
+      "contentSize": "96b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac",
+      "sha256": "60cde12a299eb1e726c631f2d90aa23ac70bf0ace9898491f76a2e3715cdcc5b",
+      "contentSize": "244b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt",
+      "sha256": "a59883618631e7bd33a463924961f3efa3c97f5ba9106f748789fe01377d6e00",
+      "contentSize": "1757b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml",
+      "sha256": "b705438ea9b0461b0a47499a04560a55a75ad479485009d1fc5e9b20fa960b83",
+      "contentSize": "138b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac",
+      "sha256": "03da4bfab37dfbc2026e29ab18f179f09cad6ced01050a68438240b779341567",
+      "contentSize": "79b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml",
+      "sha256": "34ba5ea1c379051ad092673205624db1cb00edcdf16656a718433228bbf4a38d",
+      "contentSize": "3281b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "sha256": "7cb1d1f7726daa3e8d8080829400d6030fb9e053849c675586a000edde9a4b1f",
+      "contentSize": "1431b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_25.D",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "assays/GCqTOF_targets/dataset/150115_25.D",
+      "hasPart": [
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/GC.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/checksum.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/pre_post.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/runstart.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/Atunes2GHz.ei.tune.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/Contents.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/DefaultMassCal.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/Devices.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/MSPeak.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/MSScan.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/MSScan.xsd"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/MSTS.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/TDA.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/TDASpec.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/TOFDataIndex.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/sample_info.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/sequence.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/7890Method.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.Monitors.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTP.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Acq.RTPGC.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/Audit.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/LastData.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acq.ctl"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/maestro.mth"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/method.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/methver.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msacqmethod.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D/AcqData/72_83_EC5_2GHz_Fiensplitless_wo_sugar.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt"
+        }
+      ]
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/GC.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/GC.ini",
+      "sha256": "56898a6056718049aabd80a216875f4b8a45a91626d6d1dadcf791ea18395ddc",
+      "contentSize": "9989b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/acqmeth.txt",
+      "sha256": "931678cab68b396a4fbe0fb65b99795d2aecb58ad647cbe45f363ba75c6d0249",
+      "contentSize": "13130b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/checksum.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/checksum.xml",
+      "sha256": "469e212a525e3bfb670174078c036162c1e95a40a8543d2c128028268dc7d651",
+      "contentSize": "570b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/pre_post.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/pre_post.ini",
+      "sha256": "da07f1d0919a9d6a5f8ca260c34d1a95fcd74dad2e6df5182e1bcaa2b0551be2",
+      "contentSize": "613b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/runstart.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/runstart.txt",
+      "sha256": "57601c491e7967c8488ea542bdbae5b8f09958878faed54c249546027b351325",
+      "contentSize": "1901b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/Atunes2GHz.ei.tune.xml",
+      "sha256": "48f5fd1485f6aab7ef3a555fd5a849ba9cdfe6cd3fbaac8e57db92b9dcbaa5c4",
+      "contentSize": "14204b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/Contents.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/Contents.xml",
+      "sha256": "fde4cb50374eb278a83c470ae74d4c2b24d74e103438252b3bcff17efce18886",
+      "contentSize": "903b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/DefaultMassCal.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/DefaultMassCal.xml",
+      "sha256": "973144034e4573da67ad59c26eea4922870c5a0a9b7e5d7a736f9d44494d1b3e",
+      "contentSize": "1525b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/Devices.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/Devices.xml",
+      "sha256": "e78742a9e0d04cd914ac7317cf32488c431c7a39d22f8030a464a4bace8ba611",
+      "contentSize": "552b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/MSPeak.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/MSPeak.bin",
+      "sha256": "d81f9f57281c839d2643180ac2502458007811e94b80da67e4a90a65cc2d6950",
+      "contentSize": "175301188b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/MSScan.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/MSScan.bin",
+      "sha256": "feb68054c5caff11a759e89b23debbd3e21dd387f47639663280811a6734b750",
+      "contentSize": "1295028b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/MSScan.xsd",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/MSScan.xsd",
+      "sha256": "8355e33676837225403a942df0e8af8fbf21463b8bc579aca7701e3cdff5e7c8",
+      "contentSize": "4234b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/MSTS.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/MSTS.xml",
+      "sha256": "36db6d1e74b4f9fb2921ba0270067703c42145b7f1f6b3964aa4aa7a819d32ec",
+      "contentSize": "470b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/TDA.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/TDA.bin",
+      "sha256": "2aa1ffeeaed0e09064090ff7a433390d225b2203c7c1124615c24423bbc48755",
+      "contentSize": "202049320b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/TDASpec.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/TDASpec.bin",
+      "sha256": "bdf12e8d2e5b4d9bb2fc02b6012f8a610273882436131858d238c99a26f47836",
+      "contentSize": "175524900b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/TOFDataIndex.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/TOFDataIndex.bin",
+      "sha256": "8d6dc0b453fadd277c19eaab76c7a4fe5d20a45c1e305bd5a3a829368d3a09f0",
+      "contentSize": "164047b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/sample_info.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/sample_info.xml",
+      "sha256": "a229baeccc5b069ec28b123271b83287f5e5acc8013d4df0db23c118f272cc2f",
+      "contentSize": "5810b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/sequence.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/sequence.xml",
+      "sha256": "30b049c1fb58f6d3b9a1b97295d732999af76024915883611017a3df5aae6e83",
+      "contentSize": "2368b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin",
+      "sha256": "7bdc10a9437bda57ef8112c24c65508e49613705911f1c7ed82a0bc3b53ee212",
+      "contentSize": "75676b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml",
+      "sha256": "cc166cbcdc99fd1fecc47098f774928f1e92a387f930467edc64bb5cbd910aec",
+      "contentSize": "6714b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml",
+      "sha256": "0c09806308067de40a791dffe75e85031b8ddf280ca2444f49cd81132db83db2",
+      "contentSize": "1529b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml",
+      "sha256": "048d1a78faa50cdb9ed687b881a4006777d4956838339f3c6cba8bb5e44994f5",
+      "contentSize": "1010b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt",
+      "sha256": "258f4c395fa4d4300a5b86e720f5a410b09dcae391cfe11213368b3866195d73",
+      "contentSize": "11933b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac",
+      "sha256": "8d4f8d66ab5abfe9f16ff38e0e0a95d43ae3ba4620f89392dbaee167509db18c",
+      "contentSize": "174b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl",
+      "sha256": "75f8f3208cc6ba48c0d641c4858b85a6884d6fe92867c4489b67fb035af4c630",
+      "contentSize": "100b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt",
+      "sha256": "a584931166cd82bf8a2a855cb550b8fab8e5e336524d4b09f3083541ce2393fc",
+      "contentSize": "13130b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth",
+      "sha256": "2f2fea0c502273266f26c60402133204a9582b9306d767be7970e04d6179b4e0",
+      "contentSize": "17589b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$",
+      "sha256": "fcd50360a864f234224a2f326a484ede97c1b9165a8d69446e5d05d3df662661",
+      "contentSize": "232b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini",
+      "sha256": "4bbee3ead43b538817457b5f5ebfcd8a6887866240a32734c9ca32211e174388",
+      "contentSize": "96b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac",
+      "sha256": "fcd50360a864f234224a2f326a484ede97c1b9165a8d69446e5d05d3df662661",
+      "contentSize": "232b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt",
+      "sha256": "75a6289ca65f7ea0d11596c2146a69f9db81b04ffab2387739f97fc18f7fa56c",
+      "contentSize": "2315b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml",
+      "sha256": "dd3e025b8cc61d7bf9cf76af79fa9f3e3972867627841b64429f8bc7c0338a66",
+      "contentSize": "125b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac",
+      "sha256": "03da4bfab37dfbc2026e29ab18f179f09cad6ced01050a68438240b779341567",
+      "contentSize": "79b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml",
+      "sha256": "a578c4aed064603a7679569e831fafa402093b9ba8796f51152a76b39480fe7c",
+      "contentSize": "2591b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "@type": "File",
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt",
+      "sha256": "7cb1d1f7726daa3e8d8080829400d6030fb9e053849c675586a000edde9a4b1f",
+      "contentSize": "1431b"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/dataset/150115_26.D",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "assays/GCqTOF_targets/dataset/150115_26.D",
+      "hasPart": [
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/GC.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/checksum.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/pre_post.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/runstart.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/Atunes2GHz.ei.tune.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/Contents.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/DefaultMassCal.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/Devices.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/MSPeak.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/MSScan.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/MSScan.xsd"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/MSTS.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/TDA.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/TDASpec.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/TOFDataIndex.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/sample_info.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/sequence.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/7890Method.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.Monitors.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTP.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Acq.RTPGC.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/Audit.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/LastData.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acq.ctl"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/acqmeth.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/maestro.mth"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.$$$"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.ini"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.txt"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/method.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/methver.mac"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msacqmethod.xml"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D/AcqData/inject_EC5_2GHz_Fiensplit5.ei.M/msinsctl-exe-unhandled-exception-stack-trace.txt"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_DB23",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "DB23"
+    },
+    {
+      "@id": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000171",
+      "@type": "DefinedTerm",
+      "name": "extraction protocol",
+      "termCode": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000171"
+    },
+    {
+      "@id": "#Protocol_metabolite_extraction.md_metabolite_extraction",
+      "@type": "LabProtocol",
+      "name": "metabolite_extraction.md",
+      "intendedUse": {
+        "@id": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000171"
+      }
+    },
+    {
+      "@id": "#ParameterValue_Bio_entity_metabolites",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Bio entity",
+      "value": "metabolites",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000012",
+      "columnIndex": "0"
+    },
+    {
+      "@id": "#ParameterValue_Biosource_amount_6.1",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Biosource amount",
+      "value": "6.1",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000013",
+      "unitCode": "https://bioregistry.io/UO:0000022",
+      "unitText": "milligram",
+      "columnIndex": "1"
+    },
+    {
+      "@id": "#ParameterValue_Biosource_material_state_Dry_material",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Biosource material state",
+      "value": "Dry material",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0010009",
+      "valueReference": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0010011",
+      "columnIndex": "2"
+    },
+    {
+      "@id": "#ParameterValue_Extraction_buffer_water:methanol:chloroform_1:2.5:1_(v:v:v)",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Extraction buffer",
+      "value": "water:methanol:chloroform 1:2.5:1 (v:v:v)",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000050",
+      "columnIndex": "3"
+    },
+    {
+      "@id": "#ParameterValue_Extraction_buffer_volume_1500",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Extraction buffer volume",
+      "value": "1500",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000051",
+      "columnIndex": "4"
+    },
+    {
+      "@id": "#ParameterValue_Internal_standard_ribitol",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Internal standard",
+      "value": "ribitol",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0010012",
+      "valueReference": "https://bioregistry.io/CHEBI:15963",
+      "columnIndex": "5"
+    },
+    {
+      "@id": "#ParameterValue_Sample_volume_50",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Sample volume",
+      "value": "50",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0010013",
+      "unitCode": "https://bioregistry.io/UO:0000101",
+      "unitText": "microliter",
+      "columnIndex": "6"
+    },
+    {
+      "@id": "#ParameterValue_MS_sample_post-extraction_dried_in_vacuum_concentrator",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "MS sample post-extraction",
+      "value": "dried in vacuum concentrator",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000043",
+      "columnIndex": "7"
+    },
+    {
+      "@id": "#ParameterValue_MS_sample_resuspension_-",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "MS sample resuspension",
+      "value": "-",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000044",
+      "columnIndex": "8"
+    },
+    {
+      "@id": "#ParameterValue_MS_derivatization_(1)_with_10_μl_methoxyamine_hydrochloride_(Acros_organics;_freshly_prepared_at_20_mg/ml_in_pure_pyridine_(Sigma-Aldrich))_and_shaking_at_37_◦C\\nfor_90_min,_(2)_adding_90_μl_N-Methyl-N-(trimethylsilyl)trifluoroacetamide_(MSTFA;_Macherey-Nagel)_and_shaking_at_37_◦C_for_30_min._",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "MS derivatization",
+      "value": "(1) with 10 μl methoxyamine hydrochloride (Acros organics; freshly prepared at 20 mg/ml in pure pyridine (Sigma-Aldrich)) and shaking at 37 ◦C\\nfor 90 min, (2) adding 90 μl N-Methyl-N-(trimethylsilyl)trifluoroacetamide (MSTFA; Macherey-Nagel) and shaking at 37 ◦C for 30 min. ",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000052",
+      "columnIndex": "9"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_metabolite_extraction_0",
+      "@type": "LabProcess",
+      "name": "metabolite_extraction_0",
+      "object": {
+        "@id": "#Sample_CAM_01"
+      },
+      "result": {
+        "@id": "#Sample_DB23"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_metabolite_extraction.md_metabolite_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_Bio_entity_metabolites"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_amount_6.1"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_material_state_Dry_material"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_water:methanol:chloroform_1:2.5:1_(v:v:v)"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_volume_1500"
+        },
+        {
+          "@id": "#ParameterValue_Internal_standard_ribitol"
+        },
+        {
+          "@id": "#ParameterValue_Sample_volume_50"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_post-extraction_dried_in_vacuum_concentrator"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_resuspension_-"
+        },
+        {
+          "@id": "#ParameterValue_MS_derivatization_(1)_with_10_μl_methoxyamine_hydrochloride_(Acros_organics;_freshly_prepared_at_20_mg/ml_in_pure_pyridine_(Sigma-Aldrich))_and_shaking_at_37_◦C\\nfor_90_min,_(2)_adding_90_μl_N-Methyl-N-(trimethylsilyl)trifluoroacetamide_(MSTFA;_Macherey-Nagel)_and_shaking_at_37_◦C_for_30_min._"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_DB24",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "DB24"
+    },
+    {
+      "@id": "#ParameterValue_Biosource_amount_5.2",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Biosource amount",
+      "value": "5.2",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000013",
+      "unitCode": "https://bioregistry.io/UO:0000022",
+      "unitText": "milligram",
+      "columnIndex": "1"
+    },
+    {
+      "@id": "#ParameterValue_MS_derivatization_10_μl_methoxyamine_hydrochloride_and_90_μl_N-Methyl-N-(trimethylsilyl)trifluoroacetamide_MSTFA",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "MS derivatization",
+      "value": "10 μl methoxyamine hydrochloride and 90 μl N-Methyl-N-(trimethylsilyl)trifluoroacetamide MSTFA",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000052",
+      "columnIndex": "9"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_metabolite_extraction_1",
+      "@type": "LabProcess",
+      "name": "metabolite_extraction_1",
+      "object": {
+        "@id": "#Sample_CAM_02"
+      },
+      "result": {
+        "@id": "#Sample_DB24"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_metabolite_extraction.md_metabolite_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_Bio_entity_metabolites"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_amount_5.2"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_material_state_Dry_material"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_water:methanol:chloroform_1:2.5:1_(v:v:v)"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_volume_1500"
+        },
+        {
+          "@id": "#ParameterValue_Internal_standard_ribitol"
+        },
+        {
+          "@id": "#ParameterValue_Sample_volume_50"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_post-extraction_dried_in_vacuum_concentrator"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_resuspension_-"
+        },
+        {
+          "@id": "#ParameterValue_MS_derivatization_10_μl_methoxyamine_hydrochloride_and_90_μl_N-Methyl-N-(trimethylsilyl)trifluoroacetamide_MSTFA"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_DB26",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "DB26"
+    },
+    {
+      "@id": "#ParameterValue_Biosource_amount_8.2",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Biosource amount",
+      "value": "8.2",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000013",
+      "unitCode": "https://bioregistry.io/UO:0000022",
+      "unitText": "milligram",
+      "columnIndex": "1"
+    },
+    {
+      "@id": "#ParameterValue_MS_derivatization_MaHCl_and_MSTFA",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "MS derivatization",
+      "value": "MaHCl and MSTFA",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000052",
+      "columnIndex": "9"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_metabolite_extraction_2",
+      "@type": "LabProcess",
+      "name": "metabolite_extraction_2",
+      "object": {
+        "@id": "#Sample_CAM_03"
+      },
+      "result": {
+        "@id": "#Sample_DB26"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_metabolite_extraction.md_metabolite_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_Bio_entity_metabolites"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_amount_8.2"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_material_state_Dry_material"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_water:methanol:chloroform_1:2.5:1_(v:v:v)"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_volume_1500"
+        },
+        {
+          "@id": "#ParameterValue_Internal_standard_ribitol"
+        },
+        {
+          "@id": "#ParameterValue_Sample_volume_50"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_post-extraction_dried_in_vacuum_concentrator"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_resuspension_-"
+        },
+        {
+          "@id": "#ParameterValue_MS_derivatization_MaHCl_and_MSTFA"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_DB39",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "DB39"
+    },
+    {
+      "@id": "#ParameterValue_Biosource_amount_4.9",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Biosource amount",
+      "value": "4.9",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000013",
+      "unitCode": "https://bioregistry.io/UO:0000022",
+      "unitText": "milligram",
+      "columnIndex": "1"
+    },
+    {
+      "@id": "#ParameterValue_MS_derivatization_methoxyamination_+_trimethylsylilation_(TMS)",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "MS derivatization",
+      "value": "methoxyamination + trimethylsylilation (TMS)",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000052",
+      "columnIndex": "9"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_metabolite_extraction_3",
+      "@type": "LabProcess",
+      "name": "metabolite_extraction_3",
+      "object": {
+        "@id": "#Sample_reC3_01"
+      },
+      "result": {
+        "@id": "#Sample_DB39"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_metabolite_extraction.md_metabolite_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_Bio_entity_metabolites"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_amount_4.9"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_material_state_Dry_material"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_water:methanol:chloroform_1:2.5:1_(v:v:v)"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_volume_1500"
+        },
+        {
+          "@id": "#ParameterValue_Internal_standard_ribitol"
+        },
+        {
+          "@id": "#ParameterValue_Sample_volume_50"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_post-extraction_dried_in_vacuum_concentrator"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_resuspension_-"
+        },
+        {
+          "@id": "#ParameterValue_MS_derivatization_methoxyamination_+_trimethylsylilation_(TMS)"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_DB40",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "DB40"
+    },
+    {
+      "@id": "#ParameterValue_Biosource_amount_6",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Biosource amount",
+      "value": "6",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000013",
+      "unitCode": "https://bioregistry.io/UO:0000022",
+      "unitText": "milligram",
+      "columnIndex": "1"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_metabolite_extraction_4",
+      "@type": "LabProcess",
+      "name": "metabolite_extraction_4",
+      "object": {
+        "@id": "#Sample_reC3_02"
+      },
+      "result": {
+        "@id": "#Sample_DB40"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_metabolite_extraction.md_metabolite_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_Bio_entity_metabolites"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_amount_6"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_material_state_Dry_material"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_water:methanol:chloroform_1:2.5:1_(v:v:v)"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_volume_1500"
+        },
+        {
+          "@id": "#ParameterValue_Internal_standard_ribitol"
+        },
+        {
+          "@id": "#ParameterValue_Sample_volume_50"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_post-extraction_dried_in_vacuum_concentrator"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_resuspension_-"
+        },
+        {
+          "@id": "#ParameterValue_MS_derivatization_methoxyamination_+_trimethylsylilation_(TMS)"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_DB41",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "DB41"
+    },
+    {
+      "@id": "#ParameterValue_Biosource_amount_6.2",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Biosource amount",
+      "value": "6.2",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000013",
+      "unitCode": "https://bioregistry.io/UO:0000022",
+      "unitText": "milligram",
+      "columnIndex": "1"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_metabolite_extraction_5",
+      "@type": "LabProcess",
+      "name": "metabolite_extraction_5",
+      "object": {
+        "@id": "#Sample_reC3_03"
+      },
+      "result": {
+        "@id": "#Sample_DB41"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_metabolite_extraction.md_metabolite_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_Bio_entity_metabolites"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_amount_6.2"
+        },
+        {
+          "@id": "#ParameterValue_Biosource_material_state_Dry_material"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_water:methanol:chloroform_1:2.5:1_(v:v:v)"
+        },
+        {
+          "@id": "#ParameterValue_Extraction_buffer_volume_1500"
+        },
+        {
+          "@id": "#ParameterValue_Internal_standard_ribitol"
+        },
+        {
+          "@id": "#ParameterValue_Sample_volume_50"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_post-extraction_dried_in_vacuum_concentrator"
+        },
+        {
+          "@id": "#ParameterValue_MS_sample_resuspension_-"
+        },
+        {
+          "@id": "#ParameterValue_MS_derivatization_methoxyamination_+_trimethylsylilation_(TMS)"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_Std._Mix_5µM",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "Std. Mix 5µM"
+    },
+    {
+      "@id": "#Sample_150112_03",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150112_03"
+    },
+    {
+      "@id": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000177",
+      "@type": "DefinedTerm",
+      "name": "assay protocol",
+      "termCode": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000177"
+    },
+    {
+      "@id": "#Protocol_gas_chromatography.md_gas_chromatography",
+      "@type": "LabProtocol",
+      "name": "gas_chromatography.md",
+      "intendedUse": {
+        "@id": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000177"
+      }
+    },
+    {
+      "@id": "#ParameterValue_MS_sample_type",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "MS sample type",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000045",
+      "columnIndex": "0"
+    },
+    {
+      "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Chromatography instrument model",
+      "value": "Agilent 7890B GC",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000046",
+      "columnIndex": "1"
+    },
+    {
+      "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Chromatography autosampler model",
+      "value": "GERSTEL MultiPurpose Sampler (MPS) Dual Head",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000047",
+      "columnIndex": "2"
+    },
+    {
+      "@id": "#ParameterValue_Chromatography_column_type_low_polarity",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Chromatography column type",
+      "value": "low polarity",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000053",
+      "columnIndex": "3"
+    },
+    {
+      "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Chromatography column model",
+      "value": "Agilent 19091S-433",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000048",
+      "columnIndex": "4"
+    },
+    {
+      "@id": "#ParameterValue_mobile_phase_helium(0)",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "mobile phase",
+      "value": "helium(0)",
+      "propertyID": "http://purl.obolibrary.org/obo/CHMO_0000995",
+      "valueReference": "https://bioregistry.io/CHEBI:33681",
+      "columnIndex": "5"
+    },
+    {
+      "@id": "#ParameterValue_Chromatography_injection_volume_1",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Chromatography injection volume",
+      "value": "1",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0010014",
+      "unitCode": "https://bioregistry.io/UO:0000101",
+      "unitText": "microliter",
+      "columnIndex": "6"
+    },
+    {
+      "@id": "#ParameterValue_Chromatography_injection_mode_splitless",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Chromatography injection mode",
+      "value": "splitless",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0010015",
+      "columnIndex": "7"
+    },
+    {
+      "@id": "#ParameterValue_Chromatography_gradient_gradient_elution",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Chromatography gradient",
+      "value": "gradient elution",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000081",
+      "columnIndex": "8"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_gas_chromatography_0",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_0",
+      "object": {
+        "@id": "#Sample_Std._Mix_5µM"
+      },
+      "result": {
+        "@id": "#Sample_150112_03"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_splitless"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150112_04",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150112_04"
+    },
+    {
+      "@id": "#ParameterValue_Chromatography_injection_mode_split",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Chromatography injection mode",
+      "value": "split",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0010015",
+      "valueReference": "https://bioregistry.io/PATO:0001786",
+      "columnIndex": "7"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_gas_chromatography_1",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_1",
+      "object": {
+        "@id": "#Sample_Std._Mix_5µM"
+      },
+      "result": {
+        "@id": "#Sample_150112_04"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_split"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_blank_1",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "blank 1"
+    },
+    {
+      "@id": "#Sample_150112_15",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150112_15"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_gas_chromatography_2",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_2",
+      "object": {
+        "@id": "#Sample_blank_1"
+      },
+      "result": {
+        "@id": "#Sample_150112_15"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_splitless"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150112_16",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150112_16"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_gas_chromatography_3",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_3",
+      "object": {
+        "@id": "#Sample_blank_1"
+      },
+      "result": {
+        "@id": "#Sample_150112_16"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_split"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150112_55",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150112_55"
+    },
+    {
+      "@id": "#ParameterValue_MS_sample_type_material_sample",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "MS sample type",
+      "value": "material sample",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000045",
+      "valueReference": "https://bioregistry.io/OBI:0000747",
+      "columnIndex": "0"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_gas_chromatography_4",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_4",
+      "object": {
+        "@id": "#Sample_DB23"
+      },
+      "result": {
+        "@id": "#Sample_150112_55"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_splitless"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150112_56",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150112_56"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_gas_chromatography_5",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_5",
+      "object": {
+        "@id": "#Sample_DB23"
+      },
+      "result": {
+        "@id": "#Sample_150112_56"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_split"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150112_61",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150112_61"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_gas_chromatography_6",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_6",
+      "object": {
+        "@id": "#Sample_DB24"
+      },
+      "result": {
+        "@id": "#Sample_150112_61"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_splitless"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150112_62",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150112_62"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_gas_chromatography_7",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_7",
+      "object": {
+        "@id": "#Sample_DB24"
+      },
+      "result": {
+        "@id": "#Sample_150112_62"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_split"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150112_65",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150112_65"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_gas_chromatography_8",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_8",
+      "object": {
+        "@id": "#Sample_DB26"
+      },
+      "result": {
+        "@id": "#Sample_150112_65"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_splitless"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150112_66",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150112_66"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_gas_chromatography_9",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_9",
+      "object": {
+        "@id": "#Sample_DB26"
+      },
+      "result": {
+        "@id": "#Sample_150112_66"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_split"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150115_03",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150115_03"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_gas_chromatography_10",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_10",
+      "object": {
+        "@id": "#Sample_Std._Mix_5µM"
+      },
+      "result": {
+        "@id": "#Sample_150115_03"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_splitless"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150115_04",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150115_04"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_gas_chromatography_11",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_11",
+      "object": {
+        "@id": "#Sample_Std._Mix_5µM"
+      },
+      "result": {
+        "@id": "#Sample_150115_04"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_split"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150115_11",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150115_11"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_gas_chromatography_12",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_12",
+      "object": {
+        "@id": "#Sample_DB39"
+      },
+      "result": {
+        "@id": "#Sample_150115_11"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_splitless"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150115_12",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150115_12"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_gas_chromatography_13",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_13",
+      "object": {
+        "@id": "#Sample_DB39"
+      },
+      "result": {
+        "@id": "#Sample_150115_12"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_split"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150115_13",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150115_13"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_gas_chromatography_14",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_14",
+      "object": {
+        "@id": "#Sample_DB40"
+      },
+      "result": {
+        "@id": "#Sample_150115_13"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_splitless"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150115_14",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150115_14"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_gas_chromatography_15",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_15",
+      "object": {
+        "@id": "#Sample_DB40"
+      },
+      "result": {
+        "@id": "#Sample_150115_14"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_split"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150115_15",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150115_15"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_gas_chromatography_16",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_16",
+      "object": {
+        "@id": "#Sample_DB41"
+      },
+      "result": {
+        "@id": "#Sample_150115_15"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_splitless"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150115_16",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150115_16"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_gas_chromatography_17",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_17",
+      "object": {
+        "@id": "#Sample_DB41"
+      },
+      "result": {
+        "@id": "#Sample_150115_16"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type_material_sample"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_split"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_blank_2",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "blank 2"
+    },
+    {
+      "@id": "#Sample_150115_25",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150115_25"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_gas_chromatography_18",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_18",
+      "object": {
+        "@id": "#Sample_blank_2"
+      },
+      "result": {
+        "@id": "#Sample_150115_25"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_splitless"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_150115_26",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "150115_26"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_gas_chromatography_19",
+      "@type": "LabProcess",
+      "name": "gas_chromatography_19",
+      "object": {
+        "@id": "#Sample_blank_2"
+      },
+      "result": {
+        "@id": "#Sample_150115_26"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_gas_chromatography.md_gas_chromatography"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_MS_sample_type"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_instrument_model_Agilent_7890B_GC"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_autosampler_model_GERSTEL_MultiPurpose_Sampler_(MPS)_Dual_Head"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_type_low_polarity"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_column_model_Agilent_19091S-433"
+        },
+        {
+          "@id": "#ParameterValue_mobile_phase_helium(0)"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_volume_1"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_injection_mode_split"
+        },
+        {
+          "@id": "#ParameterValue_Chromatography_gradient_gradient_elution"
+        }
+      ]
+    },
+    {
+      "@id": "#Protocol_mass_spec.md_mass_spec",
+      "@type": "LabProtocol",
+      "name": "mass_spec.md",
+      "intendedUse": {
+        "@id": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000177"
+      }
+    },
+    {
+      "@id": "#ParameterValue_scan_polarity_positive",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "scan polarity",
+      "value": "positive",
+      "propertyID": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1000465",
+      "columnIndex": "0"
+    },
+    {
+      "@id": "#ParameterValue_scan_window_lower_limit_60",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "scan window lower limit",
+      "value": "60",
+      "propertyID": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1000501",
+      "columnIndex": "1"
+    },
+    {
+      "@id": "#ParameterValue_scan_window_upper_limit_800",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "scan window upper limit",
+      "value": "800",
+      "propertyID": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1000500",
+      "columnIndex": "2"
+    },
+    {
+      "@id": "#ParameterValue_scan_rate_20",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "scan rate",
+      "value": "20",
+      "propertyID": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1000015",
+      "unitCode": "https://bioregistry.io/UO:0000106",
+      "unitText": "hertz",
+      "columnIndex": "3"
+    },
+    {
+      "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "instrument model",
+      "value": "7200 GC-QTOF (Agilent Technologies)",
+      "propertyID": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1000031",
+      "columnIndex": "4"
+    },
+    {
+      "@id": "#ParameterValue_ionization_type_electron_ionization",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "ionization type",
+      "value": "electron ionization",
+      "propertyID": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1000008",
+      "valueReference": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1000389",
+      "columnIndex": "5"
+    },
+    {
+      "@id": "#ParameterValue_mass_analyzer_type_quadrupole",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "mass analyzer type",
+      "value": "quadrupole",
+      "propertyID": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1000443",
+      "valueReference": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1000081",
+      "columnIndex": "6"
+    },
+    {
+      "@id": "#ParameterValue_detector_type_electron_multiplier",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "detector type",
+      "value": "electron multiplier",
+      "propertyID": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1000026",
+      "valueReference": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1000253",
+      "columnIndex": "7"
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_mass_spec_0",
+      "@type": "LabProcess",
+      "name": "mass_spec_0",
+      "object": {
+        "@id": "#Sample_150112_03"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_03.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_mass_spec_1",
+      "@type": "LabProcess",
+      "name": "mass_spec_1",
+      "object": {
+        "@id": "#Sample_150112_04"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_04.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_mass_spec_2",
+      "@type": "LabProcess",
+      "name": "mass_spec_2",
+      "object": {
+        "@id": "#Sample_150112_15"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_15.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_mass_spec_3",
+      "@type": "LabProcess",
+      "name": "mass_spec_3",
+      "object": {
+        "@id": "#Sample_150112_16"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_16.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_mass_spec_4",
+      "@type": "LabProcess",
+      "name": "mass_spec_4",
+      "object": {
+        "@id": "#Sample_150112_55"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_55.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_mass_spec_5",
+      "@type": "LabProcess",
+      "name": "mass_spec_5",
+      "object": {
+        "@id": "#Sample_150112_56"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_56.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_mass_spec_6",
+      "@type": "LabProcess",
+      "name": "mass_spec_6",
+      "object": {
+        "@id": "#Sample_150112_61"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_61.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_mass_spec_7",
+      "@type": "LabProcess",
+      "name": "mass_spec_7",
+      "object": {
+        "@id": "#Sample_150112_62"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_62.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_mass_spec_8",
+      "@type": "LabProcess",
+      "name": "mass_spec_8",
+      "object": {
+        "@id": "#Sample_150112_65"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_65.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_mass_spec_9",
+      "@type": "LabProcess",
+      "name": "mass_spec_9",
+      "object": {
+        "@id": "#Sample_150112_66"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_66.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_mass_spec_10",
+      "@type": "LabProcess",
+      "name": "mass_spec_10",
+      "object": {
+        "@id": "#Sample_150115_03"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_03.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_mass_spec_11",
+      "@type": "LabProcess",
+      "name": "mass_spec_11",
+      "object": {
+        "@id": "#Sample_150115_04"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_04.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_mass_spec_12",
+      "@type": "LabProcess",
+      "name": "mass_spec_12",
+      "object": {
+        "@id": "#Sample_150115_11"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_11.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_mass_spec_13",
+      "@type": "LabProcess",
+      "name": "mass_spec_13",
+      "object": {
+        "@id": "#Sample_150115_12"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_12.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_mass_spec_14",
+      "@type": "LabProcess",
+      "name": "mass_spec_14",
+      "object": {
+        "@id": "#Sample_150115_13"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_13.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_mass_spec_15",
+      "@type": "LabProcess",
+      "name": "mass_spec_15",
+      "object": {
+        "@id": "#Sample_150115_14"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_14.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_mass_spec_16",
+      "@type": "LabProcess",
+      "name": "mass_spec_16",
+      "object": {
+        "@id": "#Sample_150115_15"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_15.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_mass_spec_17",
+      "@type": "LabProcess",
+      "name": "mass_spec_17",
+      "object": {
+        "@id": "#Sample_150115_16"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_16.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_mass_spec_18",
+      "@type": "LabProcess",
+      "name": "mass_spec_18",
+      "object": {
+        "@id": "#Sample_150115_25"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_25.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_A_GCqTOF_targets_mass_spec_19",
+      "@type": "LabProcess",
+      "name": "mass_spec_19",
+      "object": {
+        "@id": "#Sample_150115_26"
+      },
+      "result": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_26.D"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mass_spec.md_mass_spec"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_scan_polarity_positive"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_lower_limit_60"
+        },
+        {
+          "@id": "#ParameterValue_scan_window_upper_limit_800"
+        },
+        {
+          "@id": "#ParameterValue_scan_rate_20"
+        },
+        {
+          "@id": "#ParameterValue_instrument_model_7200_GC-QTOF_(Agilent_Technologies)"
+        },
+        {
+          "@id": "#ParameterValue_ionization_type_electron_ionization"
+        },
+        {
+          "@id": "#ParameterValue_mass_analyzer_type_quadrupole"
+        },
+        {
+          "@id": "#ParameterValue_detector_type_electron_multiplier"
+        }
+      ]
+    },
+    {
+      "@id": "#PV_GCqTOF_targeted",
+      "@type": "PropertyValue",
+      "name": "GCqTOF targeted"
+    },
+    {
+      "@id": "assays/GCqTOF_targets/",
+      "@type": "Dataset",
+      "additionalType": "Assay",
+      "identifier": "GCqTOF_targets",
+      "creator": [
+        {
+          "@id": "#Person_Dominik_Brilhaus"
+        },
+        {
+          "@id": "#Person_Tabea_Mettler-Altmann"
+        },
+        {
+          "@id": "#Person_Elisabeth_Klemp"
+        },
+        {
+          "@id": "#Person_Maria_Graf"
+        },
+        {
+          "@id": "#Person_Katrin_Weber"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#Process_A_GCqTOF_targets_metabolite_extraction_0"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_metabolite_extraction_1"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_metabolite_extraction_2"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_metabolite_extraction_3"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_metabolite_extraction_4"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_metabolite_extraction_5"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_gas_chromatography_0"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_gas_chromatography_1"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_gas_chromatography_2"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_gas_chromatography_3"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_gas_chromatography_4"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_gas_chromatography_5"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_gas_chromatography_6"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_gas_chromatography_7"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_gas_chromatography_8"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_gas_chromatography_9"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_gas_chromatography_10"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_gas_chromatography_11"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_gas_chromatography_12"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_gas_chromatography_13"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_gas_chromatography_14"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_gas_chromatography_15"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_gas_chromatography_16"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_gas_chromatography_17"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_gas_chromatography_18"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_gas_chromatography_19"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_mass_spec_0"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_mass_spec_1"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_mass_spec_2"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_mass_spec_3"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_mass_spec_4"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_mass_spec_5"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_mass_spec_6"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_mass_spec_7"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_mass_spec_8"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_mass_spec_9"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_mass_spec_10"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_mass_spec_11"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_mass_spec_12"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_mass_spec_13"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_mass_spec_14"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_mass_spec_15"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_mass_spec_16"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_mass_spec_17"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_mass_spec_18"
+        },
+        {
+          "@id": "#Process_A_GCqTOF_targets_mass_spec_19"
+        }
+      ],
+      "variableMeasured": {
+        "@id": "#PV_GCqTOF_targeted"
+      }
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin",
+      "sha256": "c20898d9852b97042247e32fec78abd264ec07f7650351fed0f7de8e255bc40f",
+      "contentSize": "1242226b"
+    },
+    {
+      "@id": "assays/MassHunter_targets/dataset/QuantReports/22-0005_exp001.batch_a.bin/190614_QuantReport_ISTD_DB.xlsx",
+      "@type": "File",
+      "name": "assays/MassHunter_targets/dataset/QuantReports/22-0005_exp001.batch_a.bin/190614_QuantReport_ISTD_DB.xlsx",
+      "sha256": "69e947f9e7848445288e313edb4a69bf98300df21d476ea45faf375fad83352d",
+      "contentSize": "170686b"
+    },
+    {
+      "@id": "#Protocol_mh-quant-results",
+      "@type": "LabProtocol"
+    },
+    {
+      "@id": "#Process_A_MassHunter_targets_mh-quant-results_0",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_0",
+      "object": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_03.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_A_MassHunter_targets_mh-quant-results_1",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_1",
+      "object": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_04.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_A_MassHunter_targets_mh-quant-results_2",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_2",
+      "object": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_15.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_A_MassHunter_targets_mh-quant-results_3",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_3",
+      "object": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_16.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_A_MassHunter_targets_mh-quant-results_4",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_4",
+      "object": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_55.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_A_MassHunter_targets_mh-quant-results_5",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_5",
+      "object": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_56.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_A_MassHunter_targets_mh-quant-results_6",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_6",
+      "object": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_61.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_A_MassHunter_targets_mh-quant-results_7",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_7",
+      "object": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_62.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_A_MassHunter_targets_mh-quant-results_8",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_8",
+      "object": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_65.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_A_MassHunter_targets_mh-quant-results_9",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_9",
+      "object": {
+        "@id": "assays/GCqTOF_targets/dataset/150112_66.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_A_MassHunter_targets_mh-quant-results_10",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_10",
+      "object": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_03.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_A_MassHunter_targets_mh-quant-results_11",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_11",
+      "object": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_04.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_A_MassHunter_targets_mh-quant-results_12",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_12",
+      "object": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_11.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_A_MassHunter_targets_mh-quant-results_13",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_13",
+      "object": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_12.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_A_MassHunter_targets_mh-quant-results_14",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_14",
+      "object": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_13.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_A_MassHunter_targets_mh-quant-results_15",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_15",
+      "object": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_14.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_A_MassHunter_targets_mh-quant-results_16",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_16",
+      "object": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_15.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_A_MassHunter_targets_mh-quant-results_17",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_17",
+      "object": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_16.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_A_MassHunter_targets_mh-quant-results_18",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_18",
+      "object": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_25.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Process_A_MassHunter_targets_mh-quant-results_19",
+      "@type": "LabProcess",
+      "name": "mh-quant-results_19",
+      "object": {
+        "@id": "assays/GCqTOF_targets/dataset/150115_26.D"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-results"
+      }
+    },
+    {
+      "@id": "#Protocol_mh-quant-report",
+      "@type": "LabProtocol"
+    },
+    {
+      "@id": "#Process_A_MassHunter_targets_mh-quant-report_0",
+      "@type": "LabProcess",
+      "name": "mh-quant-report",
+      "object": {
+        "@id": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+      },
+      "result": {
+        "@id": "assays/MassHunter_targets/dataset/QuantReports/22-0005_exp001.batch_a.bin/190614_QuantReport_ISTD_DB.xlsx"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_mh-quant-report"
+      }
+    },
+    {
+      "@id": "assays/MassHunter_targets/",
+      "@type": "Dataset",
+      "additionalType": "Assay",
+      "identifier": "MassHunter_targets",
+      "hasPart": [
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_03.D"
+        },
+        {
+          "@id": "assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_04.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_15.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_16.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_55.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_56.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_61.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_62.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_65.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150112_66.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_03.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_04.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_11.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_12.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_13.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_14.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_15.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_16.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_25.D"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/dataset/150115_26.D"
+        },
+        {
+          "@id": "assays/MassHunter_targets/dataset/QuantReports/22-0005_exp001.batch_a.bin/190614_QuantReport_ISTD_DB.xlsx"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#Process_A_MassHunter_targets_mh-quant-results_0"
+        },
+        {
+          "@id": "#Process_A_MassHunter_targets_mh-quant-results_1"
+        },
+        {
+          "@id": "#Process_A_MassHunter_targets_mh-quant-results_2"
+        },
+        {
+          "@id": "#Process_A_MassHunter_targets_mh-quant-results_3"
+        },
+        {
+          "@id": "#Process_A_MassHunter_targets_mh-quant-results_4"
+        },
+        {
+          "@id": "#Process_A_MassHunter_targets_mh-quant-results_5"
+        },
+        {
+          "@id": "#Process_A_MassHunter_targets_mh-quant-results_6"
+        },
+        {
+          "@id": "#Process_A_MassHunter_targets_mh-quant-results_7"
+        },
+        {
+          "@id": "#Process_A_MassHunter_targets_mh-quant-results_8"
+        },
+        {
+          "@id": "#Process_A_MassHunter_targets_mh-quant-results_9"
+        },
+        {
+          "@id": "#Process_A_MassHunter_targets_mh-quant-results_10"
+        },
+        {
+          "@id": "#Process_A_MassHunter_targets_mh-quant-results_11"
+        },
+        {
+          "@id": "#Process_A_MassHunter_targets_mh-quant-results_12"
+        },
+        {
+          "@id": "#Process_A_MassHunter_targets_mh-quant-results_13"
+        },
+        {
+          "@id": "#Process_A_MassHunter_targets_mh-quant-results_14"
+        },
+        {
+          "@id": "#Process_A_MassHunter_targets_mh-quant-results_15"
+        },
+        {
+          "@id": "#Process_A_MassHunter_targets_mh-quant-results_16"
+        },
+        {
+          "@id": "#Process_A_MassHunter_targets_mh-quant-results_17"
+        },
+        {
+          "@id": "#Process_A_MassHunter_targets_mh-quant-results_18"
+        },
+        {
+          "@id": "#Process_A_MassHunter_targets_mh-quant-results_19"
+        },
+        {
+          "@id": "#Process_A_MassHunter_targets_mh-quant-report_0"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.org/spar/scoro/technician",
+      "@type": "DefinedTerm",
+      "name": "technician",
+      "termCode": "http://purl.org/spar/scoro/technician"
+    },
+    {
+      "@id": "#Person_Samantha_Kurz",
+      "@type": "Person",
+      "givenName": "Samantha",
+      "affiliation": {
+        "@id": "#Organization_Institute_of_Plant_Biochemistry,_HHU_Düsseldorf"
+      },
+      "familyName": "Kurz",
+      "jobTitle": {
+        "@id": "http://purl.org/spar/scoro/technician"
+      },
+      "address": "Universitätsstr. 1, 40225 Düsseldorf",
+      "disambiguatingDescription": "Comment {Name = \\"Worksheet\\"}"
+    },
+    {
+      "@id": "#Organization_Biological_Medical_Research_Centre,_HHU_Düsseldorf",
+      "@type": "Organization",
+      "name": "Biological Medical Research Centre, HHU Düsseldorf"
+    },
+    {
+      "@id": "#Person_Thorsten_Wachtmeister",
+      "@type": "Person",
+      "givenName": "Thorsten",
+      "affiliation": {
+        "@id": "#Organization_Biological_Medical_Research_Centre,_HHU_Düsseldorf"
+      },
+      "familyName": "Wachtmeister",
+      "jobTitle": {
+        "@id": "http://purl.org/spar/scoro/technician"
+      },
+      "address": "Universitätsstr. 1, 40225 Düsseldorf",
+      "disambiguatingDescription": "Comment {Name = \\"Worksheet\\"}"
+    },
+    {
+      "@id": "assays/RNASeq/dataset/DB_097_CAMMD_CAGATC_L001_R1_001.fastq.gz",
+      "@type": "File",
+      "name": "assays/RNASeq/dataset/DB_097_CAMMD_CAGATC_L001_R1_001.fastq.gz",
+      "sha256": "7f0b61abc9971ade750ce54f0f10aa50a6bc42a517be8ba60257e0cf6776d1c7",
+      "contentSize": "1451886904b"
+    },
+    {
+      "@id": "assays/RNASeq/dataset/DB_099_CAMMD_CTTGTA_L001_R1_001.fastq.gz",
+      "@type": "File",
+      "name": "assays/RNASeq/dataset/DB_099_CAMMD_CTTGTA_L001_R1_001.fastq.gz",
+      "sha256": "2d4200a78e57bc821b46c1b6c84b1c5bcf5889eaba82e6baff16cc35f2e77651",
+      "contentSize": "1879439049b"
+    },
+    {
+      "@id": "assays/RNASeq/dataset/DB_103_CAMMD_AGTCAA_L001_R1_001.fastq.gz",
+      "@type": "File",
+      "name": "assays/RNASeq/dataset/DB_103_CAMMD_AGTCAA_L001_R1_001.fastq.gz",
+      "sha256": "b7f7f26c5eb54c04aad9b4168b3104fcf17c6cbaff4ce4300d07c8955dbbeb28",
+      "contentSize": "1713418642b"
+    },
+    {
+      "@id": "assays/RNASeq/dataset/DB_161_reC3MD_GTCCGC_L001_R1_001.fastq.gz",
+      "@type": "File",
+      "name": "assays/RNASeq/dataset/DB_161_reC3MD_GTCCGC_L001_R1_001.fastq.gz",
+      "sha256": "827908c02722e3bf22ca4cdfaeda269d999a36ae82e54ffeefc1602f7d3938f5",
+      "contentSize": "1684786710b"
+    },
+    {
+      "@id": "assays/RNASeq/dataset/DB_163_reC3MD_GTGAAA_L001_R1_001.fastq.gz",
+      "@type": "File",
+      "name": "assays/RNASeq/dataset/DB_163_reC3MD_GTGAAA_L001_R1_001.fastq.gz",
+      "sha256": "08a331f71ef4ba111d5c8c0a76cb5e767b93b208ba9d50c93c4b632115bfea03",
+      "contentSize": "1880798768b"
+    },
+    {
+      "@id": "assays/RNASeq/dataset/DB_165_re-C3MD_GTGAAA_L002_R1_001.fastq.gz",
+      "@type": "File",
+      "name": "assays/RNASeq/dataset/DB_165_re-C3MD_GTGAAA_L002_R1_001.fastq.gz",
+      "sha256": "dc8e318352b10c72c032ebf1609ea14cd57c454e0f922a7a0c14f1d8f754dfb9",
+      "contentSize": "1801995178b"
+    },
+    {
+      "@id": "#Sample_CAM_01_ext",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "CAM_01_ext"
+    },
+    {
+      "@id": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000173",
+      "@type": "DefinedTerm",
+      "name": "RNA extraction protocol",
+      "termCode": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000173"
+    },
+    {
+      "@id": "#Protocol_rna_extraction.md_rna_extraction",
+      "@type": "LabProtocol",
+      "name": "rna_extraction.md",
+      "intendedUse": {
+        "@id": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000173"
+      }
+    },
+    {
+      "@id": "#ParameterValue_biosource_amount_80",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "biosource amount",
+      "value": "80",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000013",
+      "unitCode": "https://bioregistry.io/UO:0000022",
+      "unitText": "milligram",
+      "columnIndex": "0"
+    },
+    {
+      "@id": "#ParameterValue_extraction_method_Roboklon_EURx_GeneMATRIX_Universal_RNA_Purification_version_2.3_September_2011",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "extraction method",
+      "value": "Roboklon EURx GeneMATRIX Universal RNA Purification version 2.3 September 2011",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000054",
+      "columnIndex": "1"
+    },
+    {
+      "@id": "#ParameterValue_extraction_buffer_Roboklon_commercial_buffers",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "extraction buffer",
+      "value": "Roboklon commercial buffers",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000050",
+      "columnIndex": "2"
+    },
+    {
+      "@id": "#ParameterValue_extraction_buffer_volume_300",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "extraction buffer volume",
+      "value": "300",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000051",
+      "unitCode": "https://bioregistry.io/UO:0000101",
+      "unitText": "microliter",
+      "columnIndex": "3"
+    },
+    {
+      "@id": "#ParameterValue_RNA_quality_check_RIN_7.6_(Agilent_Bioanalyzer_2100_expert_Plant_RNA_Nano)",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "RNA quality check",
+      "value": "RIN 7.6 (Agilent Bioanalyzer 2100 expert_Plant RNA Nano)",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000062",
+      "columnIndex": "4"
+    },
+    {
+      "@id": "#Process_A_RNASeq_rna_extraction_0",
+      "@type": "LabProcess",
+      "name": "rna_extraction_0",
+      "object": {
+        "@id": "#Sample_CAM_01"
+      },
+      "result": {
+        "@id": "#Sample_CAM_01_ext"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_rna_extraction.md_rna_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_biosource_amount_80"
+        },
+        {
+          "@id": "#ParameterValue_extraction_method_Roboklon_EURx_GeneMATRIX_Universal_RNA_Purification_version_2.3_September_2011"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_Roboklon_commercial_buffers"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_volume_300"
+        },
+        {
+          "@id": "#ParameterValue_RNA_quality_check_RIN_7.6_(Agilent_Bioanalyzer_2100_expert_Plant_RNA_Nano)"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_CAM_02_ext",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "CAM_02_ext"
+    },
+    {
+      "@id": "#ParameterValue_biosource_amount_78",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "biosource amount",
+      "value": "78",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000013",
+      "unitCode": "https://bioregistry.io/UO:0000022",
+      "unitText": "milligram",
+      "columnIndex": "0"
+    },
+    {
+      "@id": "#ParameterValue_RNA_quality_check_RIN_7.7_(Agilent_Bioanalyzer_2100_expert_Plant_RNA_Nano)",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "RNA quality check",
+      "value": "RIN 7.7 (Agilent Bioanalyzer 2100 expert_Plant RNA Nano)",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000062",
+      "columnIndex": "4"
+    },
+    {
+      "@id": "#Process_A_RNASeq_rna_extraction_1",
+      "@type": "LabProcess",
+      "name": "rna_extraction_1",
+      "object": {
+        "@id": "#Sample_CAM_02"
+      },
+      "result": {
+        "@id": "#Sample_CAM_02_ext"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_rna_extraction.md_rna_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_biosource_amount_78"
+        },
+        {
+          "@id": "#ParameterValue_extraction_method_Roboklon_EURx_GeneMATRIX_Universal_RNA_Purification_version_2.3_September_2011"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_Roboklon_commercial_buffers"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_volume_300"
+        },
+        {
+          "@id": "#ParameterValue_RNA_quality_check_RIN_7.7_(Agilent_Bioanalyzer_2100_expert_Plant_RNA_Nano)"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_CAM_03_ext",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "CAM_03_ext"
+    },
+    {
+      "@id": "#ParameterValue_biosource_amount_93",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "biosource amount",
+      "value": "93",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000013",
+      "unitCode": "https://bioregistry.io/UO:0000022",
+      "unitText": "milligram",
+      "columnIndex": "0"
+    },
+    {
+      "@id": "#ParameterValue_RNA_quality_check_RIN_6.5_(Agilent_Bioanalyzer_2100_expert_Plant_RNA_Nano)",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "RNA quality check",
+      "value": "RIN 6.5 (Agilent Bioanalyzer 2100 expert_Plant RNA Nano)",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000062",
+      "columnIndex": "4"
+    },
+    {
+      "@id": "#Process_A_RNASeq_rna_extraction_2",
+      "@type": "LabProcess",
+      "name": "rna_extraction_2",
+      "object": {
+        "@id": "#Sample_CAM_03"
+      },
+      "result": {
+        "@id": "#Sample_CAM_03_ext"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_rna_extraction.md_rna_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_biosource_amount_93"
+        },
+        {
+          "@id": "#ParameterValue_extraction_method_Roboklon_EURx_GeneMATRIX_Universal_RNA_Purification_version_2.3_September_2011"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_Roboklon_commercial_buffers"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_volume_300"
+        },
+        {
+          "@id": "#ParameterValue_RNA_quality_check_RIN_6.5_(Agilent_Bioanalyzer_2100_expert_Plant_RNA_Nano)"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_reC3_01_ext",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "reC3_01_ext"
+    },
+    {
+      "@id": "#ParameterValue_biosource_amount_82",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "biosource amount",
+      "value": "82",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000013",
+      "unitCode": "https://bioregistry.io/UO:0000022",
+      "unitText": "milligram",
+      "columnIndex": "0"
+    },
+    {
+      "@id": "#ParameterValue_RNA_quality_check_RIN_7.8_(Agilent_Bioanalyzer_2100_expert_Plant_RNA_Nano)",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "RNA quality check",
+      "value": "RIN 7.8 (Agilent Bioanalyzer 2100 expert_Plant RNA Nano)",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000062",
+      "columnIndex": "4"
+    },
+    {
+      "@id": "#Process_A_RNASeq_rna_extraction_3",
+      "@type": "LabProcess",
+      "name": "rna_extraction_3",
+      "object": {
+        "@id": "#Sample_reC3_01"
+      },
+      "result": {
+        "@id": "#Sample_reC3_01_ext"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_rna_extraction.md_rna_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_biosource_amount_82"
+        },
+        {
+          "@id": "#ParameterValue_extraction_method_Roboklon_EURx_GeneMATRIX_Universal_RNA_Purification_version_2.3_September_2011"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_Roboklon_commercial_buffers"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_volume_300"
+        },
+        {
+          "@id": "#ParameterValue_RNA_quality_check_RIN_7.8_(Agilent_Bioanalyzer_2100_expert_Plant_RNA_Nano)"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_reC3_02_ext",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "reC3_02_ext"
+    },
+    {
+      "@id": "#ParameterValue_biosource_amount_96",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "biosource amount",
+      "value": "96",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000013",
+      "unitCode": "https://bioregistry.io/UO:0000022",
+      "unitText": "milligram",
+      "columnIndex": "0"
+    },
+    {
+      "@id": "#Process_A_RNASeq_rna_extraction_4",
+      "@type": "LabProcess",
+      "name": "rna_extraction_4",
+      "object": {
+        "@id": "#Sample_reC3_02"
+      },
+      "result": {
+        "@id": "#Sample_reC3_02_ext"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_rna_extraction.md_rna_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_biosource_amount_96"
+        },
+        {
+          "@id": "#ParameterValue_extraction_method_Roboklon_EURx_GeneMATRIX_Universal_RNA_Purification_version_2.3_September_2011"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_Roboklon_commercial_buffers"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_volume_300"
+        },
+        {
+          "@id": "#ParameterValue_RNA_quality_check_RIN_7.6_(Agilent_Bioanalyzer_2100_expert_Plant_RNA_Nano)"
+        }
+      ]
+    },
+    {
+      "@id": "#Sample_reC3_03_ext",
+      "@type": "Sample",
+      "additionalType": "Sample",
+      "name": "reC3_03_ext"
+    },
+    {
+      "@id": "#Process_A_RNASeq_rna_extraction_5",
+      "@type": "LabProcess",
+      "name": "rna_extraction_5",
+      "object": {
+        "@id": "#Sample_reC3_03"
+      },
+      "result": {
+        "@id": "#Sample_reC3_03_ext"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_rna_extraction.md_rna_extraction"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_biosource_amount_78"
+        },
+        {
+          "@id": "#ParameterValue_extraction_method_Roboklon_EURx_GeneMATRIX_Universal_RNA_Purification_version_2.3_September_2011"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_Roboklon_commercial_buffers"
+        },
+        {
+          "@id": "#ParameterValue_extraction_buffer_volume_300"
+        },
+        {
+          "@id": "#ParameterValue_RNA_quality_check_RIN_7.6_(Agilent_Bioanalyzer_2100_expert_Plant_RNA_Nano)"
+        }
+      ]
+    },
+    {
+      "@id": "#Protocol_illumina.md_illumina",
+      "@type": "LabProtocol",
+      "name": "illumina.md",
+      "intendedUse": {
+        "@id": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000177"
+      }
+    },
+    {
+      "@id": "#ParameterValue_library_strategy_RNA-seq",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "library strategy",
+      "value": "RNA-seq",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000035",
+      "valueReference": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000003",
+      "columnIndex": "0"
+    },
+    {
+      "@id": "#ParameterValue_library_selection_cDNA_method",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "library selection",
+      "value": "cDNA method",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000036",
+      "columnIndex": "1"
+    },
+    {
+      "@id": "#ParameterValue_library_layout_single-end",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "library layout",
+      "value": "single-end",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000015",
+      "valueReference": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000086",
+      "columnIndex": "2"
+    },
+    {
+      "@id": "#ParameterValue_library_preparation_kit_Illumina_TruSeq_RNA_Sample_Prep_Kit",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "library preparation kit",
+      "value": "Illumina TruSeq RNA Sample Prep Kit",
+      "propertyID": "http://purl.obolibrary.org/obo/GENEPIO_0000085",
+      "columnIndex": "3"
+    },
+    {
+      "@id": "#ParameterValue_library_preparation_kit_version_version_2",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "library preparation kit version",
+      "value": "version 2",
+      "propertyID": "http://purl.obolibrary.org/obo/GENEPIO_0000149",
+      "columnIndex": "4"
+    },
+    {
+      "@id": "#ParameterValue_adapter_sequence_CAGATC",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "adapter sequence",
+      "value": "CAGATC",
+      "propertyID": "http://purl.obolibrary.org/obo/GENEPIO_0000083",
+      "columnIndex": "5"
+    },
+    {
+      "@id": "#ParameterValue_next_generation_sequencing_instrument_model_Illumina_HiSeq_2000",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "next generation sequencing instrument model",
+      "value": "Illumina HiSeq 2000",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000040",
+      "valueReference": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000041",
+      "columnIndex": "6"
+    },
+    {
+      "@id": "#ParameterValue_base-calling_software_Illumina_Cassava",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "base-calling software",
+      "value": "Illumina Cassava",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000017",
+      "columnIndex": "7"
+    },
+    {
+      "@id": "#ParameterValue_base-calling_software_version_v1.8.2",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "base-calling software version",
+      "value": "v1.8.2",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000018",
+      "columnIndex": "8"
+    },
+    {
+      "@id": "#ParameterValue_Raw_data_file_format_*.fastq.gz",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "Raw data file format",
+      "value": "*.fastq.gz",
+      "propertyID": "http://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000021",
+      "columnIndex": "9"
+    },
+    {
+      "@id": "#Process_A_RNASeq_illumina_0",
+      "@type": "LabProcess",
+      "name": "illumina_0",
+      "object": {
+        "@id": "#Sample_CAM_01_ext"
+      },
+      "result": {
+        "@id": "assays/RNASeq/dataset/DB_097_CAMMD_CAGATC_L001_R1_001.fastq.gz"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_illumina.md_illumina"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_library_strategy_RNA-seq"
+        },
+        {
+          "@id": "#ParameterValue_library_selection_cDNA_method"
+        },
+        {
+          "@id": "#ParameterValue_library_layout_single-end"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_Illumina_TruSeq_RNA_Sample_Prep_Kit"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_version_version_2"
+        },
+        {
+          "@id": "#ParameterValue_adapter_sequence_CAGATC"
+        },
+        {
+          "@id": "#ParameterValue_next_generation_sequencing_instrument_model_Illumina_HiSeq_2000"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_Illumina_Cassava"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_version_v1.8.2"
+        },
+        {
+          "@id": "#ParameterValue_Raw_data_file_format_*.fastq.gz"
+        }
+      ]
+    },
+    {
+      "@id": "#ParameterValue_adapter_sequence_CTTGTA",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "adapter sequence",
+      "value": "CTTGTA",
+      "propertyID": "http://purl.obolibrary.org/obo/GENEPIO_0000083",
+      "columnIndex": "5"
+    },
+    {
+      "@id": "#Process_A_RNASeq_illumina_1",
+      "@type": "LabProcess",
+      "name": "illumina_1",
+      "object": {
+        "@id": "#Sample_CAM_02_ext"
+      },
+      "result": {
+        "@id": "assays/RNASeq/dataset/DB_099_CAMMD_CTTGTA_L001_R1_001.fastq.gz"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_illumina.md_illumina"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_library_strategy_RNA-seq"
+        },
+        {
+          "@id": "#ParameterValue_library_selection_cDNA_method"
+        },
+        {
+          "@id": "#ParameterValue_library_layout_single-end"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_Illumina_TruSeq_RNA_Sample_Prep_Kit"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_version_version_2"
+        },
+        {
+          "@id": "#ParameterValue_adapter_sequence_CTTGTA"
+        },
+        {
+          "@id": "#ParameterValue_next_generation_sequencing_instrument_model_Illumina_HiSeq_2000"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_Illumina_Cassava"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_version_v1.8.2"
+        },
+        {
+          "@id": "#ParameterValue_Raw_data_file_format_*.fastq.gz"
+        }
+      ]
+    },
+    {
+      "@id": "#ParameterValue_adapter_sequence_AGTCAA",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "adapter sequence",
+      "value": "AGTCAA",
+      "propertyID": "http://purl.obolibrary.org/obo/GENEPIO_0000083",
+      "columnIndex": "5"
+    },
+    {
+      "@id": "#Process_A_RNASeq_illumina_2",
+      "@type": "LabProcess",
+      "name": "illumina_2",
+      "object": {
+        "@id": "#Sample_CAM_03_ext"
+      },
+      "result": {
+        "@id": "assays/RNASeq/dataset/DB_103_CAMMD_AGTCAA_L001_R1_001.fastq.gz"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_illumina.md_illumina"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_library_strategy_RNA-seq"
+        },
+        {
+          "@id": "#ParameterValue_library_selection_cDNA_method"
+        },
+        {
+          "@id": "#ParameterValue_library_layout_single-end"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_Illumina_TruSeq_RNA_Sample_Prep_Kit"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_version_version_2"
+        },
+        {
+          "@id": "#ParameterValue_adapter_sequence_AGTCAA"
+        },
+        {
+          "@id": "#ParameterValue_next_generation_sequencing_instrument_model_Illumina_HiSeq_2000"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_Illumina_Cassava"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_version_v1.8.2"
+        },
+        {
+          "@id": "#ParameterValue_Raw_data_file_format_*.fastq.gz"
+        }
+      ]
+    },
+    {
+      "@id": "#ParameterValue_adapter_sequence_GTCCGC",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "adapter sequence",
+      "value": "GTCCGC",
+      "propertyID": "http://purl.obolibrary.org/obo/GENEPIO_0000083",
+      "columnIndex": "5"
+    },
+    {
+      "@id": "#Process_A_RNASeq_illumina_3",
+      "@type": "LabProcess",
+      "name": "illumina_3",
+      "object": {
+        "@id": "#Sample_reC3_01_ext"
+      },
+      "result": {
+        "@id": "assays/RNASeq/dataset/DB_161_reC3MD_GTCCGC_L001_R1_001.fastq.gz"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_illumina.md_illumina"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_library_strategy_RNA-seq"
+        },
+        {
+          "@id": "#ParameterValue_library_selection_cDNA_method"
+        },
+        {
+          "@id": "#ParameterValue_library_layout_single-end"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_Illumina_TruSeq_RNA_Sample_Prep_Kit"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_version_version_2"
+        },
+        {
+          "@id": "#ParameterValue_adapter_sequence_GTCCGC"
+        },
+        {
+          "@id": "#ParameterValue_next_generation_sequencing_instrument_model_Illumina_HiSeq_2000"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_Illumina_Cassava"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_version_v1.8.2"
+        },
+        {
+          "@id": "#ParameterValue_Raw_data_file_format_*.fastq.gz"
+        }
+      ]
+    },
+    {
+      "@id": "#ParameterValue_adapter_sequence_GTGAAA",
+      "@type": "PropertyValue",
+      "additionalType": "ParameterValue",
+      "name": "adapter sequence",
+      "value": "GTGAAA",
+      "propertyID": "http://purl.obolibrary.org/obo/GENEPIO_0000083",
+      "columnIndex": "5"
+    },
+    {
+      "@id": "#Process_A_RNASeq_illumina_4",
+      "@type": "LabProcess",
+      "name": "illumina_4",
+      "object": {
+        "@id": "#Sample_reC3_02_ext"
+      },
+      "result": {
+        "@id": "assays/RNASeq/dataset/DB_163_reC3MD_GTGAAA_L001_R1_001.fastq.gz"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_illumina.md_illumina"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_library_strategy_RNA-seq"
+        },
+        {
+          "@id": "#ParameterValue_library_selection_cDNA_method"
+        },
+        {
+          "@id": "#ParameterValue_library_layout_single-end"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_Illumina_TruSeq_RNA_Sample_Prep_Kit"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_version_version_2"
+        },
+        {
+          "@id": "#ParameterValue_adapter_sequence_GTGAAA"
+        },
+        {
+          "@id": "#ParameterValue_next_generation_sequencing_instrument_model_Illumina_HiSeq_2000"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_Illumina_Cassava"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_version_v1.8.2"
+        },
+        {
+          "@id": "#ParameterValue_Raw_data_file_format_*.fastq.gz"
+        }
+      ]
+    },
+    {
+      "@id": "#Process_A_RNASeq_illumina_5",
+      "@type": "LabProcess",
+      "name": "illumina_5",
+      "object": {
+        "@id": "#Sample_reC3_03_ext"
+      },
+      "result": {
+        "@id": "assays/RNASeq/dataset/DB_165_re-C3MD_GTGAAA_L002_R1_001.fastq.gz"
+      },
+      "executesLabProtocol": {
+        "@id": "#Protocol_illumina.md_illumina"
+      },
+      "parameterValue": [
+        {
+          "@id": "#ParameterValue_library_strategy_RNA-seq"
+        },
+        {
+          "@id": "#ParameterValue_library_selection_cDNA_method"
+        },
+        {
+          "@id": "#ParameterValue_library_layout_single-end"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_Illumina_TruSeq_RNA_Sample_Prep_Kit"
+        },
+        {
+          "@id": "#ParameterValue_library_preparation_kit_version_version_2"
+        },
+        {
+          "@id": "#ParameterValue_adapter_sequence_GTGAAA"
+        },
+        {
+          "@id": "#ParameterValue_next_generation_sequencing_instrument_model_Illumina_HiSeq_2000"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_Illumina_Cassava"
+        },
+        {
+          "@id": "#ParameterValue_base-calling_software_version_v1.8.2"
+        },
+        {
+          "@id": "#ParameterValue_Raw_data_file_format_*.fastq.gz"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C101293",
+      "@type": "DefinedTerm",
+      "name": "Next Generation Sequencing",
+      "termCode": "http://purl.obolibrary.org/obo/NCIT_C101293"
+    },
+    {
+      "@id": "#OA_Illumina_HiSeq_2500",
+      "@type": "DefinedTerm",
+      "name": "Illumina HiSeq 2500"
+    },
+    {
+      "@id": "#PV_mRNA_Sequencing",
+      "@type": "PropertyValue",
+      "name": "mRNA Sequencing",
+      "propertyID": "http://purl.obolibrary.org/obo/NCIT_C129432"
+    },
+    {
+      "@id": "assays/RNASeq/",
+      "@type": "Dataset",
+      "additionalType": "Assay",
+      "identifier": "RNASeq",
+      "creator": [
+        {
+          "@id": "#Person_Dominik_Brilhaus"
+        },
+        {
+          "@id": "#Person_Klaus_Winter"
+        },
+        {
+          "@id": "#Person_Samantha_Kurz"
+        },
+        {
+          "@id": "#Person_Thorsten_Wachtmeister"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "assays/RNASeq/dataset/DB_097_CAMMD_CAGATC_L001_R1_001.fastq.gz"
+        },
+        {
+          "@id": "assays/RNASeq/dataset/DB_099_CAMMD_CTTGTA_L001_R1_001.fastq.gz"
+        },
+        {
+          "@id": "assays/RNASeq/dataset/DB_103_CAMMD_AGTCAA_L001_R1_001.fastq.gz"
+        },
+        {
+          "@id": "assays/RNASeq/dataset/DB_161_reC3MD_GTCCGC_L001_R1_001.fastq.gz"
+        },
+        {
+          "@id": "assays/RNASeq/dataset/DB_163_reC3MD_GTGAAA_L001_R1_001.fastq.gz"
+        },
+        {
+          "@id": "assays/RNASeq/dataset/DB_165_re-C3MD_GTGAAA_L002_R1_001.fastq.gz"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#Process_A_RNASeq_rna_extraction_0"
+        },
+        {
+          "@id": "#Process_A_RNASeq_rna_extraction_1"
+        },
+        {
+          "@id": "#Process_A_RNASeq_rna_extraction_2"
+        },
+        {
+          "@id": "#Process_A_RNASeq_rna_extraction_3"
+        },
+        {
+          "@id": "#Process_A_RNASeq_rna_extraction_4"
+        },
+        {
+          "@id": "#Process_A_RNASeq_rna_extraction_5"
+        },
+        {
+          "@id": "#Process_A_RNASeq_illumina_0"
+        },
+        {
+          "@id": "#Process_A_RNASeq_illumina_1"
+        },
+        {
+          "@id": "#Process_A_RNASeq_illumina_2"
+        },
+        {
+          "@id": "#Process_A_RNASeq_illumina_3"
+        },
+        {
+          "@id": "#Process_A_RNASeq_illumina_4"
+        },
+        {
+          "@id": "#Process_A_RNASeq_illumina_5"
+        }
+      ],
+      "measurementMethod": {
+        "@id": "http://purl.obolibrary.org/obo/NCIT_C101293"
+      },
+      "measurementTechnique": {
+        "@id": "#OA_Illumina_HiSeq_2500"
+      },
+      "variableMeasured": {
+        "@id": "#PV_mRNA_Sequencing"
+      }
+    },
+    {
+      "@id": "10.1104/pp.15.01076",
+      "@type": "PropertyValue",
+      "name": "DOI",
+      "value": "10.1104/pp.15.01076",
+      "propertyID": "http://purl.obolibrary.org/obo/OBI_0002110"
+    },
+    {
+      "@id": "26530316",
+      "@type": "PropertyValue",
+      "name": "PubMedID",
+      "value": "26530316",
+      "propertyID": "http://purl.obolibrary.org/obo/OBI_0001617"
+    },
+    {
+      "@id": "#Person_Brilhaus",
+      "@type": "Person",
+      "givenName": "Brilhaus"
+    },
+    {
+      "@id": "#Person__Dominik;_Bräutigam",
+      "@type": "Person",
+      "givenName": " Dominik; Bräutigam"
+    },
+    {
+      "@id": "#Person__Andrea;_Mettler-Altmann",
+      "@type": "Person",
+      "givenName": " Andrea; Mettler-Altmann"
+    },
+    {
+      "@id": "#Person__Tabea;_Winter",
+      "@type": "Person",
+      "givenName": " Tabea; Winter"
+    },
+    {
+      "@id": "#Person__Klaus;_Weber",
+      "@type": "Person",
+      "givenName": " Klaus; Weber"
+    },
+    {
+      "@id": "#Person__Andreas_P_M",
+      "@type": "Person",
+      "givenName": " Andreas P M"
+    },
+    {
+      "@id": "#OA_Published",
+      "@type": "DefinedTerm",
+      "name": "Published"
+    },
+    {
+      "@id": "#Reversible_Burst_of_Transcriptional_Changes_during_Induction_of_Crassulacean_Acid_Metabolism_in_Talinum_triangulare.",
+      "@type": "ScholarlyArticle",
+      "headline": "Reversible Burst of Transcriptional Changes during Induction of Crassulacean Acid Metabolism in Talinum triangulare.",
+      "identifier": [
+        {
+          "@id": "10.1104/pp.15.01076"
+        },
+        {
+          "@id": "26530316"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#Person_Brilhaus"
+        },
+        {
+          "@id": "#Person__Dominik;_Bräutigam"
+        },
+        {
+          "@id": "#Person__Andrea;_Mettler-Altmann"
+        },
+        {
+          "@id": "#Person__Tabea;_Winter"
+        },
+        {
+          "@id": "#Person__Klaus;_Weber"
+        },
+        {
+          "@id": "#Person__Andreas_P_M"
+        }
+      ],
+      "creativeWorkStatus": {
+        "@id": "#OA_Published"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "additionalType": "Investigation",
+      "identifier": "Facultative-CAM-in-Talinum",
+      "creator": [
+        {
+          "@id": "http://orcid.org/0000-0001-9021-3197"
+        },
+        {
+          "@id": "http://orcid.org/0000-0002-5309-0527"
+        },
+        {
+          "@id": "http://orcid.org/0000-0002-9161-4889"
+        },
+        {
+          "@id": "#Person_Klaus_Winter"
+        },
+        {
+          "@id": "http://orcid.org/0000-0003-0970-4672"
+        }
+      ],
+      "datePublished": "2025-07-31T17:41:41.5577612",
+      "description": "Drought tolerance is a key factor for agriculture in the 21st century as it is a major determinant of plant survival in natural ecosystems as well as crop productivity. Plants have evolved a range of mechanisms to cope with drought, including a specialized type of photosynthesis termed Crassulacean acid metabolism (CAM). CAM is associated with stomatal closure during the day as atmospheric CO2 is assimilated primarily during the night, thus reducing transpirational water loss. The tropical herbaceous perennial species Talinum triangulare is capable of transitioning, in a facultative, reversible manner, from C3 photosynthesis to weakly expressed CAM in response to drought stress. The transcriptional regulation of this transition has been studied. Combining mRNA-Seq with targeted metabolite measurements, we found highly elevated levels of CAM-cycle enzyme transcripts and their metabolic products in T. triangulare leaves upon water deprivation. The carbohydrate metabolism is rewired to reduce the use of reserves for growth to support the CAM-cycle and the synthesis of compatible solutes. This large-scale expression dataset of drought-induced CAM demonstrates transcriptional regulation of the C3–CAM transition. We identified candidate transcription factors to mediate this photosynthetic plasticity, which may contribute in the future to the design of more drought-tolerant crops via engineered CAM.\\n\\n<<Test ARC registry>>",
+      "hasPart": [
+        {
+          "@id": "studies/TalinumGenomeDraft/"
+        },
+        {
+          "@id": "studies/TalinumSamples-STRI/"
+        },
+        {
+          "@id": "assays/GCqTOF_targets/"
+        },
+        {
+          "@id": "assays/MassHunter_targets/"
+        },
+        {
+          "@id": "assays/RNASeq/"
+        }
+      ],
+      "name": "Facultative CAM in Talinum triangulare",
+      "citation": {
+        "@id": "#Reversible_Burst_of_Transcriptional_Changes_during_Induction_of_Crassulacean_Acid_Metabolism_in_Talinum_triangulare."
+      },
+      "license": "ALL RIGHTS RESERVED BY THE AUTHORS"
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    }
+  ]
+}`;export{a as default};
