@@ -42,7 +42,7 @@ Find more information below:
 - Components: https://primer.style/product/components/
 - Responsive: https://github.com/primer/css/blob/b5e009778ec01b6e983cba6cbf89cebfdc5a4124/docs/content/support/breakpoints.md#media-query-mixins
 
-## Public components
+## Publish components
 
 1. Apply changes
 2. Change version in `package.json`
