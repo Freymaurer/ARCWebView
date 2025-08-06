@@ -1,4 +1,4 @@
-import { ArcAssay } from '@nfdi4plants/arctrl'
+import type { ArcAssay } from '@nfdi4plants/arctrl'
 import {Stack, Text, Heading } from '@primer/react'
 import { MetadataField, PersonsField } from '../MetadataHelper'
 

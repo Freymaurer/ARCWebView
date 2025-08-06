@@ -1,11 +1,10 @@
 import { useEffect, useMemo, useState } from 'react'
-import { JsonController, ARC, OntologyAnnotation, ArcInvestigation, ROCrate } from '@nfdi4plants/arctrl'
+import { JsonController, type ARC, type OntologyAnnotation, type ArcInvestigation, ROCrate } from '@nfdi4plants/arctrl'
 import FileViewer from '../FileViewer'
 import FileTable from '../FileTable'
 import FileBreadcrumbs from '../FileBreadcrumbs'
 import { SplitPageLayout, Stack, IconButton, useResponsiveValue, Dialog} from '@primer/react'
 import { type ContentType, type SearchCache, type TreeNode } from '../../util/types'
-// import readme from '../../assets/README.md?raw'
 import TreeSearch from '../TreeSearch'
 import { useSearchCacheContext } from '../../contexts'
 import AnnotationTable from '../AnnotationTable'
@@ -305,7 +304,7 @@ interface ARCExportMetadata {
   contentSize: string | undefined;
 }
 
-export default function WebViewer({ jsonString }: WebViewerProps) {
+export default function WebViewer({ jsonString, readmefetch, licensefetch }: WebViewerProps) {
 
   const [arc, setArc] = useState<ARC | null>(null)
   const [tree, setTree] = useState<TreeNode | null>(null)
@@ -398,11 +397,13 @@ export default function WebViewer({ jsonString }: WebViewerProps) {
               ? (renderFileComponentByName(currentTreeNode, arc)) 
               : <FileTable loading={loading} currentTreeNode={currentTreeNode} navigateTo={navigateTo} />
           }
-          {/* {tree && currentTreeNode && currentTreeNode.name === "root" && currentTreeNode.type === 'folder' &&
+          {tree && currentTreeNode && currentTreeNode.name === "root" && currentTreeNode.type === 'folder' &&
+            (readmefetch || licensefetch) &&
             <FileViewer nodes={[
-              { node: {id: currentTreeNode.name + "readme", name: "README.md", type: "file"}, contentType: "markdown", content: async () => findReadme(currentTreeNode) },
+              { node: {id: currentTreeNode.name + "readme", name: "README.md", type: "file"}, contentType: "markdown", content: readmefetch },
+              { node: {id: currentTreeNode.name + "license", name: "LICENSE.md", type: "file"}, contentType: "markdown", content: licensefetch },
             ]}  />
-          } */}
+          }
         </Stack>
       </SplitPageLayout.Content>
     </SplitPageLayout>

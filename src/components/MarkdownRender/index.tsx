@@ -8,6 +8,8 @@ interface MarkdownRenderProps {
   content: string;
 }
 
+mermaid.initialize({startOnLoad: false})
+
 export default function MarkdownRender({content}: MarkdownRenderProps) { 
 
   const [renderedContent, setRenderedContent] = useState<string>("")
@@ -18,17 +20,22 @@ export default function MarkdownRender({content}: MarkdownRenderProps) {
       // Parse the content with marked
       const htmlContent = await marked.parse(content);
       setRenderedContent(htmlContent);
-      // setLoading(false);
+      setLoading(false);
     };
     parseContent();
   }, [content]);
 
   useLayoutEffect(() => {
-    if (renderedContent) {
-      mermaid.contentLoaded();
-      setLoading(false);
+
+    const mermaidElements = document.querySelectorAll(".mermaid");
+    console.log("Mermaid elements found:", mermaidElements.length);
+
+    const loadMermaid = async () => {
+      console.log("Loading Mermaid...");
+      await mermaid.run();
     }
-  }, [renderedContent]);
+    loadMermaid();
+  }, [renderedContent, loading]);
 
   return (
       loading

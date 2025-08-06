@@ -1,4 +1,4 @@
-import { ArcStudy } from '@nfdi4plants/arctrl'
+import type {ArcStudy } from '@nfdi4plants/arctrl'
 import {Stack, Text, Heading } from '@primer/react'
 import { MetadataField, PersonsField, PublicationsField } from '../MetadataHelper'
 

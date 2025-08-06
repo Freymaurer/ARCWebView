@@ -1,16 +1,50 @@
 {
-  "name": "arc-web-view",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@nfdi4plants/arc-web-view",
+  "version": "0.1.0",
+  "description": "An Annotated Research Context web viewer in the style of GitHub's Primer ProductUI.",
+  "private": false,
+  "author": {
+    "name": "Kevin Frey",
+    "url": "https://github.com/Freymaurer"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Freymaurer/ARCWebView.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Freymaurer/ARCWebView/issues"
+  },
+  "homepage": "https://github.com/Freymaurer/ARCWebView#readme",
+  "keywords": [
+    "react",
+    "components",
+    "ui",
+    "library",
+    "rdm",
+    "nfdi4plants",
+    "arc"
+  ],
   "type": "module",
+  "main": "./dist/index.es.js",
+  "types": "./dist/lib.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "types": "./dist/lib.d.ts",
+      "styles": "./dist/arc-web-view.css"
+    }
+  },
+  "files": ["dist"],
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "start": "vite",
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "start": "npm run dev",
+    "dev": "vite --config vite.config.app.ts",
+    "build": "tsc -b && vite build --config vite.config.app.ts",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview --config vite.config.app.ts",
+    "build:lib": "tsc -b && vite build --config vite.config.lib.ts"
   },
   "dependencies": {
     "@nfdi4plants/arctrl": "^3.0.0-beta.3",
@@ -19,9 +53,11 @@
     "@primer/react": "^37.29.0",
     "marked": "^16.1.1",
     "mermaid": "^11.9.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
     "styled-components": "^5.3.11"
+  },
+  "peerDependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
@@ -35,6 +71,7 @@
     "globals": "^16.3.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.35.1",
-    "vite": "^7.0.4"
+    "vite": "^7.0.4",
+    "vite-plugin-dts": "^4.5.4"
   }
 }

@@ -1,14 +1,11 @@
-import './App.css'
 import WebViewer from './components/WebViewer';
 import { useEffect, useState } from 'react';
 import {Banner, Blankslate} from '@primer/react/experimental'
 import Icons from './components/Icons';
-import { BaseStyles, ThemeProvider } from '@primer/react';
 import { FileCacheProvider, SearchCacheProvider } from './ContextProvider';
 import { marked } from 'marked';
 
-import '@primer/primitives/dist/css/functional/themes/light.css'
-import "@primer/css/dist/primer.css";
+
 
 function ErrorBanner({error}: {error: string}) {
   return (
@@ -36,13 +33,7 @@ function BlankSlate() {
   )
 }
 
-declare global {
-  interface Window {
-    arcwebview: {
-      getROCJson: () => Promise<string>;
-    };
-  }
-}
+
 
 marked.use({
   renderer: {
@@ -54,10 +45,12 @@ marked.use({
 })
 
 interface AppProps {
-  jsonString?: string;
+  jsonString?: () => Promise<string>;
+  readmefetch?: () => Promise<string>;
+  licensefetch?: () => Promise<string>;
 }
 
-function App({ jsonString: outerJson }: AppProps) {
+function App({ jsonString: outerJson, readmefetch, licensefetch }: AppProps) {
 
   const [jsonString, setJsonString] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
@@ -66,9 +59,16 @@ function App({ jsonString: outerJson }: AppProps) {
   useEffect(() => {
     const fetchJson = async () => {
       if (outerJson) {
-        setJsonString(outerJson);
-        setLoading(false);
-        return;
+        try {
+          setLoading(true);
+          const json = await outerJson();
+          setJsonString(json);
+        } catch (err) {
+          console.error('Error fetching JSON:', err);
+          setError('Failed to load JSON data.');
+        } finally {
+          setLoading(false);
+        }
       }
       if (window.arcwebview && window.arcwebview.getROCJson) {
         try {
@@ -82,32 +82,27 @@ function App({ jsonString: outerJson }: AppProps) {
           setLoading(false);
         }
       } else {
-        console.warn('arcwebview.getROCJson is not available, using example JSON.');
-        const exmpJsonString = await import('./assets/arc-ro-crate-metadata.json?raw');
-        setJsonString(exmpJsonString.default);
+        console.warn('arcwebview.getROCJson is not available.');
         setLoading(false);
       }
     };
     fetchJson();
-    }, []);
+    }, [outerJson]);
 
   return (
-    <ThemeProvider>
-      <BaseStyles>
-        <FileCacheProvider>
-          <SearchCacheProvider>
-            {
-              error && <ErrorBanner error={error} />
-            }
-            {
-              loading 
-                ? <BlankSlate /> 
-                : jsonString && <WebViewer jsonString={jsonString} />
-            }
-          </SearchCacheProvider>
-        </FileCacheProvider>
-      </BaseStyles>
-    </ThemeProvider>
+    <FileCacheProvider>
+      <SearchCacheProvider>
+        {
+          error && <ErrorBanner error={error} />
+        }
+        {
+          loading || !jsonString 
+            ? <BlankSlate /> 
+            : <WebViewer jsonString={jsonString} readmefetch={readmefetch} licensefetch={licensefetch} />
+        }
+      </SearchCacheProvider>
+    </FileCacheProvider>
+
   )
 }
 
